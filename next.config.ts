@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   // node-ical (and its temporal-polyfill dependency) breaks when bundled by
   // the Server Components bundler — keep it as a native Node require instead.
   serverExternalPackages: ["node-ical"],
+  // Lets the dev server's assets/HMR load when opened from another device on
+  // the LAN (e.g. testing on a phone via this machine's local IP) — without
+  // this, Next.js blocks those cross-origin dev requests with a 403.
+  allowedDevOrigins: ["172.20.10.4"],
 };
 
 export default nextConfig;
