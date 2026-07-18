@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { locales } from "@/lib/i18n/config";
 
 export const villaSourceSchema = z.object({
   platform: z.enum(["airbnb", "booking"]),
@@ -6,19 +7,43 @@ export const villaSourceSchema = z.object({
   icalUrl: z.string().nullable(),
 });
 
-export const villaSchema = z.object({
-  slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase kebab-case"),
+export const amenityKeySchema = z.enum([
+  "privatePool",
+  "privateInfinityPool",
+  "rooftopPool",
+  "seaView",
+  "mountainView",
+  "ac",
+  "wifi",
+  "kitchen",
+  "parking",
+  "bbq",
+  "garden",
+  "housekeeping",
+]);
+
+export const villaContentSchema = z.object({
   name: z.string(),
   shortTagline: z.string(),
+  description: z.string(),
+});
+
+export const villaSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase kebab-case"),
+  content: z.object(
+    Object.fromEntries(locales.map((locale) => [locale, villaContentSchema])) as Record<
+      (typeof locales)[number],
+      typeof villaContentSchema
+    >
+  ),
   location: z.object({
     area: z.string(),
     town: z.string(),
     country: z.string(),
   }),
-  description: z.string(),
   gradient: z.tuple([z.string(), z.string()]),
   galleryCount: z.number().int().min(1).max(12),
-  amenities: z.array(z.string()).min(1),
+  amenityKeys: z.array(amenityKeySchema).min(1),
   bedrooms: z.number().int().positive(),
   bathrooms: z.number().int().positive(),
   maxGuests: z.number().int().positive(),
@@ -35,6 +60,8 @@ export const villaSchema = z.object({
 });
 
 export type VillaSource = z.infer<typeof villaSourceSchema>;
+export type AmenityKey = z.infer<typeof amenityKeySchema>;
+export type VillaContent = z.infer<typeof villaContentSchema>;
 export type Villa = z.infer<typeof villaSchema>;
 
 export const villasSchema = z.array(villaSchema);

@@ -1,42 +1,65 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LinkButton } from "@/components/ui/Button";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { localeHref, type Locale } from "@/lib/i18n/config";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/villas", label: "Villas" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
+type NavDict = Dictionary["nav"];
 
-export function Navbar() {
+export function Navbar({ lang, dict }: { lang: Locale; dict: NavDict }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const links = [
+    { href: localeHref(lang, "/villas"), label: dict.villas },
+    { href: localeHref(lang, "/guide"), label: dict.guide },
+    { href: localeHref(lang, "/about"), label: dict.about },
+    { href: localeHref(lang, "/faq"), label: dict.faq },
+    { href: localeHref(lang, "/contact"), label: dict.contact },
+  ];
+  const homeHref = localeHref(lang, "/");
+  const villasHref = localeHref(lang, "/villas");
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-surface/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-extrabold tracking-tight text-ink">
+        <Link
+          href={homeHref}
+          className="font-display text-xl tracking-tight text-ink"
+        >
           Villa <span className="text-brand">Kalkan</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 sm:flex">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-ink-muted transition-colors hover:text-ink"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden items-center gap-7 lg:flex">
+          {links.map((link) => {
+            const active = pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-sm font-medium transition-colors ${
+                  active ? "text-ink" : "text-ink-muted hover:text-ink"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+          <LanguageSwitcher lang={lang} label={dict.language} />
+          <LinkButton href={villasHref} className="px-5 py-2.5">
+            {dict.browseVillas}
+          </LinkButton>
         </nav>
 
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="flex items-center justify-center rounded-full p-2 text-ink sm:hidden"
-          aria-label="Toggle menu"
+          className="flex items-center justify-center rounded-full p-2 text-ink lg:hidden"
+          aria-label={dict.toggleMenu}
           aria-expanded={open}
         >
           <svg
@@ -58,7 +81,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-border px-6 py-4 sm:hidden">
+        <nav className="flex flex-col gap-1 border-t border-border px-6 py-4 lg:hidden">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -69,6 +92,10 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+          <LanguageSwitcher lang={lang} label={dict.language} className="mt-2" />
+          <LinkButton href={villasHref} className="mt-2 w-full">
+            {dict.browseVillas}
+          </LinkButton>
         </nav>
       )}
     </header>

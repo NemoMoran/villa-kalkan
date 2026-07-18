@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { contactSchema } from "@/lib/contactSchema";
 
-const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "hello@villa-kalkan.net";
+const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "info@villa-kalkan.net";
 const CONTACT_FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ?? "Villa Kalkan <onboarding@resend.dev>";
 

@@ -2,10 +2,12 @@
 
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type Status = "idle" | "submitting" | "success" | "error";
+type ContactFormDict = Dictionary["contactForm"];
 
-export function ContactForm() {
+export function ContactForm({ dict }: { dict: ContactFormDict }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -26,26 +28,22 @@ export function ContactForm() {
 
       if (!res.ok) {
         const body = await res.json().catch(() => null);
-        throw new Error(body?.error ?? "Something went wrong. Please try again.");
+        throw new Error(body?.error ?? dict.genericError);
       }
 
       setStatus("success");
       form.reset();
     } catch (error) {
       setStatus("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Something went wrong. Please try again."
-      );
+      setErrorMessage(error instanceof Error ? error.message : dict.genericError);
     }
   }
 
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-border bg-surface-muted p-6 text-center">
-        <p className="font-semibold text-ink">Thanks for reaching out!</p>
-        <p className="mt-1 text-sm text-ink-muted">
-          We&apos;ll get back to you as soon as possible.
-        </p>
+        <p className="font-semibold text-ink">{dict.successTitle}</p>
+        <p className="mt-1 text-sm text-ink-muted">{dict.successBody}</p>
       </div>
     );
   }
@@ -64,33 +62,33 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="name" className="text-sm font-medium text-ink">
-          Name
+          {dict.nameLabel}
         </label>
         <input
           id="name"
           name="name"
           type="text"
           required
-          className="mt-1 w-full rounded-lg border border-border px-3 py-2 text-sm text-ink outline-none focus:border-ink"
+          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-3.5 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-dark"
         />
       </div>
 
       <div>
         <label htmlFor="email" className="text-sm font-medium text-ink">
-          Email
+          {dict.emailLabel}
         </label>
         <input
           id="email"
           name="email"
           type="email"
           required
-          className="mt-1 w-full rounded-lg border border-border px-3 py-2 text-sm text-ink outline-none focus:border-ink"
+          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-3.5 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-dark"
         />
       </div>
 
       <div>
         <label htmlFor="message" className="text-sm font-medium text-ink">
-          Message
+          {dict.messageLabel}
         </label>
         <textarea
           id="message"
@@ -98,7 +96,7 @@ export function ContactForm() {
           required
           minLength={10}
           rows={5}
-          className="mt-1 w-full rounded-lg border border-border px-3 py-2 text-sm text-ink outline-none focus:border-ink"
+          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-3.5 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-dark"
         />
       </div>
 
@@ -107,7 +105,7 @@ export function ContactForm() {
       )}
 
       <Button type="submit" disabled={status === "submitting"} className="w-full">
-        {status === "submitting" ? "Sending..." : "Send message"}
+        {status === "submitting" ? dict.sending : dict.send}
       </Button>
     </form>
   );

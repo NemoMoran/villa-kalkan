@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "titleDefault": "Villa Kalkan | Location de villas de luxe à Kalkan",
+    "titleTemplate": "%s | Villa Kalkan",
+    "description": "Villas de luxe sélectionnées avec soin pour une location à Kalkan. Parcourez nos villas, consultez les disponibilités en direct et réservez directement sur Airbnb ou Booking.com.",
+    "siteName": "Villa Kalkan"
+  },
+  "nav": {
+    "villas": "Villas",
+    "guide": "Guide de Kalkan",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "browseVillas": "Voir les villas",
+    "toggleMenu": "Basculer le menu",
+    "language": "Langue"
+  },
+  "footer": {
+    "tagline": "Une collection de villas de luxe soigneusement sélectionnées sur la Riviera turque. Parcourez ici, réservez en toute sécurité sur Airbnb ou Booking.com.",
+    "exploreHeading": "Explorer",
+    "companyHeading": "Entreprise",
+    "getInTouchHeading": "Nous contacter",
+    "exploreLinks": { "villas": "Toutes les villas", "guide": "Guide de Kalkan", "faq": "FAQ" },
+    "companyLinks": { "about": "À propos", "contact": "Contact" },
+    "copyright": "© {year} Villa Kalkan. Tous droits réservés.",
+    "bookingNote": "Les réservations sont finalisées en toute sécurité sur Airbnb & Booking.com."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kalkan · Riviera turque",
+      "title": "Réveillez-vous au-dessus de la Méditerranée",
+      "body": "Une petite collection de villas sélectionnées avec soin, avec piscines privées et vue sur la mer. Explorez-les ici, consultez les disponibilités en direct, puis réservez en toute sécurité sur Airbnb ou Booking.com.",
+      "ctaPrimary": "Voir les villas",
+      "ctaSecondary": "Découvrir Kalkan",
+      "statVillas": "Villas sélectionnées",
+      "statSun": "Jours de soleil par an",
+      "statBooked": "Réservé via Airbnb & Booking"
+    },
+    "howItWorks": {
+      "eyebrow": "Comment ça marche",
+      "title": "Parcourez ici, réservez sur Airbnb",
+      "description": "Ce site est votre showroom — pas de compte, pas de paiement, pas de frais supplémentaires. Les réservations se font toujours sur la plateforme que vous connaissez déjà.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Parcourez la collection",
+          "description": "Comparez nos villas côte à côte — des plans réels, des descriptions honnêtes et les détails qui comptent pour votre groupe."
+        },
+        {
+          "number": "02",
+          "title": "Consultez les disponibilités en direct",
+          "description": "Le calendrier de chaque villa se synchronise directement avec Airbnb et Booking.com, donc ce que vous voyez ici est réellement libre."
+        },
+        {
+          "number": "03",
+          "title": "Réservez là où vous avez confiance",
+          "description": "Un clic vous amène à l'annonce Airbnb ou Booking.com de la villa — vous réservez là-bas, avec toutes leurs protections et leur assistance."
+        }
+      ]
+    },
+    "featuredVillas": {
+      "eyebrow": "La collection",
+      "title": "Villas en vedette",
+      "description": "Un premier aperçu des villas que les hôtes retrouvent, saison après saison.",
+      "viewAll": "Voir toutes les villas"
+    },
+    "whyKalkan": {
+      "eyebrow": "La destination",
+      "title": "Pourquoi Kalkan ?",
+      "description": "Une ville portuaire aux maisons blanchies à la chaux, perchée au-dessus d'une baie turquoise — restaurants en terrasse, criques cachées et certaines des eaux les plus claires de la Méditerranée. Assez calme pour se détendre, assez animée pour ne jamais manquer d'idées de dîner.",
+      "facts": [
+        { "value": "10 min", "label": "jusqu'à Kaputaş, l'une des plages les plus photographiées de Turquie" },
+        { "value": "25°C", "label": "température moyenne de la mer en été" },
+        { "value": "1h45", "label": "de transfert depuis l'aéroport international de Dalaman" }
+      ],
+      "altHarbour": "Port et baie de Kalkan",
+      "altOldTown": "Rues blanchies à la chaux de la vieille ville"
+    },
+    "guideTeaser": {
+      "eyebrow": "Au-delà de la villa",
+      "title": "Votre semaine à Kalkan, planifiée",
+      "description": "Plages, sorties en bateau, ruines antiques et bonnes adresses — notre guide local couvre le meilleur de la côte.",
+      "readGuide": "Lire le guide",
+      "highlights": [
+        { "title": "Plage de Kaputaş", "description": "La crique turquoise entre les falaises, à quelques minutes." },
+        { "title": "Dîners au port", "description": "Terrasses sur les toits au-dessus de la marina au coucher du soleil." },
+        { "title": "Journées en bateau", "description": "Sorties privées en goélette vers des criques inaccessibles par la route." }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Témoignages",
+      "title": "Adoré par ceux qui ont séjourné",
+      "starsLabel": "5 étoiles sur 5",
+      "items": [
+        {
+          "quote": "Les photos ne rendent pas justice à la vue. Nous avons passé chaque soirée sur la terrasse et avions à peine envie de partir dîner.",
+          "name": "Sarah",
+          "detail": "A séjourné à la Villa Yasemin · via Airbnb"
+        },
+        {
+          "quote": "Tout s'est déroulé sans accroc — nous avons trouvé la villa ici, réservé sur Airbnb en quelques minutes, et l'hôte nous a accueillis avec des conseils locaux.",
+          "name": "James & Priya",
+          "detail": "A séjourné à la Villa Akdeniz · via Airbnb"
+        },
+        {
+          "quote": "Parfait pour notre famille de huit personnes. La piscine, le jardin, le calme — et le port de Kalkan juste au bas de la colline.",
+          "name": "La famille Meyer",
+          "detail": "A séjourné à la Villa Mira · via Booking.com"
+        }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Quand vous serez prêt",
+      "title": "Votre été méditerranéen commence avec la bonne villa",
+      "description": "Vous ne savez pas laquelle convient à votre groupe ? Indiquez-nous vos dates et le nombre de personnes, et nous vous orienterons vers la meilleure option.",
+      "ctaPrimary": "Voir les villas",
+      "ctaSecondary": "Posez-nous une question"
+    }
+  },
+  "villasPage": {
+    "eyebrow": "La collection",
+    "title": "Nos villas",
+    "description": "{count} villas sélectionnées avec soin à Kalkan et ses environs. Chacune a une piscine privée ; la plupart donnent directement sur la Méditerranée."
+  },
+  "villasExplorer": {
+    "areaLabel": "Zone",
+    "guestsLabel": "Voyageurs",
+    "allAreas": "Toutes les zones",
+    "anyGroupSize": "Toute taille de groupe",
+    "guestsSuffix": " voyageurs et +",
+    "featureFilters": {
+      "seaView": "Vue sur la mer",
+      "privateInfinityPool": "Piscine à débordement",
+      "garden": "Jardin",
+      "bbq": "Barbecue"
+    },
+    "sortLabel": "Trier",
+    "sortRecommended": "Recommandé",
+    "sortPriceAsc": "Prix : croissant",
+    "sortPriceDesc": "Prix : décroissant",
+    "resultsOne": "1 villa",
+    "resultsOther": "{count} villas",
+    "noResultsTitle": "Aucune villa ne correspond à ces filtres",
+    "noResultsBody": "Essayez d'élargir votre recherche — ou demandez-nous, nous avons peut-être une suggestion.",
+    "clearFilters": "Effacer tous les filtres"
+  },
+  "villaCard": {
+    "seaViewBadge": "Vue sur la mer",
+    "nightSuffix": "/nuit",
+    "bedroomsSuffix": "chambres",
+    "bathsSuffix": "salles de bain",
+    "upToGuests": "Jusqu'à {count} voyageurs",
+    "photosLabel": "{count} photos"
+  },
+  "villaDetail": {
+    "allVillas": "← Toutes les villas",
+    "bedroomsSuffix": "chambres",
+    "bathroomsSuffix": "salles de bain",
+    "upToGuests": "Jusqu'à {count} voyageurs",
+    "amenitiesHeading": "Équipements",
+    "theAreaHeading": "Le quartier",
+    "areaDescription": "{area} fait partie de Kalkan, sur la Côte Turquoise de la Turquie — à environ 10 minutes de la plage de Kaputaş, à une courte distance en voiture ou à pied des restaurants en terrasse du port, et à environ 1h45 de l'aéroport de Dalaman. Consultez notre {guideLink} pour les plages, sorties en bateau et bonnes adresses.",
+    "guideLinkText": "guide de Kalkan",
+    "priceOnRequest": "Prix sur demande",
+    "nightSuffix": "/nuit",
+    "reservationsNote": "Les réservations sont finalisées directement sur la plateforme — ce site ne traite jamais votre paiement.",
+    "bookOn": { "airbnb": "Réserver sur Airbnb", "booking": "Réserver sur Booking.com" },
+    "trustPoints": [
+      "Paiement sécurisé et protections de la plateforme",
+      "Aucun frais supplémentaire pour réserver via ce site",
+      "Disponibilité synchronisée avec les calendriers des plateformes"
+    ],
+    "questionsFirst": "Des questions avant tout ?",
+    "askAboutVilla": "Posez-nous une question sur cette villa",
+    "youMayAlsoLike": "Vous pourriez aussi aimer",
+    "photoAlt": "{name}, photo {n} sur {count}",
+    "morePhotos": "+{count} de plus"
+  },
+  "availability": {
+    "heading": "Disponibilité",
+    "statusSynced": "synchronisé",
+    "statusUnavailable": "temporairement indisponible",
+    "statusNotConnected": "non connecté",
+    "platformAirbnb": "Airbnb",
+    "platformBooking": "Booking.com",
+    "emptyState": "La disponibilité en direct apparaîtra ici une fois cette villa connectée à son calendrier Airbnb ou Booking.com.",
+    "available": "Disponible",
+    "booked": "Réservé",
+    "weekdays": ["L", "M", "M", "J", "V", "S", "D"]
+  },
+  "amenities": {
+    "privatePool": "Piscine privée",
+    "privateInfinityPool": "Piscine à débordement privée",
+    "rooftopPool": "Piscine sur le toit",
+    "seaView": "Vue sur la mer",
+    "mountainView": "Vue sur la montagne",
+    "ac": "Climatisation",
+    "wifi": "Wi-Fi gratuit",
+    "kitchen": "Cuisine entièrement équipée",
+    "parking": "Parking privé",
+    "bbq": "Espace barbecue",
+    "garden": "Jardin",
+    "housekeeping": "Ménage quotidien (sur demande)"
+  },
+  "contactForm": {
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "messageLabel": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successTitle": "Merci de nous avoir contactés !",
+    "successBody": "Nous vous répondrons dès que possible.",
+    "genericError": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "contactPage": {
+    "eyebrow": "Dites bonjour",
+    "title": "Contactez-nous",
+    "description": "Une question sur une villa, une réservation de groupe, ou des dates qui n'apparaissent pas encore ici ? Envoyez-nous un message et nous vous répondrons.",
+    "channels": [
+      { "label": "E-mail", "value": "info@villa-kalkan.net", "note": "Nous répondons généralement en quelques heures" },
+      { "label": "Téléphone / WhatsApp", "value": "+90 000 000 00 00", "note": "Anglais et turc parlés" },
+      { "label": "Où nous sommes", "value": "Kalkan, Antalya, Turquie", "note": "Sur place, toute la saison" }
+    ]
+  },
+  "aboutPage": {
+    "eyebrow": "Notre histoire",
+    "title": "Une petite collection, entretenue avec soin",
+    "paragraphs": [
+      "Villa Kalkan a débuté comme une petite collection de villas le long de la côte de Kalkan, réunies en un seul endroit afin que les voyageurs puissent les comparer côte à côte avant de réserver. Nous ne gérons pas notre propre plateforme de réservation — chaque séjour est réservé directement via Airbnb ou Booking.com, afin que vous conserviez les protections et l'assistance attendues de l'un ou l'autre.",
+      "Ce que nous apportons, c'est une connaissance locale : quelles villas conviennent aux familles, lesquelles sont assez calmes pour un voyage d'affaires, et lesquelles offrent la meilleure vue au coucher du soleil. Si vous ne savez pas quelle villa convient à votre voyage, contactez-nous et nous vous aiderons à choisir."
+    ],
+    "talkToUs": "Discutez avec nous",
+    "altCoastline": "Le littoral de Kalkan au crépuscule",
+    "altTerrace": "Coucher de soleil depuis la terrasse d'une villa",
+    "values": [
+      {
+        "title": "Sélectionnées avec soin, pas listées en masse",
+        "description": "Chaque villa de notre collection est choisie personnellement pour son emplacement, son intimité et sa vue — nous n'ajoutons pas une villa juste pour agrandir la liste."
+      },
+      {
+        "title": "Réservez où vous avez déjà confiance",
+        "description": "Nous sommes référencés sur Airbnb et Booking.com afin que vous bénéficiiez de leurs protections et avis — ce site facilite simplement la comparaison de nos villas au préalable."
+      },
+      {
+        "title": "Assistance locale, de vraies personnes",
+        "description": "Les questions avant ou pendant votre séjour sont adressées à quelqu'un qui connaît Kalkan, pas à un centre d'appels."
+      }
+    ]
+  },
+  "faqPage": {
+    "eyebrow": "Bon à savoir",
+    "title": "Questions fréquentes",
+    "description": "En bref : parcourez ici, réservez sur Airbnb ou Booking.com, et posez-nous toutes vos questions entre les deux.",
+    "groups": [
+      {
+        "title": "Réservation",
+        "items": [
+          {
+            "q": "Comment réserver une villa concrètement ?",
+            "a": "Vous réservez sur Airbnb ou Booking.com. Chaque page de villa ici renvoie directement à son annonce en direct — vous finalisez la réservation là-bas, avec la protection de paiement, la politique d'annulation et l'assistance de la plateforme. Nous ne prenons jamais de paiement sur ce site."
+          },
+          {
+            "q": "Le calendrier de disponibilité est-il fiable ?",
+            "a": "Oui — le calendrier de chaque villa sur ce site se synchronise directement avec ses calendriers Airbnb et Booking.com. Si une date apparaît disponible ici, elle est réservable sur la plateforme. En cas de divergence, le calendrier de la plateforme fait toujours référence."
+          },
+          {
+            "q": "Pourquoi réserver via Airbnb plutôt que directement avec vous ?",
+            "a": "La confiance. Les réservations via plateforme offrent une protection acheteur, des avis vérifiés, des paiements sécurisés et une procédure de litige. Nous préférons que vous vous sentiez totalement en sécurité plutôt que d'économiser une commission."
+          },
+          {
+            "q": "Est-ce que je paie plus en passant par ce site ?",
+            "a": "Non. Ce site n'est qu'un showroom — le prix que vous voyez sur l'annonce Airbnb ou Booking.com est exactement celui que vous paieriez en le trouvant vous-même là-bas."
+          }
+        ]
+      },
+      {
+        "title": "Votre séjour",
+        "items": [
+          {
+            "q": "Quelles sont les heures d'arrivée et de départ ?",
+            "a": "Généralement l'arrivée à partir de 16h et le départ avant 10h, mais chaque annonce indique ses horaires exacts. Une arrivée anticipée ou un départ tardif peut souvent être organisé en basse saison — écrivez-nous ou demandez via la plateforme."
+          },
+          {
+            "q": "Les villas sont-elles adaptées aux enfants ?",
+            "a": "La plupart oui — plusieurs ont des jardins, des parties peu profondes dans la piscine et des lits bébé disponibles. Chaque page de villa liste ses équipements, et nous sommes heureux de vous conseiller sur la villa la mieux adaptée à votre famille."
+          },
+          {
+            "q": "Le ménage est-il inclus ?",
+            "a": "Toutes les villas sont nettoyées professionnellement avant l'arrivée. Le ménage en cours de séjour varie selon la villa — certaines l'incluent, d'autres le proposent sur demande. Consultez l'annonce ou demandez-nous."
+          },
+          {
+            "q": "Ai-je besoin d'une voiture ?",
+            "a": "Cela aide. Les villas de Kalamar et İslamlar sont à 5–10 minutes en voiture du centre ; les villas centrales sont accessibles à pied. Les taxis et transferts aéroport sont faciles à organiser, et nous pouvons recommander des loueurs locaux."
+          }
+        ]
+      },
+      {
+        "title": "Comment venir",
+        "items": [
+          {
+            "q": "Sur quel aéroport dois-je arriver ?",
+            "a": "Dalaman (DLM) est le plus proche — environ 1h45 par la route. Antalya (AYT) est une alternative à environ 3 heures. Nous pouvons vous mettre en contact avec des chauffeurs de transfert fiables qui vous accueillent à l'arrivée."
+          },
+          {
+            "q": "Quelle est la meilleure période pour visiter Kalkan ?",
+            "a": "De mai à octobre. Juillet et août sont les mois les plus chauds et les plus animés ; mai-juin et septembre-octobre offrent des mers chaudes avec des rues plus calmes et des réservations de restaurant plus faciles."
+          }
+        ]
+      }
+    ],
+    "stillHaveQuestion": "Vous avez encore une question ?",
+    "replyNote": "Nous répondons généralement en quelques heures —",
+    "sendMessage": "envoyez-nous un message",
+    "replyNoteSuffix": "et nous vous aiderons à planifier.",
+    "contactUs": "Contactez-nous"
+  },
+  "guidePage": {
+    "eyebrow": "Le guide local",
+    "title": "Une semaine à Kalkan, bien organisée",
+    "description": "Tout ce que nos hôtes nous demandent — les plages qui valent le déplacement, les tables qui valent une réservation, et les sorties à planifier à l'avance.",
+    "swim": {
+      "eyebrow": "Baignade",
+      "title": "Les plages",
+      "description": "Trois façons très différentes de passer une journée dans l'eau, toutes à moins d'une demi-heure de votre villa."
+    },
+    "explore": {
+      "eyebrow": "Explorer",
+      "title": "Sorties",
+      "description": "Quand vous serez prêt à quitter la piscine — ce qui, avertissement honnête, prend quelques jours."
+    },
+    "eatDrink": {
+      "eyebrow": "Boire & manger",
+      "title": "Où manger",
+      "description": "Kalkan surpasse largement sa taille en matière de gastronomie — voici les trois expériences à ne pas manquer."
+    },
+    "plan": { "eyebrow": "Planifier", "title": "Quand venir" },
+    "beaches": [
+      {
+        "name": "Plage de Kaputaş",
+        "detail": "La célèbre crique turquoise coincée entre les falaises sur la route Kalkan–Kaş. Arrivez avant 10h en haute saison ; l'eau est irréelle.",
+        "distance": "10 min en voiture"
+      },
+      {
+        "name": "Plage de Patara",
+        "detail": "18 km de dunes de sable protégées à côté de ruines lyciennes — l'une des plus longues plages de Méditerranée, et un site de nidification des tortues de mer.",
+        "distance": "25 min en voiture"
+      },
+      {
+        "name": "Baie de Kalamar",
+        "detail": "Beach clubs sur plateformes en bois au-dessus d'une eau profonde et claire. Transats, échelles menant directement à la mer, et déjeuner à quelques pas.",
+        "distance": "5 min en voiture"
+      }
+    ],
+    "experiences": [
+      {
+        "name": "Journée en goélette privée",
+        "detail": "Affrétez un bateau en bois traditionnel depuis le port et passez la journée à nager dans des criques inaccessibles par la route."
+      },
+      {
+        "name": "Gorges de Saklıkent",
+        "detail": "Traversez à gué un canyon de 18 km d'eau froide de montagne — une évasion parfaite les jours les plus chauds."
+      },
+      {
+        "name": "Xanthos & Létoon",
+        "detail": "Ruines lyciennes classées à l'UNESCO à vingt minutes, généralement avec presque aucun autre visiteur en vue."
+      },
+      {
+        "name": "Excursion à Kaş",
+        "detail": "Le voisin bohème de Kalkan — jolies rues, petites galeries et écoles de plongée, à 30 minutes le long de la route côtière."
+      }
+    ],
+    "dining": [
+      {
+        "name": "Dîners sur les toits",
+        "detail": "Kalkan est célèbre pour ses restaurants en terrasse — réservez une table au-dessus de la vieille ville pour le coucher du soleil sur la baie."
+      },
+      {
+        "name": "En bord de port",
+        "detail": "Poisson frais, mezze et observation des passants juste sur la marina. Animé en saison ; réservez à l'avance."
+      },
+      {
+        "name": "Petits-déjeuners au village",
+        "detail": "Montez au village d'İslamlar pour un petit-déjeuner turc traditionnel avec fermes truiticoles et vue sur la vallée."
+      }
+    ],
+    "seasons": [
+      { "months": "Mai – Juin", "detail": "Mers chaudes, collines verdoyantes, rues plus calmes. Idéal pour les couples." },
+      { "months": "Juillet – Août", "detail": "Plein été : 30°C+, port animé, réservez les villas tôt." },
+      { "months": "Septembre – Octobre", "detail": "Encore la saison de baignade, lumière plus douce, tables plus faciles à trouver." }
+    ],
+    "gettingHere": "Pour venir : prenez l'avion pour Dalaman (DLM) — environ 1h45 en transfert — ou pour Antalya (AYT), environ 3h le long de la côte. Nous pouvons recommander des chauffeurs de transfert fiables ;",
+    "justAsk": "demandez-nous simplement",
+    "soldOnKalkan": "Convaincu par Kalkan ? Choisissez votre villa."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Nous n'avons pas trouvé cette page",
+    "body": "La villa ou la page que vous recherchez a peut-être été déplacée. Essayez plutôt de parcourir la collection complète.",
+    "browseVillas": "Voir les villas"
+  }
+}

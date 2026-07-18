@@ -3,28 +3,60 @@
 :root {
   color-scheme: light;
 
-  --brand: #ff385c;
-  --brand-dark: #e31c5f;
-  --ink: #222222;
-  --ink-muted: #6b6b6b;
-  --surface: #ffffff;
-  --surface-muted: #f7f7f7;
-  --border: #dddddd;
+  /* Aegean coast palette */
+  --brand: #147d99;
+  --brand-dark: #0d5f75;
+  --gold: #8a6d2f;
+  --gold-soft: #f4ead2;
+  --navy: #10242e;
+  --navy-soft: #16303c;
+  --ink: #1d2a2e;
+  --ink-muted: #5b6b70;
+  --surface: #fcfbf8;
+  --surface-muted: #f3f0e9;
+  --border: #e3ded2;
 }
 
 @theme inline {
   --color-brand: var(--brand);
   --color-brand-dark: var(--brand-dark);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
   --color-ink: var(--ink);
   --color-ink-muted: var(--ink-muted);
   --color-surface: var(--surface);
   --color-surface-muted: var(--surface-muted);
   --color-border: var(--border);
-  --font-sans: var(--font-nunito-sans);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
 }
 
 body {
   background: var(--surface);
   color: var(--ink);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+/* Scroll reveal — elements start hidden and rise into place when the
+   Reveal component marks them visible. Motion is skipped entirely for
+   users who prefer reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
 }

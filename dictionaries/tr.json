@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "titleDefault": "Villa Kalkan | Kalkan'da Lüks Villa Kiralama",
+    "titleTemplate": "%s | Villa Kalkan",
+    "description": "Kalkan'da günlük kiralık, özenle seçilmiş lüks villalar. Villalarımıza göz atın, canlı uygunluk durumunu kontrol edin ve Airbnb veya Booking.com üzerinden doğrudan rezervasyon yapın.",
+    "siteName": "Villa Kalkan"
+  },
+  "nav": {
+    "villas": "Villalar",
+    "guide": "Kalkan Rehberi",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "browseVillas": "Villalara göz at",
+    "toggleMenu": "Menüyü aç/kapat",
+    "language": "Dil"
+  },
+  "footer": {
+    "tagline": "Türk Rivierası'nda özenle seçilmiş lüks villalar koleksiyonu. Buradan göz atın, Airbnb veya Booking.com üzerinden güvenle rezervasyon yapın.",
+    "exploreHeading": "Keşfet",
+    "companyHeading": "Şirket",
+    "getInTouchHeading": "Bize ulaşın",
+    "exploreLinks": { "villas": "Tüm villalar", "guide": "Kalkan rehberi", "faq": "SSS" },
+    "companyLinks": { "about": "Hakkımızda", "contact": "İletişim" },
+    "copyright": "© {year} Villa Kalkan. Tüm hakları saklıdır.",
+    "bookingNote": "Rezervasyonlar Airbnb & Booking.com üzerinden güvenle tamamlanır."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kalkan · Türk Rivierası",
+      "title": "Akdeniz'in üzerinde uyanın",
+      "body": "Özel havuzlu ve deniz manzaralı, özenle seçilmiş küçük bir villa koleksiyonu. Burada göz atın, canlı uygunluk durumunu kontrol edin, sonra Airbnb veya Booking.com üzerinden güvenle rezervasyon yapın.",
+      "ctaPrimary": "Villalara göz at",
+      "ctaSecondary": "Kalkan'ı keşfet",
+      "statVillas": "Özenle seçilmiş villa",
+      "statSun": "Yılda güneşli gün",
+      "statBooked": "Airbnb & Booking üzerinden rezervasyon"
+    },
+    "howItWorks": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Burada göz atın, Airbnb'de rezervasyon yapın",
+      "description": "Bu site sizin vitriniziniz — hesap yok, ödeme ekranı yok, ekstra ücret yok. Rezervasyon her zaman zaten bildiğiniz platform üzerinden yapılır.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Koleksiyona göz atın",
+          "description": "Villalarımızı yan yana karşılaştırın — gerçek planlar, dürüst açıklamalar ve grubunuz için önemli olan ayrıntılar."
+        },
+        {
+          "number": "02",
+          "title": "Canlı uygunluğu kontrol edin",
+          "description": "Her villanın takvimi Airbnb ve Booking.com ile doğrudan senkronize — burada gördüğünüz gerçekten boş olan tarihler."
+        },
+        {
+          "number": "03",
+          "title": "Güvendiğiniz yerden rezervasyon yapın",
+          "description": "Bir tıkla villanın Airbnb veya Booking.com ilanına gidersiniz — rezervasyonu, platformun tüm korumaları ve desteğiyle orada tamamlarsınız."
+        }
+      ]
+    },
+    "featuredVillas": {
+      "eyebrow": "Koleksiyon",
+      "title": "Öne çıkan villalar",
+      "description": "Sezondan sezona tekrar tercih edilen villalara ilk bakış.",
+      "viewAll": "Tüm villaları gör"
+    },
+    "whyKalkan": {
+      "eyebrow": "Destinasyon",
+      "title": "Neden Kalkan?",
+      "description": "Turkuaz bir koyun üzerinde yükselen bembeyaz bir liman kasabası — çatı katı restoranları, gizli koyları ve Akdeniz'in en berrak sularından biri. Dinlenmek için yeterince sakin, akşam yemeği planı bulmakta hiç sıkıntı çekmeyecek kadar hareketli.",
+      "facts": [
+        { "value": "10 dk", "label": "Türkiye'nin en çok fotoğraflanan plajlarından Kaputaş'a" },
+        { "value": "25°C", "label": "yaz boyunca ortalama deniz suyu sıcaklığı" },
+        { "value": "1 sa 45", "label": "Dalaman Uluslararası Havalimanı'ndan transfer" }
+      ],
+      "altHarbour": "Kalkan limanı ve koyu",
+      "altOldTown": "Beyaz badanalı eski şehir sokakları"
+    },
+    "guideTeaser": {
+      "eyebrow": "Villanın ötesinde",
+      "title": "Kalkan'da bir haftanız, planlandı",
+      "description": "Plajlar, tekne turları, antik kalıntılar ve nerede yemek yeneceği — yerel rehberimiz kıyının en iyilerini içeriyor.",
+      "readGuide": "Rehberi okuyun",
+      "highlights": [
+        { "title": "Kaputaş Plajı", "description": "Kayalıklar arasındaki turkuaz koy, sadece dakikalar uzakta." },
+        { "title": "Liman akşam yemekleri", "description": "Gün batımında marinanın üzerindeki çatı terasları." },
+        { "title": "Tekne günleri", "description": "Karayolundan ulaşılamayan koylara özel gulet turları." }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Misafir hikayeleri",
+      "title": "Kalanların gönlünde yer edindi",
+      "starsLabel": "5 üzerinden 5 yıldız",
+      "items": [
+        {
+          "quote": "Fotoğraflar manzaraya adalet etmiyor. Her akşamı terasta geçirdik, yemeğe gitmek için ayrılmak istemedik.",
+          "name": "Sarah",
+          "detail": "Villa Yasemin'de kaldı · Airbnb üzerinden"
+        },
+        {
+          "quote": "Baştan sona kusursuz — villayı burada bulduk, Airbnb üzerinden dakikalar içinde rezervasyon yaptık, ev sahibi bizi yerel ipuçlarıyla karşıladı.",
+          "name": "James & Priya",
+          "detail": "Villa Akdeniz'de kaldı · Airbnb üzerinden"
+        },
+        {
+          "quote": "Sekiz kişilik ailemiz için mükemmel. Havuz, bahçe, sessizlik — ve Kalkan'ın limanı hemen tepenin altında.",
+          "name": "Meyer ailesi",
+          "detail": "Villa Mira'da kaldı · Booking.com üzerinden"
+        }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Siz hazır olduğunuzda",
+      "title": "Akdeniz yazınız doğru villayla başlar",
+      "description": "Grubunuza hangisinin uyduğundan emin değil misiniz? Tarihlerinizi ve kişi sayınızı bize bildirin, size en iyi eşleşmeyi gösterelim.",
+      "ctaPrimary": "Villalara göz at",
+      "ctaSecondary": "Bize sorun"
+    }
+  },
+  "villasPage": {
+    "eyebrow": "Koleksiyon",
+    "title": "Villalarımız",
+    "description": "Kalkan ve çevresinde {count} özenle seçilmiş villa. Her birinde özel havuz var; çoğu doğrudan Akdeniz'e bakıyor."
+  },
+  "villasExplorer": {
+    "areaLabel": "Bölge",
+    "guestsLabel": "Misafir",
+    "allAreas": "Tüm bölgeler",
+    "anyGroupSize": "Herhangi bir grup büyüklüğü",
+    "guestsSuffix": "+ misafir",
+    "featureFilters": {
+      "seaView": "Deniz manzarası",
+      "privateInfinityPool": "Infinity havuz",
+      "garden": "Bahçe",
+      "bbq": "Barbekü"
+    },
+    "sortLabel": "Sırala",
+    "sortRecommended": "Önerilen",
+    "sortPriceAsc": "Fiyat: düşükten yükseğe",
+    "sortPriceDesc": "Fiyat: yüksekten düşüğe",
+    "resultsOne": "1 villa",
+    "resultsOther": "{count} villa",
+    "noResultsTitle": "Bu filtrelere uyan villa yok",
+    "noResultsBody": "Aramanızı genişletmeyi deneyin — ya da bize sorun, bir önerimiz olabilir.",
+    "clearFilters": "Tüm filtreleri temizle"
+  },
+  "villaCard": {
+    "seaViewBadge": "Deniz manzarası",
+    "nightSuffix": "/gece",
+    "bedroomsSuffix": "yatak odası",
+    "bathsSuffix": "banyo",
+    "upToGuests": "{count} misafire kadar",
+    "photosLabel": "{count} fotoğraf"
+  },
+  "villaDetail": {
+    "allVillas": "← Tüm villalar",
+    "bedroomsSuffix": "yatak odası",
+    "bathroomsSuffix": "banyo",
+    "upToGuests": "{count} misafire kadar",
+    "amenitiesHeading": "Olanaklar",
+    "theAreaHeading": "Bölge",
+    "areaDescription": "{area}, Türkiye'nin Turkuaz Kıyısı'nda Kalkan'ın bir parçasıdır — Kaputaş Plajı'na yaklaşık 10 dakika, limanın çatı restoranlarına kısa bir sürüş veya yürüyüş mesafesinde ve Dalaman Havalimanı'na yaklaşık 1 sa 45 dakika uzaklıktadır. Plajlar, tekne turları ve yemek önerileri için {guideLink}'e bakın.",
+    "guideLinkText": "Kalkan rehberimize",
+    "priceOnRequest": "Fiyat için sorunuz",
+    "nightSuffix": "/gece",
+    "reservationsNote": "Rezervasyonlar doğrudan platform üzerinde tamamlanır — bu site ödemenizi asla işlemez.",
+    "bookOn": { "airbnb": "Airbnb'de rezervasyon yap", "booking": "Booking.com'da rezervasyon yap" },
+    "trustPoints": [
+      "Platformun güvenli ödemesi ve korumaları",
+      "Bu site üzerinden rezervasyon için ekstra ücret yok",
+      "Uygunluk, platform takvimleriyle senkronize"
+    ],
+    "questionsFirst": "Önce sorunuz mu var?",
+    "askAboutVilla": "Bu villa hakkında bize sorun",
+    "youMayAlsoLike": "Bunlar da ilginizi çekebilir",
+    "photoAlt": "{name}, {count} fotoğraftan {n}.",
+    "morePhotos": "+{count} daha"
+  },
+  "availability": {
+    "heading": "Uygunluk",
+    "statusSynced": "senkronize",
+    "statusUnavailable": "geçici olarak kullanılamıyor",
+    "statusNotConnected": "bağlı değil",
+    "platformAirbnb": "Airbnb",
+    "platformBooking": "Booking.com",
+    "emptyState": "Bu villa Airbnb veya Booking.com takvimine bağlandığında canlı uygunluk burada görünecek.",
+    "available": "Uygun",
+    "booked": "Dolu",
+    "weekdays": ["P", "S", "Ç", "P", "C", "C", "P"]
+  },
+  "amenities": {
+    "privatePool": "Özel havuz",
+    "privateInfinityPool": "Özel infinity havuz",
+    "rooftopPool": "Çatı havuzu",
+    "seaView": "Deniz manzarası",
+    "mountainView": "Dağ manzarası",
+    "ac": "Klima",
+    "wifi": "Ücretsiz Wi-Fi",
+    "kitchen": "Tam donanımlı mutfak",
+    "parking": "Özel otopark",
+    "bbq": "Barbekü alanı",
+    "garden": "Bahçe",
+    "housekeeping": "Günlük temizlik (talep üzerine)"
+  },
+  "contactForm": {
+    "nameLabel": "Ad",
+    "emailLabel": "E-posta",
+    "messageLabel": "Mesaj",
+    "send": "Mesaj gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Bize ulaştığınız için teşekkürler!",
+    "successBody": "En kısa sürede size geri döneceğiz.",
+    "genericError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+  },
+  "contactPage": {
+    "eyebrow": "Merhaba deyin",
+    "title": "Bize ulaşın",
+    "description": "Bir villa, grup rezervasyonu veya burada henüz görünmeyen tarihler hakkında sorunuz mu var? Bize bir mesaj gönderin, size geri dönelim.",
+    "channels": [
+      { "label": "E-posta", "value": "info@villa-kalkan.net", "note": "Genellikle birkaç saat içinde yanıtlıyoruz" },
+      { "label": "Telefon / WhatsApp", "value": "+90 000 000 00 00", "note": "İngilizce & Türkçe konuşulur" },
+      { "label": "Neredeyiz", "value": "Kalkan, Antalya, Türkiye", "note": "Tüm sezon yerindeyiz" }
+    ]
+  },
+  "aboutPage": {
+    "eyebrow": "Hikayemiz",
+    "title": "Küçük bir koleksiyon, kişisel olarak özenle bakılan",
+    "paragraphs": [
+      "Villa Kalkan, Kalkan sahil şeridi boyunca bir araya getirilen küçük bir villa koleksiyonu olarak başladı; böylece gezginler rezervasyondan önce onları yan yana karşılaştırabilir. Kendi rezervasyon platformumuzu işletmiyoruz — her konaklama doğrudan Airbnb veya Booking.com üzerinden rezerve edilir, böylece her ikisinden de bekleyeceğiniz korumaları ve desteği elde edersiniz.",
+      "Kattığımız şey yerel bilgi: hangi villaların ailelere uygun olduğu, hangilerinin bir iş gezisi için yeterince sessiz olduğu ve hangilerinin gün batımı için en iyi manzaraya sahip olduğu. Hangi villanın gezinize uyduğundan emin değilseniz, bize ulaşın, seçmenize yardımcı olalım."
+    ],
+    "talkToUs": "Bizimle konuşun",
+    "altCoastline": "Alacakaranlıkta Kalkan kıyı şeridi",
+    "altTerrace": "Bir villa terasından gün batımı",
+    "values": [
+      {
+        "title": "Özenle seçilmiş, toplu listelenmemiş",
+        "description": "Koleksiyonumuzdaki her villa konumu, mahremiyeti ve manzarası için kişisel olarak seçilir — listeyi büyütmek için villa eklemeyiz."
+      },
+      {
+        "title": "Zaten güvendiğiniz yerden rezervasyon yapın",
+        "description": "Airbnb ve Booking.com'da listeleniyoruz, böylece onların korumalarını ve yorumlarını alırsınız — bu site sadece villalarımızı önce karşılaştırmanızı kolaylaştırır."
+      },
+      {
+        "title": "Yerel destek, gerçek insanlar",
+        "description": "Konaklamanızdan önce veya sırasında sorularınız bir çağrı merkezine değil, Kalkan'ı bilen birine gider."
+      }
+    ]
+  },
+  "faqPage": {
+    "eyebrow": "Bilmekte fayda var",
+    "title": "Sıkça sorulan sorular",
+    "description": "Kısacası: burada göz atın, Airbnb veya Booking.com üzerinden rezervasyon yapın ve arada bize her şeyi sorun.",
+    "groups": [
+      {
+        "title": "Rezervasyon",
+        "items": [
+          {
+            "q": "Bir villayı nasıl rezerve ederim?",
+            "a": "Airbnb veya Booking.com üzerinden rezervasyon yaparsınız. Buradaki her villa sayfası doğrudan canlı ilanına bağlanır — rezervasyonu, platformun ödeme koruması, iptal politikası ve desteğiyle orada tamamlarsınız. Bu sitede asla ödeme almayız."
+          },
+          {
+            "q": "Uygunluk takvimi doğru mu?",
+            "a": "Evet — bu sitedeki her villanın takvimi, Airbnb ve Booking.com takvimleriyle doğrudan senkronize. Bir tarih burada uygun görünüyorsa, platformda rezerve edilebilir. Bir uyuşmazlık fark ederseniz, her zaman platform takvimi geçerlidir."
+          },
+          {
+            "q": "Neden doğrudan sizinle değil, Airbnb üzerinden rezervasyon yapmalıyım?",
+            "a": "Güven. Platform rezervasyonları alıcı koruması, doğrulanmış yorumlar, güvenli ödemeler ve bir anlaşmazlık süreci sunar. Bir komisyon kazanmaktansa kendinizi tamamen güvende hissetmenizi tercih ederiz."
+          },
+          {
+            "q": "Bu web sitesi üzerinden gidersem daha fazla mı öderim?",
+            "a": "Hayır. Bu site sadece bir vitrin — Airbnb veya Booking.com ilanında gördüğünüz fiyat, orayı kendiniz bulsanız ödeyeceğiniz fiyatın tam olarak aynısıdır."
+          }
+        ]
+      },
+      {
+        "title": "Konaklamanız",
+        "items": [
+          {
+            "q": "Check-in ve check-out saatleri nedir?",
+            "a": "Genellikle check-in 16:00'dan itibaren ve check-out 10:00'a kadardır, ancak her ilan kesin saatlerini belirtir. Ara sezonda erken check-in veya geç check-out sık sık ayarlanabilir — bize mesaj atın veya platform üzerinden sorun."
+          },
+          {
+            "q": "Villalar çocuklar için uygun mu?",
+            "a": "Çoğu evet — birçoğunda bahçe, havuzda sığ bölüm ve talep üzerine beşik bulunur. Her villa sayfası olanaklarını listeler ve hangi villanın ailenize en uygun olduğu konusunda size seve seve tavsiyede buluruz."
+          },
+          {
+            "q": "Temizlik dahil mi?",
+            "a": "Tüm villalar varışınızdan önce profesyonelce temizlenir. Konaklama sırasında temizlik villaya göre değişir — bazıları dahil eder, bazıları talep üzerine sunar. İlana bakın veya bize sorun."
+          },
+          {
+            "q": "Arabaya ihtiyacım var mı?",
+            "a": "Yardımcı olur. Kalamar ve İslamlar'daki villalar kasabaya 5–10 dakikalık araçla mesafededir; merkezi villalar yürüme mesafesindedir. Taksi ve havalimanı transferleri kolayca ayarlanabilir, yerel kiralama şirketlerini önerebiliriz."
+          }
+        ]
+      },
+      {
+        "title": "Buraya nasıl gelinir",
+        "items": [
+          {
+            "q": "Hangi havalimanına uçmalıyım?",
+            "a": "Dalaman (DLM) en yakınıdır — karayoluyla yaklaşık 1 sa 45 dakika. Antalya (AYT) yaklaşık 3 saatlik bir alternatiftir. Sizi karşılamaya gelecek güvenilir transfer şoförleriyle sizi tanıştırabiliriz."
+          },
+          {
+            "q": "Kalkan'ı ziyaret etmenin en iyi zamanı ne zaman?",
+            "a": "Mayıs'tan Ekim'e kadar. Temmuz ve Ağustos en sıcak ve en hareketli aylardır; Mayıs–Haziran ve Eylül–Ekim, daha sakin sokaklar ve daha kolay restoran rezervasyonlarıyla ılık denizler sunar."
+          }
+        ]
+      }
+    ],
+    "stillHaveQuestion": "Hâlâ bir sorunuz mu var?",
+    "replyNote": "Genellikle birkaç saat içinde yanıtlıyoruz —",
+    "sendMessage": "bize bir mesaj gönderin",
+    "replyNoteSuffix": "ve planlamanıza yardımcı olalım.",
+    "contactUs": "Bize ulaşın"
+  },
+  "guidePage": {
+    "eyebrow": "Yerel rehber",
+    "title": "Kalkan'da doğru geçirilmiş bir hafta",
+    "description": "Misafirlerimizin bize sorduğu her şey — sürüşe değer plajlar, rezervasyona değer masalar ve önceden planlamaya değer günlük geziler.",
+    "swim": {
+      "eyebrow": "Yüzün",
+      "title": "Plajlar",
+      "description": "Villanıza yarım saatlik mesafede, suda bir gün geçirmenin üç çok farklı yolu."
+    },
+    "explore": {
+      "eyebrow": "Keşfedin",
+      "title": "Günlük geziler",
+      "description": "Havuzdan ayrılmaya hazır olduğunuzda — ki dürüst olmak gerekirse bu birkaç gün alır."
+    },
+    "eatDrink": {
+      "eyebrow": "Yeme & içme",
+      "title": "Nerede yenir",
+      "description": "Kalkan, yemek konusunda büyüklüğünün çok üzerinde performans gösterir — kaçırılmaması gereken üç deneyim bunlar."
+    },
+    "plan": { "eyebrow": "Planla", "title": "Ne zaman gelinmeli" },
+    "beaches": [
+      {
+        "name": "Kaputaş Plajı",
+        "detail": "Kalkan–Kaş yolundaki kayalıklar arasına sıkışmış ünlü turkuaz koy. Yoğun sezonda saat 10:00'dan önce gelin; su gerçek dışı görünüyor.",
+        "distance": "10 dk araçla"
+      },
+      {
+        "name": "Patara Plajı",
+        "detail": "Likya kalıntılarının yanında 18 km korunan kum tepeleri — Akdeniz'in en uzun plajlarından biri ve bir deniz kaplumbağası yuvalama alanı.",
+        "distance": "25 dk araçla"
+      },
+      {
+        "name": "Kalamar Koyu",
+        "detail": "Derin, berrak suyun üzerinde ahşap platformlarda plaj kulüpleri. Şezlonglar, doğrudan denize inen merdivenler ve birkaç adım ötede öğle yemeği.",
+        "distance": "5 dk araçla"
+      }
+    ],
+    "experiences": [
+      {
+        "name": "Özel gulet günü",
+        "detail": "Limandan geleneksel bir ahşap tekne kiralayın ve günü karayolundan ulaşılamayan koylarda yüzerek geçirin."
+      },
+      {
+        "name": "Saklıkent Kanyonu",
+        "detail": "18 km'lik soğuk dağ suyu kanyonunda yürüyün — en sıcak günlerde mükemmel bir kaçış."
+      },
+      {
+        "name": "Ksantos & Letoon",
+        "detail": "Yirmi dakika uzakta, genellikle görünürde başka ziyaretçi olmadan UNESCO listesindeki Likya kalıntıları."
+      },
+      {
+        "name": "Kaş günlük gezisi",
+        "detail": "Kalkan'ın bohem komşusu — sahil yolunda 30 dakika, güzel sokaklar, küçük galeriler ve dalış okulları."
+      }
+    ],
+    "dining": [
+      {
+        "name": "Çatı katı akşam yemekleri",
+        "detail": "Kalkan çatı katı restoranlarıyla ünlüdür — koyun üzerinde gün batımı için eski şehrin üzerinde bir masa ayırtın."
+      },
+      {
+        "name": "Liman kenarı",
+        "detail": "Marinanın hemen üzerinde taze balık, meze ve insan seyretme. Sezonda kalabalık; önceden rezervasyon yapın."
+      },
+      {
+        "name": "Köy kahvaltıları",
+        "detail": "Alabalık çiftlikleri ve vadi manzarasıyla geleneksel bir Türk kahvaltısı için İslamlar köyüne çıkın."
+      }
+    ],
+    "seasons": [
+      { "months": "Mayıs – Haziran", "detail": "Ilık denizler, yeşil tepeler, daha sakin sokaklar. Çiftler için ideal." },
+      { "months": "Temmuz – Ağustos", "detail": "Yaz zirvesi: 30°C+, canlı liman, villaları erken rezerve edin." },
+      { "months": "Eylül – Ekim", "detail": "Hâlâ yüzme havası, daha yumuşak ışık, daha kolay masa bulma." }
+    ],
+    "gettingHere": "Buraya nasıl gelinir: Dalaman'a (DLM) uçun — transferle yaklaşık 1 sa 45 dakika — veya kıyı yolundan yaklaşık 3 saat olan Antalya'ya (AYT). Güvenilir transfer şoförleri önerebiliriz;",
+    "justAsk": "sormanız yeterli",
+    "soldOnKalkan": "Kalkan'a ikna oldunuz mu? Villanızı seçin."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Bu sayfayı bulamadık",
+    "body": "Aradığınız villa veya sayfa taşınmış olabilir. Bunun yerine tüm koleksiyona göz atmayı deneyin.",
+    "browseVillas": "Villalara göz at"
+  }
+}

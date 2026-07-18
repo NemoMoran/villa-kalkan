@@ -1,46 +1,73 @@
 import Link from "next/link";
 import type { Villa } from "@/data/villas.schema";
+import { getVillaContent } from "@/data/villas";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { localeHref, type Locale } from "@/lib/i18n/config";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-export function VillaCard({ villa }: { villa: Villa }) {
+type VillaCardDict = Dictionary["villaCard"];
+
+export function VillaCard({
+  villa,
+  lang,
+  dict,
+}: {
+  villa: Villa;
+  lang: Locale;
+  dict: VillaCardDict;
+}) {
+  const content = getVillaContent(villa, lang);
+  const hasSeaView = villa.amenityKeys.includes("seaView");
+
   return (
     <Link
-      href={`/villas/${villa.slug}`}
-      className="group block overflow-hidden rounded-2xl border border-border bg-surface transition-shadow hover:shadow-lg"
+      href={localeHref(lang, `/villas/${villa.slug}`)}
+      className="group block overflow-hidden rounded-3xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/10"
     >
-      <PlaceholderImage
-        gradient={villa.gradient}
-        label={`${villa.galleryCount} photos`}
-        alt={`${villa.name}, ${villa.location.area}`}
-        className="aspect-[4/3] w-full transition-transform duration-300 group-hover:scale-[1.02]"
-      />
+      <div className="relative overflow-hidden">
+        <PlaceholderImage
+          gradient={villa.gradient}
+          label={dict.photosLabel.replace("{count}", String(villa.galleryCount))}
+          alt={`${content.name}, ${villa.location.area}`}
+          className="aspect-[4/3] w-full transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+        <div className="absolute left-3 top-3 flex gap-2">
+          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink backdrop-blur-sm">
+            {villa.location.area}
+          </span>
+          {hasSeaView && (
+            <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-brand-dark backdrop-blur-sm">
+              {dict.seaViewBadge}
+            </span>
+          )}
+        </div>
+      </div>
 
-      <div className="p-4">
+      <div className="p-5">
         <div className="flex items-start justify-between gap-2">
-          <div>
-            <h3 className="font-semibold text-ink">{villa.name}</h3>
-            <p className="text-sm text-ink-muted">
-              {villa.location.area}, {villa.location.town}
-            </p>
-          </div>
+          <h3 className="font-display text-lg text-ink">{content.name}</h3>
           {villa.priceIndication && (
-            <p className="whitespace-nowrap text-sm font-semibold text-ink">
+            <p className="whitespace-nowrap pt-1 text-sm font-semibold text-ink">
               {villa.priceIndication.currency} {villa.priceIndication.amount}
-              <span className="font-normal text-ink-muted"> /night</span>
+              <span className="font-normal text-ink-muted"> {dict.nightSuffix}</span>
             </p>
           )}
         </div>
 
-        <p className="mt-2 line-clamp-2 text-sm text-ink-muted">
-          {villa.shortTagline}
+        <p className="mt-1 line-clamp-2 text-sm text-ink-muted">
+          {content.shortTagline}
         </p>
 
-        <div className="mt-3 flex gap-3 text-xs text-ink-muted">
-          <span>{villa.bedrooms} bed</span>
-          <span>·</span>
-          <span>{villa.bathrooms} bath</span>
-          <span>·</span>
-          <span>{villa.maxGuests} guests</span>
+        <div className="mt-4 flex gap-3 border-t border-border pt-4 text-xs text-ink-muted">
+          <span>
+            {villa.bedrooms} {dict.bedroomsSuffix}
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>
+            {villa.bathrooms} {dict.bathsSuffix}
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>{dict.upToGuests.replace("{count}", String(villa.maxGuests))}</span>
         </div>
       </div>
     </Link>

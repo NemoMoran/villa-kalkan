@@ -1,33 +1,56 @@
 import { getFeaturedVillas } from "@/data/villas";
 import { VillaCard } from "@/components/villa/VillaCard";
 import { LinkButton } from "@/components/ui/Button";
-import { Section } from "@/components/ui/Section";
+import { Section, SectionHeader } from "@/components/ui/Section";
+import { Reveal } from "@/components/ui/Reveal";
+import { localeHref, type Locale } from "@/lib/i18n/config";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-export function FeaturedVillas() {
+type FeaturedVillasDict = Dictionary["home"]["featuredVillas"];
+
+export function FeaturedVillas({
+  lang,
+  dict,
+  villaCardDict,
+}: {
+  lang: Locale;
+  dict: FeaturedVillasDict;
+  villaCardDict: Dictionary["villaCard"];
+}) {
   const featured = getFeaturedVillas();
 
   if (featured.length === 0) return null;
 
   return (
     <Section muted>
-      <div className="flex items-end justify-between">
-        <h2 className="text-2xl font-extrabold text-ink sm:text-3xl">
-          Featured villas
-        </h2>
-        <LinkButton href="/villas" variant="secondary" className="hidden sm:inline-flex">
-          View all villas
-        </LinkButton>
-      </div>
+      <Reveal>
+        <div className="flex items-end justify-between gap-6">
+          <SectionHeader
+            eyebrow={dict.eyebrow}
+            title={dict.title}
+            description={dict.description}
+          />
+          <LinkButton
+            href={localeHref(lang, "/villas")}
+            variant="outline"
+            className="hidden shrink-0 sm:inline-flex"
+          >
+            {dict.viewAll}
+          </LinkButton>
+        </div>
+      </Reveal>
 
-      <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {featured.map((villa) => (
-          <VillaCard key={villa.slug} villa={villa} />
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {featured.map((villa, i) => (
+          <Reveal key={villa.slug} delay={i * 100}>
+            <VillaCard villa={villa} lang={lang} dict={villaCardDict} />
+          </Reveal>
         ))}
       </div>
 
-      <div className="mt-8 text-center sm:hidden">
-        <LinkButton href="/villas" variant="secondary">
-          View all villas
+      <div className="mt-10 text-center sm:hidden">
+        <LinkButton href={localeHref(lang, "/villas")} variant="outline">
+          {dict.viewAll}
         </LinkButton>
       </div>
     </Section>

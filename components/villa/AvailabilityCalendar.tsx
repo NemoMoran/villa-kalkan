@@ -1,25 +1,16 @@
 import { Badge } from "@/components/ui/Badge";
 import type { SourceStatus } from "@/lib/ical/types";
+import { localeTags, type Locale } from "@/lib/i18n/config";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type Platform = "airbnb" | "booking";
+type AvailabilityDict = Dictionary["availability"];
 
 type AvailabilityCalendarProps = {
   busyDates: Set<string>;
   sources: Record<Platform, SourceStatus>;
-};
-
-const statusMeta: Record<
-  SourceStatus,
-  { text: string; tone: "success" | "warning" | "neutral" }
-> = {
-  ok: { text: "synced", tone: "success" },
-  error: { text: "temporarily unavailable", tone: "warning" },
-  not_configured: { text: "not connected", tone: "neutral" },
-};
-
-const platformName: Record<Platform, string> = {
-  airbnb: "Airbnb",
-  booking: "Booking.com",
+  lang: Locale;
+  dict: AvailabilityDict;
 };
 
 function buildMonthMatrix(year: number, month: number): (Date | null)[][] {
@@ -50,14 +41,18 @@ function MonthGrid({
   year,
   month,
   busyDates,
+  lang,
+  weekdays,
 }: {
   year: number;
   month: number;
   busyDates: Set<string>;
+  lang: Locale;
+  weekdays: string[];
 }) {
   const weeks = buildMonthMatrix(year, month);
   const monthLabel = new Date(Date.UTC(year, month, 1)).toLocaleDateString(
-    "en-US",
+    localeTags[lang],
     { month: "long", year: "numeric", timeZone: "UTC" }
   );
 
@@ -65,7 +60,7 @@ function MonthGrid({
     <div>
       <p className="text-sm font-semibold text-ink">{monthLabel}</p>
       <div className="mt-2 grid grid-cols-7 gap-1 text-center text-[11px] text-ink-muted">
-        {["M", "T", "W", "T", "F", "S", "S"].map((label, i) => (
+        {weekdays.map((label, i) => (
           <span key={i}>{label}</span>
         ))}
       </div>
@@ -76,10 +71,10 @@ function MonthGrid({
           return (
             <div
               key={i}
-              className={`flex aspect-square items-center justify-center rounded-md text-xs ${
+              className={`flex aspect-square items-center justify-center rounded-lg text-xs ${
                 busy
-                  ? "bg-surface-muted text-ink-muted line-through"
-                  : "text-ink"
+                  ? "bg-surface-muted text-ink-muted/60 line-through"
+                  : "bg-white text-ink shadow-sm"
               }`}
             >
               {date.getUTCDate()}
@@ -94,7 +89,23 @@ function MonthGrid({
 export function AvailabilityCalendar({
   busyDates,
   sources,
+  lang,
+  dict,
 }: AvailabilityCalendarProps) {
+  const statusMeta: Record<
+    SourceStatus,
+    { text: string; tone: "success" | "warning" | "neutral" }
+  > = {
+    ok: { text: dict.statusSynced, tone: "success" },
+    error: { text: dict.statusUnavailable, tone: "warning" },
+    not_configured: { text: dict.statusNotConnected, tone: "neutral" },
+  };
+
+  const platformName: Record<Platform, string> = {
+    airbnb: dict.platformAirbnb,
+    booking: dict.platformBooking,
+  };
+
   const configured = (Object.entries(sources) as [Platform, SourceStatus][]).filter(
     ([, status]) => status !== "not_configured"
   );
@@ -108,7 +119,7 @@ export function AvailabilityCalendar({
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2">
-        <h2 className="text-xl font-bold text-ink">Availability</h2>
+        <h2 className="font-display text-2xl text-ink">{dict.heading}</h2>
         {configured.map(([platform, status]) => (
           <Badge key={platform} tone={statusMeta[status].tone}>
             {platformName[platform]}: {statusMeta[status].text}
@@ -117,15 +128,36 @@ export function AvailabilityCalendar({
       </div>
 
       {configured.length === 0 ? (
-        <p className="mt-3 text-sm text-ink-muted">
-          Live availability will appear here once this villa is connected to
-          its Airbnb or Booking.com calendar.
-        </p>
+        <p className="mt-3 text-sm text-ink-muted">{dict.emptyState}</p>
       ) : (
-        <div className="mt-4 grid gap-8 sm:grid-cols-2">
-          <MonthGrid year={year} month={month} busyDates={busyDates} />
-          <MonthGrid year={nextYear} month={nextMonth} busyDates={busyDates} />
-        </div>
+        <>
+          <div className="mt-4 grid gap-8 rounded-3xl border border-border bg-surface-muted/40 p-6 sm:grid-cols-2">
+            <MonthGrid
+              year={year}
+              month={month}
+              busyDates={busyDates}
+              lang={lang}
+              weekdays={dict.weekdays}
+            />
+            <MonthGrid
+              year={nextYear}
+              month={nextMonth}
+              busyDates={busyDates}
+              lang={lang}
+              weekdays={dict.weekdays}
+            />
+          </div>
+          <div className="mt-3 flex gap-5 text-xs text-ink-muted">
+            <span className="flex items-center gap-1.5">
+              <span className="h-3 w-3 rounded bg-white shadow-sm ring-1 ring-border" />
+              {dict.available}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="h-3 w-3 rounded bg-surface-muted ring-1 ring-border" />
+              {dict.booked}
+            </span>
+          </div>
+        </>
       )}
     </div>
   );
