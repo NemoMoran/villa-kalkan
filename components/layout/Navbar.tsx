@@ -4,7 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LinkButton } from "@/components/ui/Button";
-import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import {
+  LanguagePills,
+  LanguageSwitcher,
+} from "@/components/layout/LanguageSwitcher";
 import { localeHref, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
@@ -92,8 +95,10 @@ export function Navbar({ lang, dict }: { lang: Locale; dict: NavDict }) {
               {link.label}
             </Link>
           ))}
-          <LanguageSwitcher lang={lang} label={dict.language} className="mt-2" />
-          <LinkButton href={villasHref} className="mt-2 w-full">
+          <div className="mt-3 border-t border-border pt-4">
+            <LanguagePills lang={lang} label={dict.language} />
+          </div>
+          <LinkButton href={villasHref} className="mt-4 w-full">
             {dict.browseVillas}
           </LinkButton>
         </nav>
