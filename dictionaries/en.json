@@ -64,6 +64,12 @@
       "description": "A first look at the villas guests come back to, season after season.",
       "viewAll": "View all villas"
     },
+    "villasTogether": {
+      "eyebrow": "One hillside, five villas",
+      "title": "Five villas, side by side",
+      "description": "Villa Cemre, Leyla, Sude, Ayda, and Sur share the same hillside plot above Kalkan — book one, or take several together for a family or group of friends.",
+      "altPhoto": "Aerial view of the five villas together on the hillside above Kalkan, each with its own pool and sea view"
+    },
     "whyKalkan": {
       "eyebrow": "The destination",
       "title": "Why Kalkan?",
@@ -396,7 +402,29 @@
       { "months": "July – August", "detail": "Peak summer: 30°C+, buzzing harbour, book villas early." },
       { "months": "September – October", "detail": "Still swimming weather, softer light, easier tables." }
     ],
-    "gettingHere": "Getting here: fly to Dalaman (DLM) — about 1h45 by transfer — or Antalya (AYT), around 3h along the coast. We can recommend trusted transfer drivers;",
+    "gettingHere": {
+      "eyebrow": "Getting here",
+      "title": "Reaching Kalkan",
+      "options": [
+        {
+          "name": "From Antalya Airport (AYT)",
+          "detail": "About 2.5 hours by road to Kalkan."
+        },
+        {
+          "name": "From Dalaman Airport (DLM)",
+          "detail": "About 2 hours by road to Kalkan — the closer of the two."
+        },
+        {
+          "name": "Shuttle transfer",
+          "detail": "Regional shuttle services run to Kalkan for an extra fee."
+        },
+        {
+          "name": "Dolmuş (shared minibus)",
+          "detail": "Local dolmuş minibuses also run directly to Kalkan."
+        }
+      ]
+    },
+    "gettingHereFooter": "We can recommend trusted transfer drivers;",
     "justAsk": "just ask",
     "soldOnKalkan": "Sold on Kalkan? Pick your villa."
   },

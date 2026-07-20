@@ -168,27 +168,29 @@ const rawVillas: VillaInput[] = [
     content: {
       en: {
         name: "Villa Ayda",
-        shortTagline: "Modern villa with private pool, hamam and sauna",
+        shortTagline:
+          "Modern villa with private pool, jacuzzi, hamam and sauna",
         description:
-          "A modern villa with a private pool, traditional hamam, and sauna, Villa Ayda is perfect for couples, newlyweds, and small groups who value wellness and relaxation, with three bedrooms sleeping up to six.",
+          "A modern villa with a private pool, jacuzzi, traditional hamam, and sauna, Villa Ayda is perfect for couples, newlyweds, and small groups who value wellness and relaxation, with three bedrooms sleeping up to six.",
       },
       de: {
         name: "Villa Ayda",
-        shortTagline: "Moderne Villa mit Privatpool, Hamam und Sauna",
+        shortTagline: "Moderne Villa mit Privatpool, Jacuzzi, Hamam und Sauna",
         description:
-          "Villa Ayda ist eine moderne Villa mit Privatpool, Hamam und Sauna – perfekt für Paare, Frischvermählte und kleine Gruppen, die besonderen Wert auf Wellness und Entspannung legen. Drei Schlafzimmer bieten Platz für bis zu sechs Gäste.",
+          "Villa Ayda ist eine moderne Villa mit Privatpool, Jacuzzi, Hamam und Sauna – perfekt für Paare, Frischvermählte und kleine Gruppen, die besonderen Wert auf Wellness und Entspannung legen. Drei Schlafzimmer bieten Platz für bis zu sechs Gäste.",
       },
       tr: {
         name: "Villa Ayda",
-        shortTagline: "Özel havuzlu, hamamlı ve saunalı modern villa",
+        shortTagline: "Özel havuzlu, jakuzili, hamamlı ve saunalı modern villa",
         description:
-          "Villa Ayda; özel havuzu, hamamı ve saunasıyla modern bir villadır — wellness ve dinlenmeye özellikle önem veren çiftler, yeni evliler ve küçük gruplar için mükemmeldir. Üç yatak odasıyla altı kişiye kadar konaklama sunar.",
+          "Villa Ayda; özel havuzu, jakuzisi, hamamı ve saunasıyla modern bir villadır — wellness ve dinlenmeye özellikle önem veren çiftler, yeni evliler ve küçük gruplar için mükemmeldir. Üç yatak odasıyla altı kişiye kadar konaklama sunar.",
       },
       fr: {
         name: "Villa Ayda",
-        shortTagline: "Villa moderne avec piscine privée, hammam et sauna",
+        shortTagline:
+          "Villa moderne avec piscine privée, jacuzzi, hammam et sauna",
         description:
-          "Villa Ayda est une villa moderne dotée d'une piscine privée, d'un hammam et d'un sauna — parfaite pour les couples, jeunes mariés et petits groupes attachant une importance particulière au bien-être et à la détente. Ses trois chambres accueillent jusqu'à six personnes.",
+          "Villa Ayda est une villa moderne dotée d'une piscine privée, d'un jacuzzi, d'un hammam et d'un sauna — parfaite pour les couples, jeunes mariés et petits groupes attachant une importance particulière au bien-être et à la détente. Ses trois chambres accueillent jusqu'à six personnes.",
       },
     },
     location: { area: "Kalkan Center", town: "Kalkan", country: "Turkey" },
@@ -201,6 +203,7 @@ const rawVillas: VillaInput[] = [
       "kitchen",
       "parking",
       "bbq",
+      "jacuzzi",
       "hamam",
       "sauna",
     ],
@@ -318,38 +321,35 @@ const rawVillas: VillaInput[] = [
     ],
   },
   {
-    // TODO: photos are real (public/images/villas/villa-bogota/) and the
-    // tagline/description below are grounded in what they show (modern
-    // villa, private pool, shaded terrace, olive-grove/valley/mountain view
-    // — no sea or harbour in shot, so "Kalkan Harbour" area + rooftopPool/
-    // seaView from the old placeholder were dropped). bedrooms/bathrooms/
-    // guests/price/location/listing URLs still placeholder — no fact sheet
-    // was given for this villa.
+    // TODO: photos are real (public/images/villas/villa-bogota/). Owner fact
+    // sheet (2026-07-20) confirms 2+1 / 4 guests / private jacuzzi / pool /
+    // no sea view; bathrooms assumed = bedrooms. location/price/listing URLs
+    // still placeholder.
     slug: "villa-bogota",
     content: {
       en: {
         name: "Villa Bogota",
-        shortTagline: "Modern villa with a private pool and valley views",
+        shortTagline: "Modern villa with a private pool and jacuzzi",
         description:
-          "Villa Bogota is a modern villa with a private pool and a shaded terrace for outdoor dining, looking out over the olive groves and mountains beyond Kalkan.",
+          "Villa Bogota is a modern villa with a private pool and jacuzzi, plus a shaded terrace for outdoor dining looking out over the olive groves and mountains beyond Kalkan — two bedrooms sleep up to four.",
       },
       de: {
         name: "Villa Bogota",
-        shortTagline: "Moderne Villa mit Privatpool und Talblick",
+        shortTagline: "Moderne Villa mit Privatpool und Jacuzzi",
         description:
-          "Villa Bogota ist eine moderne Villa mit Privatpool und einer schattigen Terrasse zum Essen im Freien, mit Blick über die Olivenhaine und Berge hinter Kalkan.",
+          "Villa Bogota ist eine moderne Villa mit Privatpool und Jacuzzi sowie einer schattigen Terrasse zum Essen im Freien, mit Blick über die Olivenhaine und Berge hinter Kalkan. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste.",
       },
       tr: {
         name: "Villa Bogota",
-        shortTagline: "Özel havuzlu ve vadi manzaralı modern villa",
+        shortTagline: "Özel havuzlu ve jakuzili modern villa",
         description:
-          "Villa Bogota; özel havuzu ve dışarıda yemek için gölgeli terasıyla, Kalkan'ın arkasındaki zeytinlikler ve dağlara bakan modern bir villadır.",
+          "Villa Bogota; özel havuzu ve jakuzisi, dışarıda yemek için gölgeli terasıyla, Kalkan'ın arkasındaki zeytinlikler ve dağlara bakan modern bir villadır. İki yatak odasıyla dört kişiye kadar konaklama sunar.",
       },
       fr: {
         name: "Villa Bogota",
-        shortTagline: "Villa moderne avec piscine privée et vue sur la vallée",
+        shortTagline: "Villa moderne avec piscine privée et jacuzzi",
         description:
-          "Villa Bogota est une villa moderne dotée d'une piscine privée et d'une terrasse ombragée pour dîner en plein air, avec vue sur les oliveraies et les montagnes derrière Kalkan.",
+          "Villa Bogota est une villa moderne dotée d'une piscine privée et d'un jacuzzi, ainsi que d'une terrasse ombragée pour dîner en plein air, avec vue sur les oliveraies et les montagnes derrière Kalkan. Ses deux chambres accueillent jusqu'à quatre personnes.",
       },
     },
     location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
@@ -362,93 +362,44 @@ const rawVillas: VillaInput[] = [
       "wifi",
       "kitchen",
       "parking",
+      "jacuzzi",
     ],
-    bedrooms: 4,
-    bathrooms: 4,
-    maxGuests: 8,
-    priceIndication: { amount: 360, currency: "EUR", per: "night" },
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
+    priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
   },
   {
-    slug: "villa-mira",
-    content: {
-      en: {
-        name: "Villa Mira",
-        shortTagline: "Spacious family villa with a large garden",
-        description:
-          "Built for families and groups, Villa Mira offers generous indoor and outdoor space, a large garden for kids to run in, and a shallow end in the pool for younger swimmers.",
-      },
-      de: {
-        name: "Villa Mira",
-        shortTagline: "Großzügige Familienvilla mit weitläufigem Garten",
-        description:
-          "Für Familien und Gruppen gebaut, bietet die Villa Mira großzügigen Innen- und Außenbereich, einen großen Garten zum Herumtoben für Kinder und einen flachen Bereich im Pool für die jüngsten Schwimmer.",
-      },
-      tr: {
-        name: "Villa Mira",
-        shortTagline: "Geniş bahçeli, aileler için ferah villa",
-        description:
-          "Aileler ve gruplar için tasarlanan Villa Mira; bol iç ve dış mekân, çocukların koşabileceği geniş bir bahçe ve küçük yüzücüler için havuzda sığ bir bölüm sunuyor.",
-      },
-      fr: {
-        name: "Villa Mira",
-        shortTagline: "Villa familiale spacieuse avec un grand jardin",
-        description:
-          "Conçue pour les familles et les groupes, la Villa Mira offre de généreux espaces intérieurs et extérieurs, un grand jardin où les enfants peuvent courir, et une partie peu profonde dans la piscine pour les plus jeunes.",
-      },
-    },
-    location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
-    gradient: ["#ffd54f", "#ff8a65"],
-    galleryCount: 6,
-    amenityKeys: [
-      "privatePool",
-      "garden",
-      "ac",
-      "wifi",
-      "kitchen",
-      "parking",
-      "bbq",
-    ],
-    bedrooms: 5,
-    bathrooms: 4,
-    maxGuests: 10,
-    priceIndication: { amount: 380, currency: "EUR", per: "night" },
-    sources: [
-      { platform: "airbnb", listingUrl: "#", icalUrl: null },
-      { platform: "booking", listingUrl: "#", icalUrl: null },
-    ],
-  },
-  {
-    // TODO: photos are real (public/images/villas/villa-colombia/) and the
-    // tagline/description below are grounded in what they show (modern
-    // 2-storey villa, private pool, valley/mountain view, kids' play area —
-    // no sea in shot). bedrooms/bathrooms/guests/price/location/listing URLs
-    // are still placeholder — no fact sheet was given for this villa.
+    // TODO: photos are real (public/images/villas/villa-colombia/). Owner
+    // fact sheet (2026-07-20) confirms 2+1 / 4 guests / private jacuzzi /
+    // pool / no sea view; bathrooms assumed = bedrooms. location/price/
+    // listing URLs still placeholder.
     slug: "villa-colombia",
     content: {
       en: {
         name: "Villa Colombia",
-        shortTagline: "Modern villa with a private pool and mountain views",
+        shortTagline: "Modern villa with a private pool and jacuzzi",
         description:
-          "A modern two-storey villa with a private pool and a terrace looking out over the valley and mountains beyond Kalkan, Villa Colombia has a shaded lounge area and a kids' play corner — an easy match for families.",
+          "A modern two-storey villa with a private pool and jacuzzi, Villa Colombia has a terrace looking out over the valley and mountains beyond Kalkan — two bedrooms sleep up to four, an easy match for couples and small groups.",
       },
       de: {
         name: "Villa Colombia",
-        shortTagline: "Moderne Villa mit Privatpool und Bergblick",
+        shortTagline: "Moderne Villa mit Privatpool und Jacuzzi",
         description:
-          "Villa Colombia ist eine moderne, zweistöckige Villa mit Privatpool und einer Terrasse mit Blick auf das Tal und die Berge hinter Kalkan. Eine schattige Lounge-Ecke und eine Spielecke für Kinder machen sie ideal für Familien.",
+          "Villa Colombia ist eine moderne, zweistöckige Villa mit Privatpool und Jacuzzi und einer Terrasse mit Blick auf das Tal und die Berge hinter Kalkan. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste — ideal für Paare und kleine Gruppen.",
       },
       tr: {
         name: "Villa Colombia",
-        shortTagline: "Özel havuzlu ve dağ manzaralı modern villa",
+        shortTagline: "Özel havuzlu ve jakuzili modern villa",
         description:
-          "Villa Colombia, özel havuzu ve Kalkan'ın arkasındaki vadi ve dağlara bakan terasıyla modern, iki katlı bir villadır. Gölgeli oturma alanı ve çocuklar için oyun köşesiyle aileler için idealdir.",
+          "Villa Colombia, özel havuzu ve jakuzisi, Kalkan'ın arkasındaki vadi ve dağlara bakan terasıyla modern, iki katlı bir villadır. İki yatak odasıyla dört kişiye kadar konaklama sunar — çiftler ve küçük gruplar için idealdir.",
       },
       fr: {
         name: "Villa Colombia",
-        shortTagline: "Villa moderne avec piscine privée et vue sur les montagnes",
+        shortTagline: "Villa moderne avec piscine privée et jacuzzi",
         description:
-          "Villa Colombia est une villa moderne à deux étages dotée d'une piscine privée et d'une terrasse donnant sur la vallée et les montagnes derrière Kalkan. Un coin salon ombragé et un espace de jeux pour enfants en font un excellent choix pour les familles.",
+          "Villa Colombia est une villa moderne à deux étages dotée d'une piscine privée et d'un jacuzzi, avec une terrasse donnant sur la vallée et les montagnes derrière Kalkan. Ses deux chambres accueillent jusqu'à quatre personnes — idéale pour les couples et petits groupes.",
       },
     },
     location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
@@ -461,48 +412,47 @@ const rawVillas: VillaInput[] = [
       "wifi",
       "kitchen",
       "parking",
-      "garden",
+      "jacuzzi",
     ],
-    bedrooms: 3,
-    bathrooms: 3,
-    maxGuests: 6,
-    priceIndication: { amount: 310, currency: "EUR", per: "night" },
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
+    priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
   },
   {
-    // TODO: photos are real (public/images/villas/villa-colosseum/) and the
-    // tagline/description below are grounded in what they show (sleek modern
-    // villa, private pool, open dining terrace, valley/hill view — no sea in
-    // shot). bedrooms/bathrooms/guests/price/location/listing URLs are still
-    // placeholder — no fact sheet was given for this villa.
+    // TODO: photos are real (public/images/villas/villa-colosseum/). Owner
+    // fact sheet (2026-07-20) confirms 2+1 / 4 guests / private jacuzzi /
+    // pool / no sea view; bathrooms assumed = bedrooms. location/price/
+    // listing URLs still placeholder.
     slug: "villa-colosseum",
     content: {
       en: {
         name: "Villa Colosseum",
-        shortTagline: "Designer villa with a private pool and valley views",
+        shortTagline: "Designer villa with a private pool and jacuzzi",
         description:
-          "A sleek, design-forward villa with a private pool, Villa Colosseum pairs an open dining terrace and stylish interiors with sweeping views over the valley and hills beyond Kalkan.",
+          "A sleek, design-forward villa with a private pool and jacuzzi, Villa Colosseum pairs an open dining terrace and stylish interiors with sweeping views over the valley and hills beyond Kalkan — two bedrooms sleep up to four.",
       },
       de: {
         name: "Villa Colosseum",
-        shortTagline: "Design-Villa mit Privatpool und Talblick",
+        shortTagline: "Design-Villa mit Privatpool und Jacuzzi",
         description:
-          "Villa Colosseum ist eine stilvolle, design-orientierte Villa mit Privatpool, die eine offene Essterrasse und elegante Innenräume mit weitem Blick über das Tal und die Hügel hinter Kalkan verbindet.",
+          "Villa Colosseum ist eine stilvolle, design-orientierte Villa mit Privatpool und Jacuzzi, die eine offene Essterrasse und elegante Innenräume mit weitem Blick über das Tal und die Hügel hinter Kalkan verbindet. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste.",
       },
       tr: {
         name: "Villa Colosseum",
-        shortTagline: "Özel havuzlu ve vadi manzaralı tasarım villa",
+        shortTagline: "Özel havuzlu ve jakuzili tasarım villa",
         description:
-          "Villa Colosseum; özel havuzu, açık yemek terası ve şık iç mekanlarıyla Kalkan'ın arkasındaki vadi ve tepelere geniş bir manzara sunan modern, tasarım odaklı bir villadır.",
+          "Villa Colosseum; özel havuzu, jakuzisi, açık yemek terası ve şık iç mekanlarıyla Kalkan'ın arkasındaki vadi ve tepelere geniş bir manzara sunan modern, tasarım odaklı bir villadır. İki yatak odasıyla dört kişiye kadar konaklama sunar.",
       },
       fr: {
         name: "Villa Colosseum",
-        shortTagline: "Villa design avec piscine privée et vue sur la vallée",
+        shortTagline: "Villa design avec piscine privée et jacuzzi",
         description:
-          "Villa Colosseum est une villa élégante et moderne dotée d'une piscine privée, associant une terrasse à manger ouverte et un intérieur raffiné à une vue dégagée sur la vallée et les collines derrière Kalkan.",
+          "Villa Colosseum est une villa élégante et moderne dotée d'une piscine privée et d'un jacuzzi, associant une terrasse à manger ouverte et un intérieur raffiné à une vue dégagée sur la vallée et les collines derrière Kalkan. Ses deux chambres accueillent jusqu'à quatre personnes.",
       },
     },
     location: { area: "Kalkan Harbour", town: "Kalkan", country: "Turkey" },
@@ -515,15 +465,71 @@ const rawVillas: VillaInput[] = [
       "wifi",
       "kitchen",
       "parking",
+      "jacuzzi",
     ],
-    bedrooms: 4,
-    bathrooms: 4,
-    maxGuests: 8,
-    priceIndication: { amount: 350, currency: "EUR", per: "night" },
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
+    priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
+  },
+  {
+    // TODO: photos pending — user said "Pictures for villa alkaya are going
+    // to come" (2026-07-20); folder public/images/villas/villa-alkaya-cinar/
+    // exists empty so it falls back to the gradient placeholder until photos
+    // are dropped in. Owner fact sheet confirms 3+1 / two jacuzzis / sauna /
+    // pool / sea view; bathrooms assumed = bedrooms, maxGuests inferred from
+    // bedroom count to match Villa Ayda/Saba pattern. location/price/listing
+    // URLs still placeholder.
+    slug: "villa-alkaya-cinar",
+    content: {
+      en: {
+        name: "Villa Alkaya Çınar",
+        shortTagline:
+          "Villa with private pool, two jacuzzis, sauna and sea view",
+        description:
+          "Villa Alkaya Çınar pairs a private pool with two jacuzzis and a sauna, all with sea views — three bedrooms make it a comfortable fit for families or a group of friends.",
+      },
+      de: {
+        name: "Villa Alkaya Çınar",
+        shortTagline: "Villa mit Privatpool, zwei Jacuzzis, Sauna und Meerblick",
+        description:
+          "Villa Alkaya Çınar verbindet einen Privatpool mit zwei Jacuzzis und einer Sauna, alles mit Meerblick – drei Schlafzimmer bieten komfortablen Platz für Familien oder Freundesgruppen.",
+      },
+      tr: {
+        name: "Villa Alkaya Çınar",
+        shortTagline:
+          "Özel havuzlu, 2 jakuzili, saunalı ve deniz manzaralı villa",
+        description:
+          "Villa Alkaya Çınar; özel havuzu, 2 jakuzisi ve saunasıyla deniz manzarasını bir araya getiriyor — üç yatak odasıyla aileler veya arkadaş grupları için konforlu bir seçim.",
+      },
+      fr: {
+        name: "Villa Alkaya Çınar",
+        shortTagline: "Villa avec piscine privée, deux jacuzzis, sauna et vue mer",
+        description:
+          "Villa Alkaya Çınar associe une piscine privée à deux jacuzzis et un sauna, le tout avec vue sur la mer — ses trois chambres offrent un espace confortable pour les familles ou les groupes d'amis.",
+      },
+    },
+    location: { area: "Kalkan", town: "Kalkan", country: "Turkey" },
+    gradient: ["#8d9c6b", "#3f5d4a"],
+    galleryCount: 5,
+    amenityKeys: [
+      "privatePool",
+      "seaView",
+      "ac",
+      "kitchen",
+      "parking",
+      "jacuzzi",
+      "sauna",
+    ],
+    bedrooms: 3,
+    bathrooms: 3,
+    maxGuests: 6,
+    priceIndication: null,
+    sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
   },
 ];
 

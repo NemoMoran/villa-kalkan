@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/Hero";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { FeaturedVillas } from "@/components/home/FeaturedVillas";
+import { VillasTogether } from "@/components/home/VillasTogether";
 import { WhyKalkan } from "@/components/home/WhyKalkan";
 import { GuideTeaser } from "@/components/home/GuideTeaser";
 import { Reviews } from "@/components/home/Reviews";
@@ -28,6 +29,7 @@ export default async function Home({
         dict={dict.home.featuredVillas}
         villaCardDict={dict.villaCard}
       />
+      <VillasTogether lang={lang} dict={dict.home.villasTogether} />
       <WhyKalkan dict={dict.home.whyKalkan} />
       <GuideTeaser lang={lang} dict={dict.home.guideTeaser} />
       <Reviews dict={dict.home.reviews} />

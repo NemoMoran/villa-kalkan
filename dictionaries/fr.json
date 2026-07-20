@@ -64,6 +64,12 @@
       "description": "Un premier aperçu des villas que les hôtes retrouvent, saison après saison.",
       "viewAll": "Voir toutes les villas"
     },
+    "villasTogether": {
+      "eyebrow": "Une colline, cinq villas",
+      "title": "Cinq villas, côte à côte",
+      "description": "Les villas Cemre, Leyla, Sude, Ayda et Sur partagent le même terrain à flanc de colline au-dessus de Kalkan — réservez-en une, ou plusieurs ensemble pour une famille ou un groupe d'amis.",
+      "altPhoto": "Vue aérienne des cinq villas réunies sur la colline au-dessus de Kalkan, chacune avec sa propre piscine et vue sur la mer"
+    },
     "whyKalkan": {
       "eyebrow": "La destination",
       "title": "Pourquoi Kalkan ?",
@@ -396,7 +402,29 @@
       { "months": "Juillet – Août", "detail": "Plein été : 30°C+, port animé, réservez les villas tôt." },
       { "months": "Septembre – Octobre", "detail": "Encore la saison de baignade, lumière plus douce, tables plus faciles à trouver." }
     ],
-    "gettingHere": "Pour venir : prenez l'avion pour Dalaman (DLM) — environ 1h45 en transfert — ou pour Antalya (AYT), environ 3h le long de la côte. Nous pouvons recommander des chauffeurs de transfert fiables ;",
+    "gettingHere": {
+      "eyebrow": "Arriver à Kalkan",
+      "title": "Comment rejoindre Kalkan",
+      "options": [
+        {
+          "name": "Depuis l'aéroport d'Antalya (AYT)",
+          "detail": "Environ 2h30 de route jusqu'à Kalkan."
+        },
+        {
+          "name": "Depuis l'aéroport de Dalaman (DLM)",
+          "detail": "Environ 2 heures de route jusqu'à Kalkan — le plus proche des deux."
+        },
+        {
+          "name": "Navette",
+          "detail": "Des services de navette circulent dans la région jusqu'à Kalkan, moyennant un supplément."
+        },
+        {
+          "name": "Dolmuş (minibus partagé)",
+          "detail": "Des dolmuş locaux desservent aussi directement Kalkan."
+        }
+      ]
+    },
+    "gettingHereFooter": "Nous pouvons recommander des chauffeurs de transfert fiables ;",
     "justAsk": "demandez-nous simplement",
     "soldOnKalkan": "Convaincu par Kalkan ? Choisissez votre villa."
   },

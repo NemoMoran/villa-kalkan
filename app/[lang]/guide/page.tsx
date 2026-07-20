@@ -185,16 +185,35 @@ export default async function GuidePage({
           ))}
         </div>
         <Reveal delay={200}>
-          <p className="mt-10 text-sm text-ink-muted">
-            {t.gettingHere}{" "}
-            <Link
-              href={localeHref(lang, "/contact")}
-              className="font-medium text-brand-dark underline underline-offset-2"
-            >
-              {t.justAsk}
-            </Link>
-            .
-          </p>
+          <div className="mt-14 border-t border-border pt-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+              {t.gettingHere.eyebrow}
+            </p>
+            <h3 className="font-display mt-3 text-2xl text-ink">
+              {t.gettingHere.title}
+            </h3>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {t.gettingHere.options.map((option) => (
+                <div
+                  key={option.name}
+                  className="rounded-2xl border border-border bg-surface p-6"
+                >
+                  <p className="font-semibold text-ink">{option.name}</p>
+                  <p className="mt-2 text-sm text-ink-muted">{option.detail}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-sm text-ink-muted">
+              {t.gettingHereFooter}{" "}
+              <Link
+                href={localeHref(lang, "/contact")}
+                className="font-medium text-brand-dark underline underline-offset-2"
+              >
+                {t.justAsk}
+              </Link>
+              .
+            </p>
+          </div>
         </Reveal>
       </Section>
 

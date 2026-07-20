@@ -64,6 +64,12 @@
       "description": "Sezondan sezona tekrar tercih edilen villalara ilk bakış.",
       "viewAll": "Tüm villaları gör"
     },
+    "villasTogether": {
+      "eyebrow": "Tek yamaç, beş villa",
+      "title": "Beş villa, yan yana",
+      "description": "Villa Cemre, Leyla, Sude, Ayda ve Sur, Kalkan'ın üzerindeki aynı yamaç arazisini paylaşıyor — tek bir villa ayırtabilir ya da aile veya arkadaş grubunuz için birkaçını birlikte kiralayabilirsiniz.",
+      "altPhoto": "Kalkan'ın üzerindeki yamaçta yan yana duran beş villanın havadan görünümü, her birinin kendi havuzu ve deniz manzarası var"
+    },
     "whyKalkan": {
       "eyebrow": "Destinasyon",
       "title": "Neden Kalkan?",
@@ -396,7 +402,29 @@
       { "months": "Temmuz – Ağustos", "detail": "Yaz zirvesi: 30°C+, canlı liman, villaları erken rezerve edin." },
       { "months": "Eylül – Ekim", "detail": "Hâlâ yüzme havası, daha yumuşak ışık, daha kolay masa bulma." }
     ],
-    "gettingHere": "Buraya nasıl gelinir: Dalaman'a (DLM) uçun — transferle yaklaşık 1 sa 45 dakika — veya kıyı yolundan yaklaşık 3 saat olan Antalya'ya (AYT). Güvenilir transfer şoförleri önerebiliriz;",
+    "gettingHere": {
+      "eyebrow": "Ulaşım",
+      "title": "Kalkan'a nasıl ulaşılır",
+      "options": [
+        {
+          "name": "Antalya Havalimanı'ndan (AYT)",
+          "detail": "Kalkan'a genellikle yaklaşık 2,5 saat sürüyor."
+        },
+        {
+          "name": "Dalaman Havalimanı'ndan (DLM)",
+          "detail": "Kalkan'a yaklaşık 2 saat sürüyor — ikisinden daha yakın olanı."
+        },
+        {
+          "name": "Shuttle servisi",
+          "detail": "Bölgede shuttle servisleri de mevcut, ancak bunlar için ek bir ücret ödemeniz gerekiyor."
+        },
+        {
+          "name": "Dolmuş",
+          "detail": "Dolmuşlar da kalkıyor ve direkt olarak Kalkan'a gidiyor."
+        }
+      ]
+    },
+    "gettingHereFooter": "Güvenilir transfer şoförleri önerebiliriz;",
     "justAsk": "sormanız yeterli",
     "soldOnKalkan": "Kalkan'a ikna oldunuz mu? Villanızı seçin."
   },

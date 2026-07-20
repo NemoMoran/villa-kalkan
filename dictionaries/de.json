@@ -64,6 +64,12 @@
       "description": "Ein erster Blick auf die Villen, zu denen Gäste Saison für Saison zurückkehren.",
       "viewAll": "Alle Villen ansehen"
     },
+    "villasTogether": {
+      "eyebrow": "Ein Hang, fünf Villen",
+      "title": "Fünf Villen, Seite an Seite",
+      "description": "Villa Cemre, Leyla, Sude, Ayda und Sur teilen sich dasselbe Hanggrundstück oberhalb von Kalkan – buchen Sie eine einzelne Villa oder gleich mehrere für eine Familien- oder Freundesgruppe.",
+      "altPhoto": "Luftaufnahme der fünf Villen zusammen am Hang oberhalb von Kalkan, jede mit eigenem Pool und Meerblick"
+    },
     "whyKalkan": {
       "eyebrow": "Das Reiseziel",
       "title": "Warum Kalkan?",
@@ -396,7 +402,29 @@
       { "months": "Juli – August", "detail": "Hochsommer: 30°C+, belebter Hafen, Villen früh buchen." },
       { "months": "September – Oktober", "detail": "Noch Badewetter, weicheres Licht, leichtere Tischreservierungen." }
     ],
-    "gettingHere": "Anreise: Fliegen Sie nach Dalaman (DLM) — etwa 1 Std. 45 per Transfer — oder nach Antalya (AYT), rund 3 Std. entlang der Küste. Wir empfehlen gern vertrauenswürdige Transferfahrer;",
+    "gettingHere": {
+      "eyebrow": "Anreise",
+      "title": "So kommen Sie nach Kalkan",
+      "options": [
+        {
+          "name": "Ab Flughafen Antalya (AYT)",
+          "detail": "Etwa 2,5 Stunden Fahrzeit nach Kalkan."
+        },
+        {
+          "name": "Ab Flughafen Dalaman (DLM)",
+          "detail": "Etwa 2 Stunden Fahrzeit nach Kalkan – der näher gelegene der beiden."
+        },
+        {
+          "name": "Shuttle-Transfer",
+          "detail": "In der Region verkehren Shuttle-Services nach Kalkan gegen Aufpreis."
+        },
+        {
+          "name": "Dolmuş (Sammeltaxi)",
+          "detail": "Auch Dolmuş-Sammeltaxis fahren direkt nach Kalkan."
+        }
+      ]
+    },
+    "gettingHereFooter": "Wir empfehlen gern vertrauenswürdige Transferfahrer;",
     "justAsk": "einfach fragen",
     "soldOnKalkan": "Von Kalkan überzeugt? Wählen Sie Ihre Villa."
   },
