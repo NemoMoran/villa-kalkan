@@ -1,4 +1,4 @@
-import { getFeaturedVillas } from "@/data/villas";
+import { getFeaturedVillasWithImages } from "@/data/villaImages";
 import { VillaCard } from "@/components/villa/VillaCard";
 import { LinkButton } from "@/components/ui/Button";
 import { Section, SectionHeader } from "@/components/ui/Section";
@@ -17,7 +17,7 @@ export function FeaturedVillas({
   dict: FeaturedVillasDict;
   villaCardDict: Dictionary["villaCard"];
 }) {
-  const featured = getFeaturedVillas();
+  const featured = getFeaturedVillasWithImages();
 
   if (featured.length === 0) return null;
 

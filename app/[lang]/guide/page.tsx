@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
@@ -12,6 +13,13 @@ const beachGradients: [string, string][] = [
   ["#4dd0e1", "#0d5f75"],
   ["#f4ead2", "#c9a86a"],
   ["#147d99", "#16303c"],
+];
+
+// Order matches t.beaches: Kaputaş, Patara, Kalamar Bay.
+const beachPhotos = [
+  "/images/guide/kaputas.jpg",
+  "/images/guide/patara.jpg",
+  "/images/guide/kalamar.jpg",
 ];
 
 export async function generateMetadata({
@@ -40,11 +48,19 @@ export default async function GuidePage({
     <div>
       {/* Hero band */}
       <section className="relative overflow-hidden bg-navy py-24 text-white">
+        <Image
+          src="/images/site/kalkan-coast.jpg"
+          alt={t.heroAlt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[25%_40%]"
+        />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(80% 60% at 80% 10%, rgba(244,234,210,0.12), transparent 60%), linear-gradient(160deg, #10242e 0%, #16303c 55%, #147d99 130%)",
+              "linear-gradient(90deg, rgba(13,24,30,0.92) 0%, rgba(13,24,30,0.8) 35%, rgba(13,24,30,0.45) 65%, rgba(13,24,30,0.25) 100%)",
           }}
           aria-hidden="true"
         />
@@ -72,12 +88,24 @@ export default async function GuidePage({
           {t.beaches.map((beach, i) => (
             <Reveal key={beach.name} delay={i * 100}>
               <div className="h-full overflow-hidden rounded-3xl border border-border bg-surface">
-                <PlaceholderImage
-                  gradient={beachGradients[i]}
-                  alt={beach.name}
-                  className="aspect-[4/3]"
-                  plain
-                />
+                {beachPhotos[i] ? (
+                  <div className="relative aspect-[4/3]">
+                    <Image
+                      src={beachPhotos[i]}
+                      alt={beach.name}
+                      fill
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : (
+                  <PlaceholderImage
+                    gradient={beachGradients[i]}
+                    alt={beach.name}
+                    className="aspect-[4/3]"
+                    plain
+                  />
+                )}
                 <div className="p-6">
                   <div className="flex items-center justify-between gap-2">
                     <h3 className="font-display text-lg text-ink">{beach.name}</h3>

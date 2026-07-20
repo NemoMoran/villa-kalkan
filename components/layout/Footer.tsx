@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { localeHref, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
@@ -22,10 +23,14 @@ export function Footer({ lang, dict }: { lang: Locale; dict: FooterDict }) {
     <footer className="mt-auto bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-xl tracking-tight">
-            Villa <span className="text-brand">Kalkan</span>
-          </p>
-          <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/60">
+          <Image
+            src="/images/site/logo-white.png"
+            alt="Villa Kalkan"
+            width={955}
+            height={249}
+            className="h-10 w-auto"
+          />
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             {dict.tagline}
           </p>
         </div>

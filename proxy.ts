@@ -42,6 +42,9 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|icon|opengraph-image).*)",
+    // The trailing `.*\.[^/]+$` alternative excludes any request path ending
+    // in a file extension, so static assets served from `public/` (villa
+    // photos, favicons, etc.) are never caught by the locale redirect.
+    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|icon|opengraph-image|.*\\.[^/]+$).*)",
   ],
 };

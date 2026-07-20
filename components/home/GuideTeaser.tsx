@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { localeHref, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type GuideTeaserDict = Dictionary["home"]["guideTeaser"];
 
-const gradients: [string, string][] = [
-  ["#4dd0e1", "#0d5f75"],
-  ["#f4a261", "#b95c2f"],
-  ["#147d99", "#10242e"],
+// Order matches dict.highlights: Kaputaş Beach, Harbour dinners, Boat days.
+const photos = [
+  "/images/guide/kaputas.jpg",
+  "/images/site/harbour-dinner.jpg",
+  "/images/site/boat-day.jpg",
 ];
 
 export function GuideTeaser({
@@ -60,12 +61,15 @@ export function GuideTeaser({
         {dict.highlights.map((item, i) => (
           <Reveal key={item.title} delay={i * 100}>
             <Link href={guideHref} className="group block">
-              <PlaceholderImage
-                gradient={gradients[i]}
-                alt={item.title}
-                className="aspect-[4/3] rounded-3xl transition-transform duration-300 group-hover:scale-[1.02]"
-                plain
-              />
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+                <Image
+                  src={photos[i]}
+                  alt={item.title}
+                  fill
+                  sizes="(min-width: 640px) 33vw, 100vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </div>
               <p className="mt-4 font-semibold">{item.title}</p>
               <p className="mt-1 text-sm text-white/60">{item.description}</p>
             </Link>

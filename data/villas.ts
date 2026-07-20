@@ -1,5 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
-import type { Villa, VillaContent } from "./villas.schema";
+import type { Villa, VillaContent, VillaInput } from "./villas.schema";
 import { villasSchema } from "./villas.schema";
 
 /**
@@ -8,50 +8,52 @@ import { villasSchema } from "./villas.schema";
  * villa's real Airbnb/Booking.com listing page and calendar export link —
  * no other code changes are needed for that swap.
  */
-const rawVillas: Villa[] = [
+const rawVillas: VillaInput[] = [
   {
-    slug: "villa-yasemin",
+    // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
+    // confirmation). location/price/listing URLs still placeholder.
+    slug: "villa-sur",
     content: {
       en: {
-        name: "Villa Yasemin",
-        shortTagline: "Hillside infinity pool with panoramic sea views",
+        name: "Villa Sur",
+        shortTagline: "Spacious luxury villa with private pool and jacuzzi",
         description:
-          "Perched above Kalamar Bay, Villa Yasemin pairs a sweeping infinity pool with uninterrupted Mediterranean views. Floor-to-ceiling glass, shaded terraces, and a private garden make it an easy base for long, sunny stays.",
+          "A spacious luxury villa with a private pool and jacuzzi, Villa Sur is ideal for larger families and groups looking for sea views and comfort, with four bedrooms sleeping up to eight.",
       },
       de: {
-        name: "Villa Yasemin",
-        shortTagline: "Infinity-Pool am Hang mit Panoramablick aufs Meer",
+        name: "Villa Sur",
+        shortTagline: "Großzügige Luxusvilla mit Privatpool und Jacuzzi",
         description:
-          "Hoch über der Bucht von Kalamar gelegen, verbindet die Villa Yasemin einen weiten Infinity-Pool mit uneingeschränktem Blick aufs Mittelmeer. Bodentiefe Fenster, schattige Terrassen und ein privater Garten machen sie zur idealen Basis für lange, sonnige Aufenthalte.",
+          "Villa Sur ist eine großzügige Luxusvilla mit Privatpool und Jacuzzi – ideal für größere Familien und Gruppen, die Meerblick und Komfort suchen. Vier Schlafzimmer bieten Platz für bis zu acht Gäste.",
       },
       tr: {
-        name: "Villa Yasemin",
-        shortTagline: "Panoramik deniz manzaralı, yamaçta sonsuzluk havuzu",
+        name: "Villa Sur",
+        shortTagline: "Özel havuzlu ve jakuzili geniş lüks villa",
         description:
-          "Kalamar Koyu'nun üzerinde yer alan Villa Yasemin, geniş bir infinity havuzu kesintisiz Akdeniz manzarasıyla buluşturuyor. Yerden tavana camlar, gölgeli teraslar ve özel bahçesiyle uzun, güneşli tatiller için ideal bir üs.",
+          "Villa Sur, özel havuzu ve jakuzisiyle geniş bir lüks villadır — deniz manzarası ve konfor arayan büyük aileler ve gruplar için idealdir. Dört yatak odasıyla sekiz kişiye kadar konaklama sunar.",
       },
       fr: {
-        name: "Villa Yasemin",
-        shortTagline:
-          "Piscine à débordement sur la colline avec vue panoramique sur la mer",
+        name: "Villa Sur",
+        shortTagline: "Villa de luxe spacieuse avec piscine privée et jacuzzi",
         description:
-          "Perchée au-dessus de la baie de Kalamar, la Villa Yasemin associe une vaste piscine à débordement à une vue ininterrompue sur la Méditerranée. Baies vitrées du sol au plafond, terrasses ombragées et jardin privé en font une base idéale pour de longs séjours ensoleillés.",
+          "Villa Sur est une spacieuse villa de luxe dotée d'une piscine privée et d'un jacuzzi — idéale pour les grandes familles et les groupes en quête de vue sur mer et de confort. Ses quatre chambres accueillent jusqu'à huit personnes.",
       },
     },
     location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
     gradient: ["#ff8a65", "#ff385c"],
     galleryCount: 6,
     amenityKeys: [
-      "privateInfinityPool",
+      "privatePool",
       "seaView",
       "ac",
-      "wifi",
       "kitchen",
       "parking",
+      "bbq",
+      "jacuzzi",
     ],
-    bedrooms: 5,
-    bathrooms: 5,
-    maxGuests: 10,
+    bedrooms: 4,
+    bathrooms: 4,
+    maxGuests: 8,
     priceIndication: { amount: 420, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -60,79 +62,99 @@ const rawVillas: Villa[] = [
     featured: true,
   },
   {
-    slug: "villa-deniz",
+    // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
+    // confirmation). location/price/listing URLs still placeholder.
+    slug: "villa-sude",
     content: {
       en: {
-        name: "Villa Deniz",
-        shortTagline: "Steps from the water in a quiet cove",
+        name: "Villa Sude",
+        shortTagline: "Stylish villa with private pool and jacuzzi",
         description:
-          "Villa Deniz sits just above a quiet cove a short walk from the sea. Bright, breezy rooms open onto a poolside terrace built for long lunches and late swims.",
+          "A stylish villa with a private pool and jacuzzi, Villa Sude is ideal for couples, newlyweds, and small groups seeking peace and privacy, with two bedrooms sleeping up to four.",
       },
       de: {
-        name: "Villa Deniz",
-        shortTagline: "Wenige Schritte vom Wasser, in einer ruhigen Bucht",
+        name: "Villa Sude",
+        shortTagline: "Stilvolle Villa mit Privatpool und Jacuzzi",
         description:
-          "Villa Deniz liegt nur wenige Schritte über einer ruhigen Bucht, kurz zu Fuß vom Meer entfernt. Helle, luftige Zimmer öffnen sich zu einer Poolterrasse, perfekt für lange Mittagessen und späte Schwimmzüge.",
+          "Villa Sude ist eine stilvolle Villa mit Privatpool und Jacuzzi – ideal für Paare, Frischvermählte und kleine Gruppen, die Ruhe und Privatsphäre suchen. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste.",
       },
       tr: {
-        name: "Villa Deniz",
-        shortTagline: "Sessiz bir koyda, denize adımlar mesafede",
+        name: "Villa Sude",
+        shortTagline: "Özel havuzlu ve jakuzili şık villa",
         description:
-          "Villa Deniz, denize kısa bir yürüyüş mesafesindeki sessiz bir koyun hemen üzerinde yer alır. Aydınlık, ferah odalar; uzun öğle yemekleri ve akşamüstü yüzüşleri için tasarlanmış havuz kenarı terasına açılıyor.",
+          "Villa Sude, özel havuzu ve jakuzisiyle şık bir villadır — huzur ve mahremiyet arayan çiftler, yeni evliler ve küçük gruplar için idealdir. İki yatak odasıyla dört kişiye kadar konaklama sunar.",
       },
       fr: {
-        name: "Villa Deniz",
-        shortTagline: "À deux pas de l'eau, dans une crique tranquille",
+        name: "Villa Sude",
+        shortTagline: "Villa élégante avec piscine privée et jacuzzi",
         description:
-          "La Villa Deniz se trouve juste au-dessus d'une crique tranquille, à quelques pas de la mer. Des chambres claires et aérées s'ouvrent sur une terrasse au bord de la piscine, idéale pour de longs déjeuners et des baignades tardives.",
+          "Villa Sude est une villa élégante dotée d'une piscine privée et d'un jacuzzi — idéale pour les couples, jeunes mariés et petits groupes en quête de calme et d'intimité. Ses deux chambres accueillent jusqu'à quatre personnes.",
       },
     },
     location: { area: "Kalkan Bay", town: "Kalkan", country: "Turkey" },
     gradient: ["#4fb6c9", "#2f7d9f"],
     galleryCount: 5,
-    amenityKeys: ["privatePool", "seaView", "wifi", "kitchen", "bbq"],
-    bedrooms: 4,
-    bathrooms: 3,
-    maxGuests: 8,
+    amenityKeys: [
+      "privatePool",
+      "seaView",
+      "ac",
+      "kitchen",
+      "parking",
+      "bbq",
+      "jacuzzi",
+    ],
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
     priceIndication: { amount: 340, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
     featured: true,
   },
   {
-    slug: "villa-zeytin",
+    // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
+    // confirmation). location/price/listing URLs still placeholder.
+    slug: "villa-cemre",
     content: {
       en: {
-        name: "Villa Zeytin",
-        shortTagline: "Tucked among centuries-old olive groves",
+        name: "Villa Cemre",
+        shortTagline: "Comfortable villa with private pool and jacuzzi",
         description:
-          "Surrounded by olive groves in the hills above Kalkan, Villa Zeytin offers a calmer, greener stay with mountain air and valley views, ten minutes from the beach by car.",
+          "A comfortable villa with a private pool and jacuzzi, Villa Cemre is an excellent choice for couples, honeymooners, small families, and groups of friends, with two bedrooms sleeping up to four.",
       },
       de: {
-        name: "Villa Zeytin",
-        shortTagline: "Versteckt zwischen jahrhundertealten Olivenhainen",
+        name: "Villa Cemre",
+        shortTagline: "Komfortable Villa mit Privatpool und Jacuzzi",
         description:
-          "Umgeben von Olivenhainen in den Hügeln über Kalkan bietet die Villa Zeytin einen ruhigeren, grüneren Aufenthalt mit Bergluft und Talblick, zehn Autominuten vom Strand entfernt.",
+          "Villa Cemre ist eine komfortable Villa mit Privatpool und Jacuzzi – eine hervorragende Wahl für Paare, Honeymoon-Gäste, kleine Familien und Freundesgruppen. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste.",
       },
       tr: {
-        name: "Villa Zeytin",
-        shortTagline: "Yüzyıllık zeytinlikler arasında saklı",
+        name: "Villa Cemre",
+        shortTagline: "Özel havuzlu ve jakuzili konforlu villa",
         description:
-          "Kalkan'ın üzerindeki tepelerde zeytinliklerle çevrili Villa Zeytin; dağ havası ve vadi manzarasıyla daha sakin, daha yeşil bir tatil sunuyor — plaja arabayla on dakika.",
+          "Villa Cemre, özel havuzu ve jakuzisiyle konforlu bir villadır — çiftler, balayı çiftleri, küçük aileler ve arkadaş grupları için mükemmel bir seçimdir. İki yatak odasıyla dört kişiye kadar konaklama sunar.",
       },
       fr: {
-        name: "Villa Zeytin",
-        shortTagline: "Nichée parmi des oliveraies centenaires",
+        name: "Villa Cemre",
+        shortTagline: "Villa confortable avec piscine privée et jacuzzi",
         description:
-          "Entourée d'oliveraies dans les collines au-dessus de Kalkan, la Villa Zeytin offre un séjour plus calme et plus vert, avec air de montagne et vue sur la vallée, à dix minutes de la plage en voiture.",
+          "Villa Cemre est une villa confortable dotée d'une piscine privée et d'un jacuzzi — un excellent choix pour les couples, les lunes de miel, les petites familles et les groupes d'amis. Ses deux chambres accueillent jusqu'à quatre personnes.",
       },
     },
     location: { area: "Islamlar", town: "Kalkan", country: "Turkey" },
     gradient: ["#9caf6b", "#5d7a3f"],
     galleryCount: 5,
-    amenityKeys: ["privatePool", "mountainView", "ac", "wifi", "parking"],
-    bedrooms: 3,
+    amenityKeys: [
+      "privatePool",
+      "seaView",
+      "ac",
+      "kitchen",
+      "parking",
+      "bbq",
+      "jacuzzi",
+    ],
+    bedrooms: 2,
     bathrooms: 2,
-    maxGuests: 6,
+    maxGuests: 4,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -140,48 +162,51 @@ const rawVillas: Villa[] = [
     ],
   },
   {
-    slug: "villa-akdeniz",
+    // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
+    // confirmation). location/price/listing URLs still placeholder.
+    slug: "villa-ayda",
     content: {
       en: {
-        name: "Villa Akdeniz",
-        shortTagline: "Panoramic Mediterranean views from every room",
+        name: "Villa Ayda",
+        shortTagline: "Modern villa with private pool, hamam and sauna",
         description:
-          "A modern villa built around its view, Villa Akdeniz looks straight out over the Mediterranean from an elevated infinity pool deck. Walking distance to Kalkan's harbour restaurants.",
+          "A modern villa with a private pool, traditional hamam, and sauna, Villa Ayda is perfect for couples, newlyweds, and small groups who value wellness and relaxation, with three bedrooms sleeping up to six.",
       },
       de: {
-        name: "Villa Akdeniz",
-        shortTagline: "Panoramablick aufs Mittelmeer aus jedem Zimmer",
+        name: "Villa Ayda",
+        shortTagline: "Moderne Villa mit Privatpool, Hamam und Sauna",
         description:
-          "Eine moderne Villa, ganz auf ihre Aussicht ausgerichtet: Die Villa Akdeniz blickt von einer erhöhten Infinity-Pool-Terrasse direkt aufs Mittelmeer. Zu Fuß erreichbar sind die Hafenrestaurants von Kalkan.",
+          "Villa Ayda ist eine moderne Villa mit Privatpool, Hamam und Sauna – perfekt für Paare, Frischvermählte und kleine Gruppen, die besonderen Wert auf Wellness und Entspannung legen. Drei Schlafzimmer bieten Platz für bis zu sechs Gäste.",
       },
       tr: {
-        name: "Villa Akdeniz",
-        shortTagline: "Her odadan panoramik Akdeniz manzarası",
+        name: "Villa Ayda",
+        shortTagline: "Özel havuzlu, hamamlı ve saunalı modern villa",
         description:
-          "Manzarası etrafında tasarlanmış modern bir villa olan Villa Akdeniz, yükseltilmiş infinity havuz terasından doğrudan Akdeniz'e bakıyor. Kalkan'ın liman restoranlarına yürüme mesafesinde.",
+          "Villa Ayda; özel havuzu, hamamı ve saunasıyla modern bir villadır — wellness ve dinlenmeye özellikle önem veren çiftler, yeni evliler ve küçük gruplar için mükemmeldir. Üç yatak odasıyla altı kişiye kadar konaklama sunar.",
       },
       fr: {
-        name: "Villa Akdeniz",
-        shortTagline:
-          "Vue panoramique sur la Méditerranée depuis chaque pièce",
+        name: "Villa Ayda",
+        shortTagline: "Villa moderne avec piscine privée, hammam et sauna",
         description:
-          "Villa moderne conçue autour de sa vue, la Villa Akdeniz surplombe directement la Méditerranée depuis une terrasse à piscine à débordement surélevée. À quelques pas des restaurants du port de Kalkan.",
+          "Villa Ayda est une villa moderne dotée d'une piscine privée, d'un hammam et d'un sauna — parfaite pour les couples, jeunes mariés et petits groupes attachant une importance particulière au bien-être et à la détente. Ses trois chambres accueillent jusqu'à six personnes.",
       },
     },
     location: { area: "Kalkan Center", town: "Kalkan", country: "Turkey" },
     gradient: ["#ffb74d", "#ff385c"],
     galleryCount: 7,
     amenityKeys: [
-      "privateInfinityPool",
+      "privatePool",
       "seaView",
       "ac",
-      "wifi",
       "kitchen",
-      "housekeeping",
+      "parking",
+      "bbq",
+      "hamam",
+      "sauna",
     ],
-    bedrooms: 6,
-    bathrooms: 6,
-    maxGuests: 12,
+    bedrooms: 3,
+    bathrooms: 3,
+    maxGuests: 6,
     priceIndication: { amount: 520, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -190,79 +215,102 @@ const rawVillas: Villa[] = [
     featured: true,
   },
   {
-    slug: "villa-lavanta",
+    // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
+    // confirmation). location/price/listing URLs still placeholder.
+    slug: "villa-leyla",
     content: {
       en: {
-        name: "Villa Lavanta",
-        shortTagline: "A quiet hillside retreat surrounded by lavender",
+        name: "Villa Leyla",
+        shortTagline: "Elegant villa with private pool and jacuzzi",
         description:
-          "Villa Lavanta is a peaceful hideaway with lavender-lined terraces and a private pool shaded by pine trees — ideal for travelers who want quiet over nightlife, without straying far from town.",
+          "An elegant villa with a private pool and jacuzzi, Villa Leyla is perfect for couples, honeymooners, and groups of friends wanting a romantic stay with sea views, with two bedrooms sleeping up to four.",
       },
       de: {
-        name: "Villa Lavanta",
-        shortTagline: "Ein ruhiger Rückzugsort am Hang, umgeben von Lavendel",
+        name: "Villa Leyla",
+        shortTagline: "Elegante Villa mit Privatpool und Jacuzzi",
         description:
-          "Villa Lavanta ist ein friedvoller Rückzugsort mit lavendelgesäumten Terrassen und einem von Pinien beschatteten Privatpool — ideal für Reisende, die Ruhe dem Nachtleben vorziehen, ohne weit vom Ort entfernt zu sein.",
+          "Villa Leyla ist eine elegante Villa mit Privatpool und Jacuzzi – perfekt für Paare, Honeymoon-Reisende und Freundesgruppen, die einen romantischen Aufenthalt mit Meerblick wünschen. Zwei Schlafzimmer bieten Platz für bis zu vier Gäste.",
       },
       tr: {
-        name: "Villa Lavanta",
-        shortTagline: "Lavanta kokulu, sessiz bir yamaç sığınağı",
+        name: "Villa Leyla",
+        shortTagline: "Özel havuzlu ve jakuzili zarif villa",
         description:
-          "Villa Lavanta; lavanta kokulu teraslar ve çam ağaçlarının gölgelediği özel havuzuyla huzurlu bir sığınak — gece hayatından çok sessizliği tercih eden, ama şehirden de uzaklaşmak istemeyen gezginler için ideal.",
+          "Villa Leyla, özel havuzu ve jakuzisiyle zarif bir villadır — deniz manzaralı romantik bir tatil arayan çiftler, balayı gezginleri ve arkadaş grupları için mükemmeldir. İki yatak odasıyla dört kişiye kadar konaklama sunar.",
       },
       fr: {
-        name: "Villa Lavanta",
-        shortTagline:
-          "Une retraite tranquille sur la colline, entourée de lavande",
+        name: "Villa Leyla",
+        shortTagline: "Villa élégante avec piscine privée et jacuzzi",
         description:
-          "La Villa Lavanta est une retraite paisible aux terrasses bordées de lavande et à la piscine privée ombragée par des pins — idéale pour les voyageurs qui préfèrent le calme à la vie nocturne, sans s'éloigner du centre.",
+          "Villa Leyla est une villa élégante dotée d'une piscine privée et d'un jacuzzi — parfaite pour les couples, voyageurs en lune de miel et groupes d'amis en quête d'un séjour romantique avec vue sur mer. Ses deux chambres accueillent jusqu'à quatre personnes.",
       },
     },
     location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
     gradient: ["#b39ddb", "#7e57c2"],
     galleryCount: 5,
-    amenityKeys: ["privatePool", "garden", "ac", "wifi", "parking"],
-    bedrooms: 3,
-    bathrooms: 3,
-    maxGuests: 6,
+    amenityKeys: [
+      "privatePool",
+      "seaView",
+      "ac",
+      "kitchen",
+      "parking",
+      "bbq",
+      "jacuzzi",
+    ],
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
     priceIndication: null,
     sources: [{ platform: "booking", listingUrl: "#", icalUrl: null }],
   },
   {
-    slug: "villa-narin",
+    // TODO: photos are real (public/images/villas/villa-saba/). Bedrooms
+    // (3+1) and amenities (pool, jacuzzi, sauna, sea view) are from the
+    // owner's notes; bathrooms assumed = bedrooms (not stated); maxGuests
+    // inferred from bedroom count. location/price/listing URLs still
+    // placeholder.
+    slug: "villa-saba",
     content: {
       en: {
-        name: "Villa Narin",
-        shortTagline: "Minimalist design villa near the center",
+        name: "Villa Saba",
+        shortTagline: "Villa with private pool, jacuzzi, sauna and sea view",
         description:
-          "Clean lines, an all-white palette, and a sun-drenched courtyard pool give Villa Narin a calm, minimalist feel — a short stroll from Kalkan's shops and restaurants.",
+          "Villa Saba pairs a private pool with a jacuzzi and sauna, all with sea views — three bedrooms make it an easy fit for couples, small families, or a group of friends.",
       },
       de: {
-        name: "Villa Narin",
-        shortTagline: "Minimalistische Design-Villa nahe dem Zentrum",
+        name: "Villa Saba",
+        shortTagline: "Villa mit Privatpool, Jacuzzi, Sauna und Meerblick",
         description:
-          "Klare Linien, eine komplett weiße Farbpalette und ein sonnendurchfluteter Innenhofpool verleihen der Villa Narin ein ruhiges, minimalistisches Gefühl — nur einen kurzen Spaziergang von Kalkans Geschäften und Restaurants entfernt.",
+          "Villa Saba verbindet einen Privatpool mit Jacuzzi und Sauna, alles mit Meerblick – drei Schlafzimmer machen sie zur idealen Wahl für Paare, kleine Familien oder Freundesgruppen.",
       },
       tr: {
-        name: "Villa Narin",
-        shortTagline: "Merkeze yakın, minimalist tasarımlı villa",
+        name: "Villa Saba",
+        shortTagline: "Özel havuzlu, jakuzili, saunalı ve deniz manzaralı villa",
         description:
-          "Sade hatlar, beyaz tonlarında bir palet ve güneşli avlu havuzu, Villa Narin'e sakin, minimalist bir hava veriyor — Kalkan'ın dükkân ve restoranlarına kısa bir yürüyüş mesafesinde.",
+          "Villa Saba; özel havuzu, jakuzisi ve saunasıyla deniz manzarasını bir araya getiriyor — üç yatak odasıyla çiftler, küçük aileler veya arkadaş grupları için ideal bir seçim.",
       },
       fr: {
-        name: "Villa Narin",
-        shortTagline: "Villa au design minimaliste près du centre",
+        name: "Villa Saba",
+        shortTagline: "Villa avec piscine privée, jacuzzi, sauna et vue mer",
         description:
-          "Des lignes épurées, une palette tout en blanc et une piscine de cour baignée de soleil donnent à la Villa Narin une atmosphère calme et minimaliste — à quelques pas des boutiques et restaurants de Kalkan.",
+          "Villa Saba associe une piscine privée à un jacuzzi et un sauna, le tout avec vue sur la mer — ses trois chambres en font un choix idéal pour les couples, petites familles ou groupes d'amis.",
       },
     },
     location: { area: "Kalkan Center", town: "Kalkan", country: "Turkey" },
     gradient: ["#e0e0e0", "#616161"],
     galleryCount: 5,
-    amenityKeys: ["privatePool", "ac", "wifi", "kitchen"],
-    bedrooms: 4,
+    amenityKeys: [
+      "privatePool",
+      "seaView",
+      "ac",
+      "wifi",
+      "kitchen",
+      "parking",
+      "jacuzzi",
+      "sauna",
+    ],
+    bedrooms: 3,
     bathrooms: 3,
-    maxGuests: 8,
+    maxGuests: 6,
     priceIndication: { amount: 300, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -270,37 +318,51 @@ const rawVillas: Villa[] = [
     ],
   },
   {
-    slug: "villa-sahil",
+    // TODO: photos are real (public/images/villas/villa-bogota/) and the
+    // tagline/description below are grounded in what they show (modern
+    // villa, private pool, shaded terrace, olive-grove/valley/mountain view
+    // — no sea or harbour in shot, so "Kalkan Harbour" area + rooftopPool/
+    // seaView from the old placeholder were dropped). bedrooms/bathrooms/
+    // guests/price/location/listing URLs still placeholder — no fact sheet
+    // was given for this villa.
+    slug: "villa-bogota",
     content: {
       en: {
-        name: "Villa Sahil",
-        shortTagline: "Harbourside living, moments from the marina",
+        name: "Villa Bogota",
+        shortTagline: "Modern villa with a private pool and valley views",
         description:
-          "Villa Sahil puts you right at the heart of things, a five-minute walk from Kalkan's harbour, marina, and waterfront dining, with a private rooftop pool above it all.",
+          "Villa Bogota is a modern villa with a private pool and a shaded terrace for outdoor dining, looking out over the olive groves and mountains beyond Kalkan.",
       },
       de: {
-        name: "Villa Sahil",
-        shortTagline: "Leben am Hafen, nur Minuten von der Marina",
+        name: "Villa Bogota",
+        shortTagline: "Moderne Villa mit Privatpool und Talblick",
         description:
-          "Villa Sahil bringt Sie mitten ins Geschehen — fünf Gehminuten von Kalkans Hafen, Marina und Restaurants am Wasser entfernt, mit einem privaten Dachpool über allem.",
+          "Villa Bogota ist eine moderne Villa mit Privatpool und einer schattigen Terrasse zum Essen im Freien, mit Blick über die Olivenhaine und Berge hinter Kalkan.",
       },
       tr: {
-        name: "Villa Sahil",
-        shortTagline: "Limana yakın yaşam, marinaya çok kısa mesafede",
+        name: "Villa Bogota",
+        shortTagline: "Özel havuzlu ve vadi manzaralı modern villa",
         description:
-          "Villa Sahil sizi tam merkeze taşıyor — Kalkan'ın limanına, marinasına ve sahildeki restoranlarına beş dakika yürüme mesafesinde, üstünde de özel bir çatı havuzuyla.",
+          "Villa Bogota; özel havuzu ve dışarıda yemek için gölgeli terasıyla, Kalkan'ın arkasındaki zeytinlikler ve dağlara bakan modern bir villadır.",
       },
       fr: {
-        name: "Villa Sahil",
-        shortTagline: "La vie au bord du port, à deux pas de la marina",
+        name: "Villa Bogota",
+        shortTagline: "Villa moderne avec piscine privée et vue sur la vallée",
         description:
-          "La Villa Sahil vous place au cœur de l'animation, à cinq minutes à pied du port, de la marina et des restaurants en bord d'eau de Kalkan, avec une piscine privée sur le toit dominant le tout.",
+          "Villa Bogota est une villa moderne dotée d'une piscine privée et d'une terrasse ombragée pour dîner en plein air, avec vue sur les oliveraies et les montagnes derrière Kalkan.",
       },
     },
-    location: { area: "Kalkan Harbour", town: "Kalkan", country: "Turkey" },
+    location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
     gradient: ["#4dd0e1", "#00838f"],
     galleryCount: 6,
-    amenityKeys: ["rooftopPool", "seaView", "ac", "wifi", "kitchen"],
+    amenityKeys: [
+      "privatePool",
+      "mountainView",
+      "ac",
+      "wifi",
+      "kitchen",
+      "parking",
+    ],
     bedrooms: 4,
     bathrooms: 4,
     maxGuests: 8,
@@ -351,6 +413,113 @@ const rawVillas: Villa[] = [
     bathrooms: 4,
     maxGuests: 10,
     priceIndication: { amount: 380, currency: "EUR", per: "night" },
+    sources: [
+      { platform: "airbnb", listingUrl: "#", icalUrl: null },
+      { platform: "booking", listingUrl: "#", icalUrl: null },
+    ],
+  },
+  {
+    // TODO: photos are real (public/images/villas/villa-colombia/) and the
+    // tagline/description below are grounded in what they show (modern
+    // 2-storey villa, private pool, valley/mountain view, kids' play area —
+    // no sea in shot). bedrooms/bathrooms/guests/price/location/listing URLs
+    // are still placeholder — no fact sheet was given for this villa.
+    slug: "villa-colombia",
+    content: {
+      en: {
+        name: "Villa Colombia",
+        shortTagline: "Modern villa with a private pool and mountain views",
+        description:
+          "A modern two-storey villa with a private pool and a terrace looking out over the valley and mountains beyond Kalkan, Villa Colombia has a shaded lounge area and a kids' play corner — an easy match for families.",
+      },
+      de: {
+        name: "Villa Colombia",
+        shortTagline: "Moderne Villa mit Privatpool und Bergblick",
+        description:
+          "Villa Colombia ist eine moderne, zweistöckige Villa mit Privatpool und einer Terrasse mit Blick auf das Tal und die Berge hinter Kalkan. Eine schattige Lounge-Ecke und eine Spielecke für Kinder machen sie ideal für Familien.",
+      },
+      tr: {
+        name: "Villa Colombia",
+        shortTagline: "Özel havuzlu ve dağ manzaralı modern villa",
+        description:
+          "Villa Colombia, özel havuzu ve Kalkan'ın arkasındaki vadi ve dağlara bakan terasıyla modern, iki katlı bir villadır. Gölgeli oturma alanı ve çocuklar için oyun köşesiyle aileler için idealdir.",
+      },
+      fr: {
+        name: "Villa Colombia",
+        shortTagline: "Villa moderne avec piscine privée et vue sur les montagnes",
+        description:
+          "Villa Colombia est une villa moderne à deux étages dotée d'une piscine privée et d'une terrasse donnant sur la vallée et les montagnes derrière Kalkan. Un coin salon ombragé et un espace de jeux pour enfants en font un excellent choix pour les familles.",
+      },
+    },
+    location: { area: "Kalamar", town: "Kalkan", country: "Turkey" },
+    gradient: ["#7fd8be", "#0f6b5c"],
+    galleryCount: 5,
+    amenityKeys: [
+      "privatePool",
+      "mountainView",
+      "ac",
+      "wifi",
+      "kitchen",
+      "parking",
+      "garden",
+    ],
+    bedrooms: 3,
+    bathrooms: 3,
+    maxGuests: 6,
+    priceIndication: { amount: 310, currency: "EUR", per: "night" },
+    sources: [
+      { platform: "airbnb", listingUrl: "#", icalUrl: null },
+      { platform: "booking", listingUrl: "#", icalUrl: null },
+    ],
+  },
+  {
+    // TODO: photos are real (public/images/villas/villa-colosseum/) and the
+    // tagline/description below are grounded in what they show (sleek modern
+    // villa, private pool, open dining terrace, valley/hill view — no sea in
+    // shot). bedrooms/bathrooms/guests/price/location/listing URLs are still
+    // placeholder — no fact sheet was given for this villa.
+    slug: "villa-colosseum",
+    content: {
+      en: {
+        name: "Villa Colosseum",
+        shortTagline: "Designer villa with a private pool and valley views",
+        description:
+          "A sleek, design-forward villa with a private pool, Villa Colosseum pairs an open dining terrace and stylish interiors with sweeping views over the valley and hills beyond Kalkan.",
+      },
+      de: {
+        name: "Villa Colosseum",
+        shortTagline: "Design-Villa mit Privatpool und Talblick",
+        description:
+          "Villa Colosseum ist eine stilvolle, design-orientierte Villa mit Privatpool, die eine offene Essterrasse und elegante Innenräume mit weitem Blick über das Tal und die Hügel hinter Kalkan verbindet.",
+      },
+      tr: {
+        name: "Villa Colosseum",
+        shortTagline: "Özel havuzlu ve vadi manzaralı tasarım villa",
+        description:
+          "Villa Colosseum; özel havuzu, açık yemek terası ve şık iç mekanlarıyla Kalkan'ın arkasındaki vadi ve tepelere geniş bir manzara sunan modern, tasarım odaklı bir villadır.",
+      },
+      fr: {
+        name: "Villa Colosseum",
+        shortTagline: "Villa design avec piscine privée et vue sur la vallée",
+        description:
+          "Villa Colosseum est une villa élégante et moderne dotée d'une piscine privée, associant une terrasse à manger ouverte et un intérieur raffiné à une vue dégagée sur la vallée et les collines derrière Kalkan.",
+      },
+    },
+    location: { area: "Kalkan Harbour", town: "Kalkan", country: "Turkey" },
+    gradient: ["#f4a896", "#c1666b"],
+    galleryCount: 5,
+    amenityKeys: [
+      "privatePool",
+      "mountainView",
+      "ac",
+      "wifi",
+      "kitchen",
+      "parking",
+    ],
+    bedrooms: 4,
+    bathrooms: 4,
+    maxGuests: 8,
+    priceIndication: { amount: 350, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },

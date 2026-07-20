@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LinkButton } from "@/components/ui/Button";
 import { villas } from "@/data/villas";
 import { localeHref, type Locale } from "@/lib/i18n/config";
@@ -14,22 +15,20 @@ export function Hero({ lang, dict }: { lang: Locale; dict: HeroDict }) {
 
   return (
     <section className="relative flex min-h-[88vh] flex-col overflow-hidden bg-navy">
-      {/* Layered Aegean night-to-sea gradient */}
+      {/* Kaputaş Beach */}
+      <Image
+        src="/images/guide/kaputas.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[65%_50%]"
+      />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(90% 70% at 75% 15%, rgba(244,234,210,0.14), transparent 60%), linear-gradient(165deg, #10242e 0%, #16303c 40%, #147d99 100%)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Sun disc */}
-      <div
-        className="absolute right-[12%] top-[16%] h-28 w-28 rounded-full sm:h-40 sm:w-40"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(244,234,210,0.85), rgba(244,234,210,0.0) 70%)",
+            "linear-gradient(100deg, rgba(13,24,30,0.92) 0%, rgba(13,24,30,0.78) 35%, rgba(13,36,46,0.4) 65%, rgba(13,36,46,0.15) 100%)",
         }}
         aria-hidden="true"
       />

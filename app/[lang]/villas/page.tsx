@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { villas } from "@/data/villas";
+import { getVillasWithImages } from "@/data/villaImages";
 import { VillasExplorer } from "@/components/villa/VillasExplorer";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "../dictionaries";
@@ -41,7 +42,7 @@ export default async function VillasPage({
 
       <div className="mt-10">
         <VillasExplorer
-          villas={villas}
+          villas={getVillasWithImages()}
           lang={lang}
           dict={dict.villasExplorer}
           villaCardDict={dict.villaCard}

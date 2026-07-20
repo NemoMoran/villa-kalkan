@@ -95,12 +95,12 @@
         {
           "quote": "The photos don't do the view justice. We spent every evening on the terrace and barely wanted to leave for dinner.",
           "name": "Sarah",
-          "detail": "Stayed at Villa Yasemin · via Airbnb"
+          "detail": "Stayed at Villa Sur · via Airbnb"
         },
         {
           "quote": "Seamless from start to finish — we found the villa here, booked on Airbnb in minutes, and the host met us with local tips.",
           "name": "James & Priya",
-          "detail": "Stayed at Villa Akdeniz · via Airbnb"
+          "detail": "Stayed at Villa Ayda · via Airbnb"
         },
         {
           "quote": "Perfect for our family of eight. The pool, the garden, the quiet — and Kalkan's harbour just down the hill.",
@@ -174,7 +174,11 @@
     "askAboutVilla": "Ask us about this villa",
     "youMayAlsoLike": "You may also like",
     "photoAlt": "{name}, photo {n} of {count}",
-    "morePhotos": "+{count} more"
+    "morePhotos": "+{count} more",
+    "lightboxClose": "Close",
+    "lightboxPrevious": "Previous photo",
+    "lightboxNext": "Next photo",
+    "lightboxCounter": "{n} / {count}"
   },
   "availability": {
     "heading": "Availability",
@@ -200,7 +204,10 @@
     "parking": "Private parking",
     "bbq": "BBQ area",
     "garden": "Garden",
-    "housekeeping": "Daily housekeeping (on request)"
+    "housekeeping": "Daily housekeeping (on request)",
+    "jacuzzi": "Jacuzzi",
+    "hamam": "Turkish hamam",
+    "sauna": "Sauna"
   },
   "contactForm": {
     "nameLabel": "Name",
@@ -318,6 +325,7 @@
     "eyebrow": "The local guide",
     "title": "A week in Kalkan, done right",
     "description": "Everything our guests ask us — the beaches worth the drive, the tables worth booking, and the days out worth planning ahead.",
+    "heroAlt": "Sunset over the Mediterranean from the hills above Kalkan",
     "swim": {
       "eyebrow": "Swim",
       "title": "The beaches",

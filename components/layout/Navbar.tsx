@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -30,11 +31,15 @@ export function Navbar({ lang, dict }: { lang: Locale; dict: NavDict }) {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-surface/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link
-          href={homeHref}
-          className="font-display text-xl tracking-tight text-ink"
-        >
-          Villa <span className="text-brand">Kalkan</span>
+        <Link href={homeHref} className="flex items-center">
+          <Image
+            src="/images/site/logo-compact.png"
+            alt="Villa Kalkan"
+            width={953}
+            height={229}
+            priority
+            className="h-9 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">

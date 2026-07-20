@@ -86,6 +86,28 @@ const icons: Record<AmenityKey, ReactNode> = {
       <path d="M19 4 9 14M9 14l-4.5 6L11 16.5M9 14l2.5 2.5" />
     </svg>
   ),
+  jacuzzi: (
+    <svg {...iconProps}>
+      <path d="M3 16c1.5 1.2 3 1.2 4.5 0s3-1.2 4.5 0 3 1.2 4.5 0 3-1.2 4.5 0" />
+      <path d="M3 20c1.5 1.2 3 1.2 4.5 0s3-1.2 4.5 0 3 1.2 4.5 0 3-1.2 4.5 0" />
+      <circle cx="8" cy="7" r="0.9" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="4" r="0.9" fill="currentColor" stroke="none" />
+      <circle cx="16" cy="7" r="0.9" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  hamam: (
+    <svg {...iconProps}>
+      <path d="M4 19h16M5 19v-5a7 7 0 0 1 14 0v5" />
+      <circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none" />
+      <path d="M9 3.5c0 .9-.7 1.1-.7 2M15 3.5c0 .9-.7 1.1-.7 2" />
+    </svg>
+  ),
+  sauna: (
+    <svg {...iconProps}>
+      <rect x="6.5" y="10.5" width="11" height="8.5" rx="1.5" />
+      <path d="M9 10.5V8.5c0-1.4.9-2.3.9-3.6M12 10.5V8.5c0-1.4.9-2.3.9-3.6M15 10.5V8.5c0-1.4.9-2.3.9-3.6" />
+    </svg>
+  ),
 };
 
 export function AmenitiesList({

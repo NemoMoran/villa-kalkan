@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { LinkButton } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { hasLocale, localeHref } from "@/lib/i18n/config";
@@ -66,18 +66,24 @@ export default async function AboutPage({
 
           <Reveal delay={150}>
             <div className="grid grid-cols-2 gap-4">
-              <PlaceholderImage
-                gradient={["#147d99", "#10242e"]}
-                alt={t.altCoastline}
-                className="mt-8 aspect-[3/4] rounded-3xl"
-                plain
-              />
-              <PlaceholderImage
-                gradient={["#f4a261", "#b95c2f"]}
-                alt={t.altTerrace}
-                className="aspect-[3/4] rounded-3xl"
-                plain
-              />
+              <div className="relative mt-8 aspect-[3/4] overflow-hidden rounded-3xl">
+                <Image
+                  src="/images/site/about-coastline.jpg"
+                  alt={t.altCoastline}
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[3/4] overflow-hidden rounded-3xl">
+                <Image
+                  src="/images/site/about-terrace.jpg"
+                  alt={t.altTerrace}
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </Reveal>
         </div>

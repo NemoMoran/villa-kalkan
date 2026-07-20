@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { villas, getVillaBySlug, getVillaContent } from "@/data/villas";
+import { getVillasWithImages, getVillaWithImagesBySlug } from "@/data/villaImages";
 import { VillaGallery } from "@/components/villa/VillaGallery";
 import { VillaCard } from "@/components/villa/VillaCard";
 import { AmenitiesList } from "@/components/villa/AmenitiesList";
@@ -42,7 +43,7 @@ export default async function VillaDetailPage({
   const { lang, slug } = await params;
   if (!hasLocale(lang)) notFound();
 
-  const villa = getVillaBySlug(slug);
+  const villa = getVillaWithImagesBySlug(slug);
   if (!villa) notFound();
 
   const dict = await getDictionary(lang);
@@ -72,7 +73,7 @@ export default async function VillaDetailPage({
     };
   }
 
-  const similar = villas
+  const similar = getVillasWithImages()
     .filter((v) => v.slug !== villa.slug)
     .sort((a, b) => {
       const sameAreaA = a.location.area === villa.location.area ? 0 : 1;
@@ -94,6 +95,7 @@ export default async function VillaDetailPage({
       </nav>
 
       <VillaGallery
+        images={villa.images}
         gradient={villa.gradient}
         count={villa.galleryCount}
         villaName={content.name}

@@ -95,12 +95,12 @@
         {
           "quote": "Les photos ne rendent pas justice à la vue. Nous avons passé chaque soirée sur la terrasse et avions à peine envie de partir dîner.",
           "name": "Sarah",
-          "detail": "A séjourné à la Villa Yasemin · via Airbnb"
+          "detail": "A séjourné à la Villa Sur · via Airbnb"
         },
         {
           "quote": "Tout s'est déroulé sans accroc — nous avons trouvé la villa ici, réservé sur Airbnb en quelques minutes, et l'hôte nous a accueillis avec des conseils locaux.",
           "name": "James & Priya",
-          "detail": "A séjourné à la Villa Akdeniz · via Airbnb"
+          "detail": "A séjourné à la Villa Ayda · via Airbnb"
         },
         {
           "quote": "Parfait pour notre famille de huit personnes. La piscine, le jardin, le calme — et le port de Kalkan juste au bas de la colline.",
@@ -174,7 +174,11 @@
     "askAboutVilla": "Posez-nous une question sur cette villa",
     "youMayAlsoLike": "Vous pourriez aussi aimer",
     "photoAlt": "{name}, photo {n} sur {count}",
-    "morePhotos": "+{count} de plus"
+    "morePhotos": "+{count} de plus",
+    "lightboxClose": "Fermer",
+    "lightboxPrevious": "Photo précédente",
+    "lightboxNext": "Photo suivante",
+    "lightboxCounter": "{n} / {count}"
   },
   "availability": {
     "heading": "Disponibilité",
@@ -200,7 +204,10 @@
     "parking": "Parking privé",
     "bbq": "Espace barbecue",
     "garden": "Jardin",
-    "housekeeping": "Ménage quotidien (sur demande)"
+    "housekeeping": "Ménage quotidien (sur demande)",
+    "jacuzzi": "Jacuzzi",
+    "hamam": "Hammam",
+    "sauna": "Sauna"
   },
   "contactForm": {
     "nameLabel": "Nom",
@@ -318,6 +325,7 @@
     "eyebrow": "Le guide local",
     "title": "Une semaine à Kalkan, bien organisée",
     "description": "Tout ce que nos hôtes nous demandent — les plages qui valent le déplacement, les tables qui valent une réservation, et les sorties à planifier à l'avance.",
+    "heroAlt": "Coucher de soleil sur la Méditerranée depuis les collines au-dessus de Kalkan",
     "swim": {
       "eyebrow": "Baignade",
       "title": "Les plages",

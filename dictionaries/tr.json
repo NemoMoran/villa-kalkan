@@ -95,12 +95,12 @@
         {
           "quote": "Fotoğraflar manzaraya adalet etmiyor. Her akşamı terasta geçirdik, yemeğe gitmek için ayrılmak istemedik.",
           "name": "Sarah",
-          "detail": "Villa Yasemin'de kaldı · Airbnb üzerinden"
+          "detail": "Villa Sur'da kaldı · Airbnb üzerinden"
         },
         {
           "quote": "Baştan sona kusursuz — villayı burada bulduk, Airbnb üzerinden dakikalar içinde rezervasyon yaptık, ev sahibi bizi yerel ipuçlarıyla karşıladı.",
           "name": "James & Priya",
-          "detail": "Villa Akdeniz'de kaldı · Airbnb üzerinden"
+          "detail": "Villa Ayda'da kaldı · Airbnb üzerinden"
         },
         {
           "quote": "Sekiz kişilik ailemiz için mükemmel. Havuz, bahçe, sessizlik — ve Kalkan'ın limanı hemen tepenin altında.",
@@ -174,7 +174,11 @@
     "askAboutVilla": "Bu villa hakkında bize sorun",
     "youMayAlsoLike": "Bunlar da ilginizi çekebilir",
     "photoAlt": "{name}, {count} fotoğraftan {n}.",
-    "morePhotos": "+{count} daha"
+    "morePhotos": "+{count} daha",
+    "lightboxClose": "Kapat",
+    "lightboxPrevious": "Önceki fotoğraf",
+    "lightboxNext": "Sonraki fotoğraf",
+    "lightboxCounter": "{n} / {count}"
   },
   "availability": {
     "heading": "Uygunluk",
@@ -200,7 +204,10 @@
     "parking": "Özel otopark",
     "bbq": "Barbekü alanı",
     "garden": "Bahçe",
-    "housekeeping": "Günlük temizlik (talep üzerine)"
+    "housekeeping": "Günlük temizlik (talep üzerine)",
+    "jacuzzi": "Jakuzi",
+    "hamam": "Hamam",
+    "sauna": "Sauna"
   },
   "contactForm": {
     "nameLabel": "Ad",
@@ -318,6 +325,7 @@
     "eyebrow": "Yerel rehber",
     "title": "Kalkan'da doğru geçirilmiş bir hafta",
     "description": "Misafirlerimizin bize sorduğu her şey — sürüşe değer plajlar, rezervasyona değer masalar ve önceden planlamaya değer günlük geziler.",
+    "heroAlt": "Kalkan üzerindeki tepelerden Akdeniz'e gün batımı manzarası",
     "swim": {
       "eyebrow": "Yüzün",
       "title": "Plajlar",

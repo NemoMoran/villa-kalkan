@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type WhyKalkanDict = Dictionary["home"]["whyKalkan"];
@@ -30,18 +30,24 @@ export function WhyKalkan({ dict }: { dict: WhyKalkanDict }) {
 
         <Reveal delay={150}>
           <div className="grid grid-cols-2 gap-4">
-            <PlaceholderImage
-              gradient={["#4dd0e1", "#147d99"]}
-              alt={dict.altHarbour}
-              className="aspect-[3/4] rounded-3xl"
-              plain
-            />
-            <PlaceholderImage
-              gradient={["#f4ead2", "#c9a86a"]}
-              alt={dict.altOldTown}
-              className="mt-8 aspect-[3/4] rounded-3xl"
-              plain
-            />
+            <div className="relative aspect-[3/4] overflow-hidden rounded-3xl">
+              <Image
+                src="/images/site/kalkan-harbour.jpg"
+                alt={dict.altHarbour}
+                fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative mt-8 aspect-[3/4] overflow-hidden rounded-3xl">
+              <Image
+                src="/images/site/old-town-street.jpg"
+                alt={dict.altOldTown}
+                fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </Reveal>
       </div>

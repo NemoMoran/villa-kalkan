@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Villa } from "@/data/villas.schema";
 import { getVillaContent } from "@/data/villas";
@@ -25,12 +26,24 @@ export function VillaCard({
       className="group block overflow-hidden rounded-3xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/10"
     >
       <div className="relative overflow-hidden">
-        <PlaceholderImage
-          gradient={villa.gradient}
-          label={dict.photosLabel.replace("{count}", String(villa.galleryCount))}
-          alt={`${content.name}, ${villa.location.area}`}
-          className="aspect-[4/3] w-full transition-transform duration-500 group-hover:scale-[1.04]"
-        />
+        {villa.images.length > 0 ? (
+          <div className="relative aspect-[4/3] w-full">
+            <Image
+              src={villa.images[0]}
+              alt={`${content.name}, ${villa.location.area}`}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+            />
+          </div>
+        ) : (
+          <PlaceholderImage
+            gradient={villa.gradient}
+            label={dict.photosLabel.replace("{count}", String(villa.galleryCount))}
+            alt={`${content.name}, ${villa.location.area}`}
+            className="aspect-[4/3] w-full transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        )}
         <div className="absolute left-3 top-3 flex gap-2">
           <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink backdrop-blur-sm">
             {villa.location.area}

@@ -95,12 +95,12 @@
         {
           "quote": "Die Fotos werden der Aussicht nicht gerecht. Wir haben jeden Abend auf der Terrasse verbracht und wollten kaum zum Essen aufbrechen.",
           "name": "Sarah",
-          "detail": "Übernachtet in der Villa Yasemin · über Airbnb"
+          "detail": "Übernachtet in der Villa Sur · über Airbnb"
         },
         {
           "quote": "Von Anfang bis Ende reibungslos — wir haben die Villa hier gefunden, in wenigen Minuten über Airbnb gebucht, und der Gastgeber hat uns mit lokalen Tipps empfangen.",
           "name": "James & Priya",
-          "detail": "Übernachtet in der Villa Akdeniz · über Airbnb"
+          "detail": "Übernachtet in der Villa Ayda · über Airbnb"
         },
         {
           "quote": "Perfekt für unsere achtköpfige Familie. Der Pool, der Garten, die Ruhe — und Kalkans Hafen nur den Hügel hinunter.",
@@ -174,7 +174,11 @@
     "askAboutVilla": "Fragen Sie uns zu dieser Villa",
     "youMayAlsoLike": "Das könnte Ihnen auch gefallen",
     "photoAlt": "{name}, Foto {n} von {count}",
-    "morePhotos": "+{count} weitere"
+    "morePhotos": "+{count} weitere",
+    "lightboxClose": "Schließen",
+    "lightboxPrevious": "Vorheriges Foto",
+    "lightboxNext": "Nächstes Foto",
+    "lightboxCounter": "{n} / {count}"
   },
   "availability": {
     "heading": "Verfügbarkeit",
@@ -200,7 +204,10 @@
     "parking": "Privatparkplatz",
     "bbq": "Grillbereich",
     "garden": "Garten",
-    "housekeeping": "Tägliche Reinigung (auf Anfrage)"
+    "housekeeping": "Tägliche Reinigung (auf Anfrage)",
+    "jacuzzi": "Jacuzzi",
+    "hamam": "Hamam",
+    "sauna": "Sauna"
   },
   "contactForm": {
     "nameLabel": "Name",
@@ -318,6 +325,7 @@
     "eyebrow": "Der lokale Guide",
     "title": "Eine Woche in Kalkan, richtig gemacht",
     "description": "Alles, was uns unsere Gäste fragen — die Strände, die eine Fahrt wert sind, die Tische, die eine Reservierung wert sind, und die Ausflüge, die man vorausplanen sollte.",
+    "heroAlt": "Sonnenuntergang über dem Mittelmeer, von den Hügeln über Kalkan aus gesehen",
     "swim": {
       "eyebrow": "Schwimmen",
       "title": "Die Strände",

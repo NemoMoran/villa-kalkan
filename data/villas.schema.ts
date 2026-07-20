@@ -20,6 +20,9 @@ export const amenityKeySchema = z.enum([
   "bbq",
   "garden",
   "housekeeping",
+  "jacuzzi",
+  "hamam",
+  "sauna",
 ]);
 
 export const villaContentSchema = z.object({
@@ -43,6 +46,12 @@ export const villaSchema = z.object({
   }),
   gradient: z.tuple([z.string(), z.string()]),
   galleryCount: z.number().int().min(1).max(12),
+  /**
+   * Real photo paths under /public, auto-populated from
+   * public/images/villas/<slug>/ at load time — see loadVillaImages in
+   * villas.ts. Falls back to the gradient placeholder when empty.
+   */
+  images: z.array(z.string()).default([]),
   amenityKeys: z.array(amenityKeySchema).min(1),
   bedrooms: z.number().int().positive(),
   bathrooms: z.number().int().positive(),
@@ -63,5 +72,7 @@ export type VillaSource = z.infer<typeof villaSourceSchema>;
 export type AmenityKey = z.infer<typeof amenityKeySchema>;
 export type VillaContent = z.infer<typeof villaContentSchema>;
 export type Villa = z.infer<typeof villaSchema>;
+/** Raw villa literal shape, before the `images` default is applied. */
+export type VillaInput = z.input<typeof villaSchema>;
 
 export const villasSchema = z.array(villaSchema);
