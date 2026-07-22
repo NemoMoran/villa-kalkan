@@ -20,8 +20,19 @@
     "exploreHeading": "Keşfet",
     "companyHeading": "Şirket",
     "getInTouchHeading": "Bize ulaşın",
-    "exploreLinks": { "villas": "Tüm villalar", "guide": "Kalkan rehberi", "faq": "SSS" },
-    "companyLinks": { "about": "Hakkımızda", "contact": "İletişim" },
+    "exploreLinks": {
+      "villas": "Tüm villalar",
+      "guide": "Kalkan rehberi",
+      "faq": "SSS"
+    },
+    "companyLinks": {
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "legalLinks": {
+      "imprint": "Yasal Bilgiler",
+      "privacy": "Gizlilik Politikası"
+    },
     "copyright": "© {year} Villa Kalkan. Tüm hakları saklıdır.",
     "bookingNote": "Rezervasyonlar Airbnb & Booking.com üzerinden güvenle tamamlanır."
   },
@@ -75,9 +86,18 @@
       "title": "Neden Kalkan?",
       "description": "Turkuaz bir koyun üzerinde yükselen bembeyaz bir liman kasabası — çatı katı restoranları, gizli koyları ve Akdeniz'in en berrak sularından biri. Dinlenmek için yeterince sakin, akşam yemeği planı bulmakta hiç sıkıntı çekmeyecek kadar hareketli.",
       "facts": [
-        { "value": "10 dk", "label": "Türkiye'nin en çok fotoğraflanan plajlarından Kaputaş'a" },
-        { "value": "25°C", "label": "yaz boyunca ortalama deniz suyu sıcaklığı" },
-        { "value": "1 sa 45", "label": "Dalaman Uluslararası Havalimanı'ndan transfer" }
+        {
+          "value": "10 dk",
+          "label": "Türkiye'nin en çok fotoğraflanan plajlarından Kaputaş'a"
+        },
+        {
+          "value": "25°C",
+          "label": "yaz boyunca ortalama deniz suyu sıcaklığı"
+        },
+        {
+          "value": "1 sa 45",
+          "label": "Dalaman Uluslararası Havalimanı'ndan transfer"
+        }
       ],
       "altHarbour": "Kalkan limanı ve koyu",
       "altOldTown": "Beyaz badanalı eski şehir sokakları"
@@ -88,9 +108,18 @@
       "description": "Plajlar, tekne turları, antik kalıntılar ve nerede yemek yeneceği — yerel rehberimiz kıyının en iyilerini içeriyor.",
       "readGuide": "Rehberi okuyun",
       "highlights": [
-        { "title": "Kaputaş Plajı", "description": "Kayalıklar arasındaki turkuaz koy, sadece dakikalar uzakta." },
-        { "title": "Liman akşam yemekleri", "description": "Gün batımında marinanın üzerindeki çatı terasları." },
-        { "title": "Tekne günleri", "description": "Karayolundan ulaşılamayan koylara özel gulet turları." }
+        {
+          "title": "Kaputaş Plajı",
+          "description": "Kayalıklar arasındaki turkuaz koy, sadece dakikalar uzakta."
+        },
+        {
+          "title": "Liman akşam yemekleri",
+          "description": "Gün batımında marinanın üzerindeki çatı terasları."
+        },
+        {
+          "title": "Tekne günleri",
+          "description": "Karayolundan ulaşılamayan koylara özel gulet turları."
+        }
       ]
     },
     "reviews": {
@@ -170,7 +199,10 @@
     "priceOnRequest": "Fiyat için sorunuz",
     "nightSuffix": "/gece",
     "reservationsNote": "Rezervasyonlar doğrudan platform üzerinde tamamlanır — bu site ödemenizi asla işlemez.",
-    "bookOn": { "airbnb": "Airbnb'de rezervasyon yap", "booking": "Booking.com'da rezervasyon yap" },
+    "bookOn": {
+      "airbnb": "Airbnb'de rezervasyon yap",
+      "booking": "Booking.com'da rezervasyon yap"
+    },
     "trustPoints": [
       "Platformun güvenli ödemesi ve korumaları",
       "Bu site üzerinden rezervasyon için ekstra ücret yok",
@@ -184,7 +216,9 @@
     "lightboxClose": "Kapat",
     "lightboxPrevious": "Önceki fotoğraf",
     "lightboxNext": "Sonraki fotoğraf",
-    "lightboxCounter": "{n} / {count}"
+    "lightboxCounter": "{n} / {count}",
+    "sizeSuffix": "m²",
+    "facilitiesHeading": "Konaklama Olanakları"
   },
   "availability": {
     "heading": "Uygunluk",
@@ -215,6 +249,79 @@
     "hamam": "Hamam",
     "sauna": "Sauna"
   },
+  "facilities": {
+    "unitType": "Özel konaklama – Kalkan'da villa",
+    "categories": {
+      "parking": "Otopark",
+      "internet": "İnternet",
+      "kitchen": "Mutfak",
+      "bedroom": "Yatak Odası",
+      "bathroom": "Banyo",
+      "media": "Medya ve Teknoloji",
+      "roomFeatures": "Oda Özellikleri",
+      "outdoor": "Dış Mekan",
+      "wellness": "Wellness",
+      "outdoorView": "Dış Mekan ve Manzara",
+      "building": "Bina",
+      "general": "Diğer",
+      "familyRoom": "Aile Odası",
+      "safety": "Güvenlik",
+      "languages": "Konuşulan Diller"
+    },
+    "items": {
+      "freeParking": "Ücretsiz özel otopark (rezervasyon gerekmez)",
+      "wifi": "Tüm alanlarda kullanılabilen ücretsiz Wi-Fi",
+      "highchair": "Bebek maması sandalyesi",
+      "toaster": "Tost makinesi",
+      "stovetop": "Ocak",
+      "oven": "Fırın",
+      "kitchenUtensils": "Mutfak gereçleri",
+      "kettle": "Su ısıtıcısı",
+      "kitchen": "Mutfak",
+      "washingMachine": "Çamaşır makinesi",
+      "dishwasher": "Bulaşık makinesi",
+      "fridge": "Buzdolabı",
+      "coffeeMaker": "Kahve makinesi",
+      "microwave": "Mikrodalga fırın",
+      "linens": "Nevresim takımı",
+      "wardrobe": "Dolap",
+      "toiletPaper": "Tuvalet kağıdı",
+      "towels": "Havlular",
+      "bathtubOrShower": "Küvet veya duş",
+      "privateBathroom": "Özel banyo",
+      "toilet": "Tuvalet",
+      "hairDryer": "Saç kurutma makinesi",
+      "shower": "Duş",
+      "flatScreenTv": "Düz ekran TV",
+      "tv": "TV",
+      "closet": "Gardırop",
+      "vanity": "Makyaj masası",
+      "outdoorDining": "Açık hava yemek alanı",
+      "outdoorFurniture": "Bahçe mobilyaları",
+      "grill": "Barbekü",
+      "privatePool": "Özel havuz",
+      "balcony": "Balkon",
+      "terrace": "Teras",
+      "garden": "Bahçe",
+      "outdoorPool": "Açık havuz",
+      "sunUmbrellas": "Güneş şemsiyeleri",
+      "sunLoungers": "Şezlonglar",
+      "steamBath": "Buhar odası/Türk hamamı",
+      "jacuzzi": "Jakuzi",
+      "sauna": "Sauna",
+      "seaView": "Deniz manzarası",
+      "view": "Manzara",
+      "standalone": "Müstakil villa",
+      "ac": "Klima",
+      "nonSmoking": "Sigara içilmeyen tesis",
+      "heating": "Isıtma",
+      "nonSmokingRoom": "Sigara içilmeyen odalar",
+      "smokeDetector": "Duman dedektörü",
+      "german": "Almanca",
+      "english": "İngilizce",
+      "turkish": "Türkçe"
+    }
+  },
   "contactForm": {
     "nameLabel": "Ad",
     "emailLabel": "E-posta",
@@ -230,9 +337,21 @@
     "title": "Bize ulaşın",
     "description": "Bir villa, grup rezervasyonu veya burada henüz görünmeyen tarihler hakkında sorunuz mu var? Bize bir mesaj gönderin, size geri dönelim.",
     "channels": [
-      { "label": "E-posta", "value": "info@villa-kalkan.net", "note": "Genellikle birkaç saat içinde yanıtlıyoruz" },
-      { "label": "Telefon / WhatsApp", "value": "+90 000 000 00 00", "note": "İngilizce & Türkçe konuşulur" },
-      { "label": "Neredeyiz", "value": "Kalkan, Antalya, Türkiye", "note": "Tüm sezon yerindeyiz" }
+      {
+        "label": "E-posta",
+        "value": "info@villa-kalkan.net",
+        "note": "Genellikle birkaç saat içinde yanıtlıyoruz"
+      },
+      {
+        "label": "Telefon / WhatsApp",
+        "value": "+49 1578 3027381",
+        "note": "İngilizce, Almanca & Türkçe konuşulur"
+      },
+      {
+        "label": "Neredeyiz",
+        "value": "Kalkan, Antalya, Türkiye",
+        "note": "Tüm sezon yerindeyiz"
+      }
     ]
   },
   "aboutPage": {
@@ -347,7 +466,10 @@
       "title": "Nerede yenir",
       "description": "Kalkan, yemek konusunda büyüklüğünün çok üzerinde performans gösterir — kaçırılmaması gereken üç deneyim bunlar."
     },
-    "plan": { "eyebrow": "Planla", "title": "Ne zaman gelinmeli" },
+    "plan": {
+      "eyebrow": "Planla",
+      "title": "Ne zaman gelinmeli"
+    },
     "beaches": [
       {
         "name": "Kaputaş Plajı",
@@ -398,9 +520,18 @@
       }
     ],
     "seasons": [
-      { "months": "Mayıs – Haziran", "detail": "Ilık denizler, yeşil tepeler, daha sakin sokaklar. Çiftler için ideal." },
-      { "months": "Temmuz – Ağustos", "detail": "Yaz zirvesi: 30°C+, canlı liman, villaları erken rezerve edin." },
-      { "months": "Eylül – Ekim", "detail": "Hâlâ yüzme havası, daha yumuşak ışık, daha kolay masa bulma." }
+      {
+        "months": "Mayıs – Haziran",
+        "detail": "Ilık denizler, yeşil tepeler, daha sakin sokaklar. Çiftler için ideal."
+      },
+      {
+        "months": "Temmuz – Ağustos",
+        "detail": "Yaz zirvesi: 30°C+, canlı liman, villaları erken rezerve edin."
+      },
+      {
+        "months": "Eylül – Ekim",
+        "detail": "Hâlâ yüzme havası, daha yumuşak ışık, daha kolay masa bulma."
+      }
     ],
     "gettingHere": {
       "eyebrow": "Ulaşım",
@@ -433,5 +564,8 @@
     "title": "Bu sayfayı bulamadık",
     "body": "Aradığınız villa veya sayfa taşınmış olabilir. Bunun yerine tüm koleksiyona göz atmayı deneyin.",
     "browseVillas": "Villalara göz at"
+  },
+  "legal": {
+    "germanNoticeNote": "Bu sayfa, Alman hukuku kapsamında yasal bağlayıcılığı olan bir bildirim olduğu için Almanca olarak sunulmaktadır."
   }
 }

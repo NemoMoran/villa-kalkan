@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/faq", changeFrequency: "monthly", priority: 0.5 },
     { path: "/about", changeFrequency: "monthly", priority: 0.5 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
+    { path: "/impressum", changeFrequency: "yearly", priority: 0.2 },
+    { path: "/datenschutz", changeFrequency: "yearly", priority: 0.2 },
   ];
 
   const staticRoutes: MetadataRoute.Sitemap = staticPaths.flatMap(

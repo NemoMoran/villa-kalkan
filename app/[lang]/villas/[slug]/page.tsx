@@ -6,6 +6,7 @@ import { getVillasWithImages, getVillaWithImagesBySlug } from "@/data/villaImage
 import { VillaGallery } from "@/components/villa/VillaGallery";
 import { VillaCard } from "@/components/villa/VillaCard";
 import { AmenitiesList } from "@/components/villa/AmenitiesList";
+import { FacilitiesList } from "@/components/villa/FacilitiesList";
 import { AvailabilityCalendar } from "@/components/villa/AvailabilityCalendar";
 import { LinkButton } from "@/components/ui/Button";
 import { getVillaAvailability } from "@/lib/ical/getVillaAvailability";
@@ -115,6 +116,7 @@ export default async function VillaDetailPage({
               `${villa.bedrooms} ${dict.villaDetail.bedroomsSuffix}`,
               `${villa.bathrooms} ${dict.villaDetail.bathroomsSuffix}`,
               dict.villaDetail.upToGuests.replace("{count}", String(villa.maxGuests)),
+              `${villa.sizeSqm} ${dict.villaDetail.sizeSuffix}`,
             ].map((fact) => (
               <span
                 key={fact}
@@ -132,6 +134,14 @@ export default async function VillaDetailPage({
           </h2>
           <div className="mt-5">
             <AmenitiesList amenityKeys={villa.amenityKeys} dict={dict.amenities} />
+          </div>
+
+          <h2 className="font-display mt-12 text-2xl text-ink">
+            {dict.villaDetail.facilitiesHeading}
+          </h2>
+          <p className="mt-2 text-sm text-ink-muted">{dict.facilities.unitType}</p>
+          <div className="mt-5 rounded-3xl border border-border bg-surface p-6">
+            <FacilitiesList villa={villa} dict={dict.facilities} />
           </div>
 
           <div className="mt-12">

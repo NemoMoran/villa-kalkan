@@ -20,8 +20,19 @@
     "exploreHeading": "Explore",
     "companyHeading": "Company",
     "getInTouchHeading": "Get in touch",
-    "exploreLinks": { "villas": "All villas", "guide": "Kalkan guide", "faq": "FAQ" },
-    "companyLinks": { "about": "About us", "contact": "Contact" },
+    "exploreLinks": {
+      "villas": "All villas",
+      "guide": "Kalkan guide",
+      "faq": "FAQ"
+    },
+    "companyLinks": {
+      "about": "About us",
+      "contact": "Contact"
+    },
+    "legalLinks": {
+      "imprint": "Legal Notice",
+      "privacy": "Privacy Policy"
+    },
     "copyright": "© {year} Villa Kalkan. All rights reserved.",
     "bookingNote": "Bookings are completed securely on Airbnb & Booking.com."
   },
@@ -75,9 +86,18 @@
       "title": "Why Kalkan?",
       "description": "A whitewashed harbour town stacked above a turquoise bay — rooftop restaurants, hidden coves, and some of the clearest water on the Mediterranean. Quiet enough to unwind, lively enough to never run out of dinner plans.",
       "facts": [
-        { "value": "10 min", "label": "to Kaputaş, one of Turkey's most photographed beaches" },
-        { "value": "25°C", "label": "average sea temperature through summer" },
-        { "value": "1h 45m", "label": "transfer from Dalaman International Airport" }
+        {
+          "value": "10 min",
+          "label": "to Kaputaş, one of Turkey's most photographed beaches"
+        },
+        {
+          "value": "25°C",
+          "label": "average sea temperature through summer"
+        },
+        {
+          "value": "1h 45m",
+          "label": "transfer from Dalaman International Airport"
+        }
       ],
       "altHarbour": "Kalkan harbour and bay",
       "altOldTown": "Whitewashed old town streets"
@@ -88,9 +108,18 @@
       "description": "Beaches, boat trips, ancient ruins, and where to eat — our local guide covers the best of the coast.",
       "readGuide": "Read the guide",
       "highlights": [
-        { "title": "Kaputaş Beach", "description": "The turquoise cove between the cliffs, minutes away." },
-        { "title": "Harbour dinners", "description": "Rooftop terraces above the marina at sunset." },
-        { "title": "Boat days", "description": "Private gulet trips to coves you can't reach by road." }
+        {
+          "title": "Kaputaş Beach",
+          "description": "The turquoise cove between the cliffs, minutes away."
+        },
+        {
+          "title": "Harbour dinners",
+          "description": "Rooftop terraces above the marina at sunset."
+        },
+        {
+          "title": "Boat days",
+          "description": "Private gulet trips to coves you can't reach by road."
+        }
       ]
     },
     "reviews": {
@@ -170,7 +199,10 @@
     "priceOnRequest": "Price on request",
     "nightSuffix": "/night",
     "reservationsNote": "Reservations are completed directly on the platform — this site never handles your payment.",
-    "bookOn": { "airbnb": "Book on Airbnb", "booking": "Book on Booking.com" },
+    "bookOn": {
+      "airbnb": "Book on Airbnb",
+      "booking": "Book on Booking.com"
+    },
     "trustPoints": [
       "Secure payment & protections on the platform",
       "No extra fees for booking through this site",
@@ -184,7 +216,9 @@
     "lightboxClose": "Close",
     "lightboxPrevious": "Previous photo",
     "lightboxNext": "Next photo",
-    "lightboxCounter": "{n} / {count}"
+    "lightboxCounter": "{n} / {count}",
+    "sizeSuffix": "m²",
+    "facilitiesHeading": "Property facilities"
   },
   "availability": {
     "heading": "Availability",
@@ -215,6 +249,79 @@
     "hamam": "Turkish hamam",
     "sauna": "Sauna"
   },
+  "facilities": {
+    "unitType": "Private accommodation – villa in Kalkan",
+    "categories": {
+      "parking": "Parking",
+      "internet": "Internet",
+      "kitchen": "Kitchen",
+      "bedroom": "Bedroom",
+      "bathroom": "Bathroom",
+      "media": "Media & Technology",
+      "roomFeatures": "Room Features",
+      "outdoor": "Outdoors",
+      "wellness": "Wellness",
+      "outdoorView": "Outdoors & View",
+      "building": "Building",
+      "general": "Miscellaneous",
+      "familyRoom": "Family Room",
+      "safety": "Safety",
+      "languages": "Languages Spoken"
+    },
+    "items": {
+      "freeParking": "Free private parking, no reservation needed",
+      "wifi": "Free WiFi throughout the property",
+      "highchair": "Baby high chair",
+      "toaster": "Toaster",
+      "stovetop": "Stovetop",
+      "oven": "Oven",
+      "kitchenUtensils": "Kitchen utensils",
+      "kettle": "Electric kettle",
+      "kitchen": "Kitchen",
+      "washingMachine": "Washing machine",
+      "dishwasher": "Dishwasher",
+      "fridge": "Refrigerator",
+      "coffeeMaker": "Coffee maker",
+      "microwave": "Microwave",
+      "linens": "Linens",
+      "wardrobe": "Wardrobe",
+      "toiletPaper": "Toilet paper",
+      "towels": "Towels",
+      "bathtubOrShower": "Bathtub or shower",
+      "privateBathroom": "Private bathroom",
+      "toilet": "Toilet",
+      "hairDryer": "Hair dryer",
+      "shower": "Shower",
+      "flatScreenTv": "Flat-screen TV",
+      "tv": "TV",
+      "closet": "Closet",
+      "vanity": "Vanity",
+      "outdoorDining": "Outdoor dining area",
+      "outdoorFurniture": "Outdoor furniture",
+      "grill": "BBQ grill",
+      "privatePool": "Private pool",
+      "balcony": "Balcony",
+      "terrace": "Terrace",
+      "garden": "Garden",
+      "outdoorPool": "Outdoor pool",
+      "sunUmbrellas": "Sun umbrellas",
+      "sunLoungers": "Sun loungers",
+      "steamBath": "Steam room / Turkish bath",
+      "jacuzzi": "Whirlpool/jacuzzi",
+      "sauna": "Sauna",
+      "seaView": "Sea view",
+      "view": "View",
+      "standalone": "Detached villa",
+      "ac": "Air conditioning",
+      "nonSmoking": "Non-smoking property",
+      "heating": "Heating",
+      "nonSmokingRoom": "Non-smoking rooms",
+      "smokeDetector": "Smoke detector",
+      "german": "German",
+      "english": "English",
+      "turkish": "Turkish"
+    }
+  },
   "contactForm": {
     "nameLabel": "Name",
     "emailLabel": "Email",
@@ -230,9 +337,21 @@
     "title": "Contact us",
     "description": "Have a question about a villa, a group booking, or dates you don't see reflected yet? Send us a message and we'll get back to you.",
     "channels": [
-      { "label": "Email", "value": "info@villa-kalkan.net", "note": "We usually reply within a few hours" },
-      { "label": "Phone / WhatsApp", "value": "+90 000 000 00 00", "note": "English & Turkish spoken" },
-      { "label": "Where we are", "value": "Kalkan, Antalya, Turkey", "note": "On the ground, all season" }
+      {
+        "label": "Email",
+        "value": "info@villa-kalkan.net",
+        "note": "We usually reply within a few hours"
+      },
+      {
+        "label": "Phone / WhatsApp",
+        "value": "+49 1578 3027381",
+        "note": "English, German & Turkish spoken"
+      },
+      {
+        "label": "Where we are",
+        "value": "Kalkan, Antalya, Turkey",
+        "note": "On the ground, all season"
+      }
     ]
   },
   "aboutPage": {
@@ -347,7 +466,10 @@
       "title": "Where to eat",
       "description": "Kalkan punches far above its size for food — these are the three experiences not to miss."
     },
-    "plan": { "eyebrow": "Plan", "title": "When to visit" },
+    "plan": {
+      "eyebrow": "Plan",
+      "title": "When to visit"
+    },
     "beaches": [
       {
         "name": "Kaputaş Beach",
@@ -398,9 +520,18 @@
       }
     ],
     "seasons": [
-      { "months": "May – June", "detail": "Warm seas, green hills, quieter streets. Ideal for couples." },
-      { "months": "July – August", "detail": "Peak summer: 30°C+, buzzing harbour, book villas early." },
-      { "months": "September – October", "detail": "Still swimming weather, softer light, easier tables." }
+      {
+        "months": "May – June",
+        "detail": "Warm seas, green hills, quieter streets. Ideal for couples."
+      },
+      {
+        "months": "July – August",
+        "detail": "Peak summer: 30°C+, buzzing harbour, book villas early."
+      },
+      {
+        "months": "September – October",
+        "detail": "Still swimming weather, softer light, easier tables."
+      }
     ],
     "gettingHere": {
       "eyebrow": "Getting here",
@@ -433,5 +564,8 @@
     "title": "We couldn't find that page",
     "body": "The villa or page you're looking for may have moved. Try browsing the full collection instead.",
     "browseVillas": "Browse villas"
+  },
+  "legal": {
+    "germanNoticeNote": "This page is provided in German, as it is a legally binding notice under German law."
   }
 }

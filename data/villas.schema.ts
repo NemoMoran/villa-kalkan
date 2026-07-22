@@ -56,6 +56,7 @@ export const villaSchema = z.object({
   bedrooms: z.number().int().positive(),
   bathrooms: z.number().int().positive(),
   maxGuests: z.number().int().positive(),
+  sizeSqm: z.number().int().positive(),
   priceIndication: z
     .object({
       amount: z.number().positive(),

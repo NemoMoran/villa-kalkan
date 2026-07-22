@@ -43,13 +43,18 @@ export async function POST(request: Request) {
     const { Resend } = await import("resend");
     const resend = new Resend(apiKey);
 
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: CONTACT_FROM_EMAIL,
       to: CONTACT_TO_EMAIL,
       replyTo: email,
       subject: `New inquiry from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
     });
+
+    if (error) {
+      console.error("[contact] Resend rejected the email:", error);
+      return NextResponse.json({ error: "Failed to send message" }, { status: 502 });
+    }
 
     return NextResponse.json({ ok: true });
   } catch (error) {

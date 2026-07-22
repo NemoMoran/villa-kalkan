@@ -71,7 +71,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: FooterDict }) {
           </p>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
             <li>info@villa-kalkan.net</li>
-            <li>+90 000 000 00 00</li>
+            <li>+49 1578 3027381</li>
             <li>Kalkan, Antalya, Turkey</li>
           </ul>
         </div>
@@ -80,7 +80,21 @@ export function Footer({ lang, dict }: { lang: Locale; dict: FooterDict }) {
       <div className="border-t border-white/10 px-6 py-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-white/50 sm:flex-row">
           <p>{dict.copyright.replace("{year}", String(year))}</p>
-          <p>{dict.bookingNote}</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+            <p>{dict.bookingNote}</p>
+            <Link
+              href={localeHref(lang, "/impressum")}
+              className="underline-offset-2 transition-colors hover:text-white hover:underline"
+            >
+              {dict.legalLinks.imprint}
+            </Link>
+            <Link
+              href={localeHref(lang, "/datenschutz")}
+              className="underline-offset-2 transition-colors hover:text-white hover:underline"
+            >
+              {dict.legalLinks.privacy}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

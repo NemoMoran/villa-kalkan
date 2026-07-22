@@ -20,8 +20,19 @@
     "exploreHeading": "Explorer",
     "companyHeading": "Entreprise",
     "getInTouchHeading": "Nous contacter",
-    "exploreLinks": { "villas": "Toutes les villas", "guide": "Guide de Kalkan", "faq": "FAQ" },
-    "companyLinks": { "about": "À propos", "contact": "Contact" },
+    "exploreLinks": {
+      "villas": "Toutes les villas",
+      "guide": "Guide de Kalkan",
+      "faq": "FAQ"
+    },
+    "companyLinks": {
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "legalLinks": {
+      "imprint": "Mentions légales",
+      "privacy": "Politique de confidentialité"
+    },
     "copyright": "© {year} Villa Kalkan. Tous droits réservés.",
     "bookingNote": "Les réservations sont finalisées en toute sécurité sur Airbnb & Booking.com."
   },
@@ -75,9 +86,18 @@
       "title": "Pourquoi Kalkan ?",
       "description": "Une ville portuaire aux maisons blanchies à la chaux, perchée au-dessus d'une baie turquoise — restaurants en terrasse, criques cachées et certaines des eaux les plus claires de la Méditerranée. Assez calme pour se détendre, assez animée pour ne jamais manquer d'idées de dîner.",
       "facts": [
-        { "value": "10 min", "label": "jusqu'à Kaputaş, l'une des plages les plus photographiées de Turquie" },
-        { "value": "25°C", "label": "température moyenne de la mer en été" },
-        { "value": "1h45", "label": "de transfert depuis l'aéroport international de Dalaman" }
+        {
+          "value": "10 min",
+          "label": "jusqu'à Kaputaş, l'une des plages les plus photographiées de Turquie"
+        },
+        {
+          "value": "25°C",
+          "label": "température moyenne de la mer en été"
+        },
+        {
+          "value": "1h45",
+          "label": "de transfert depuis l'aéroport international de Dalaman"
+        }
       ],
       "altHarbour": "Port et baie de Kalkan",
       "altOldTown": "Rues blanchies à la chaux de la vieille ville"
@@ -88,9 +108,18 @@
       "description": "Plages, sorties en bateau, ruines antiques et bonnes adresses — notre guide local couvre le meilleur de la côte.",
       "readGuide": "Lire le guide",
       "highlights": [
-        { "title": "Plage de Kaputaş", "description": "La crique turquoise entre les falaises, à quelques minutes." },
-        { "title": "Dîners au port", "description": "Terrasses sur les toits au-dessus de la marina au coucher du soleil." },
-        { "title": "Journées en bateau", "description": "Sorties privées en goélette vers des criques inaccessibles par la route." }
+        {
+          "title": "Plage de Kaputaş",
+          "description": "La crique turquoise entre les falaises, à quelques minutes."
+        },
+        {
+          "title": "Dîners au port",
+          "description": "Terrasses sur les toits au-dessus de la marina au coucher du soleil."
+        },
+        {
+          "title": "Journées en bateau",
+          "description": "Sorties privées en goélette vers des criques inaccessibles par la route."
+        }
       ]
     },
     "reviews": {
@@ -170,7 +199,10 @@
     "priceOnRequest": "Prix sur demande",
     "nightSuffix": "/nuit",
     "reservationsNote": "Les réservations sont finalisées directement sur la plateforme — ce site ne traite jamais votre paiement.",
-    "bookOn": { "airbnb": "Réserver sur Airbnb", "booking": "Réserver sur Booking.com" },
+    "bookOn": {
+      "airbnb": "Réserver sur Airbnb",
+      "booking": "Réserver sur Booking.com"
+    },
     "trustPoints": [
       "Paiement sécurisé et protections de la plateforme",
       "Aucun frais supplémentaire pour réserver via ce site",
@@ -184,7 +216,9 @@
     "lightboxClose": "Fermer",
     "lightboxPrevious": "Photo précédente",
     "lightboxNext": "Photo suivante",
-    "lightboxCounter": "{n} / {count}"
+    "lightboxCounter": "{n} / {count}",
+    "sizeSuffix": "m²",
+    "facilitiesHeading": "Équipements du logement"
   },
   "availability": {
     "heading": "Disponibilité",
@@ -215,6 +249,79 @@
     "hamam": "Hammam",
     "sauna": "Sauna"
   },
+  "facilities": {
+    "unitType": "Hébergement privé – villa à Kalkan",
+    "categories": {
+      "parking": "Parking",
+      "internet": "Internet",
+      "kitchen": "Cuisine",
+      "bedroom": "Chambre",
+      "bathroom": "Salle de bain",
+      "media": "Médias & Technologie",
+      "roomFeatures": "Caractéristiques de la chambre",
+      "outdoor": "Extérieur",
+      "wellness": "Bien-être",
+      "outdoorView": "Extérieur & Vue",
+      "building": "Bâtiment",
+      "general": "Autres",
+      "familyRoom": "Chambre familiale",
+      "safety": "Sécurité",
+      "languages": "Langues parlées"
+    },
+    "items": {
+      "freeParking": "Parking privé gratuit, sans réservation",
+      "wifi": "Wifi gratuit dans tout le logement",
+      "highchair": "Chaise haute pour bébé",
+      "toaster": "Grille-pain",
+      "stovetop": "Plaque de cuisson",
+      "oven": "Four",
+      "kitchenUtensils": "Ustensiles de cuisine",
+      "kettle": "Bouilloire",
+      "kitchen": "Cuisine",
+      "washingMachine": "Lave-linge",
+      "dishwasher": "Lave-vaisselle",
+      "fridge": "Réfrigérateur",
+      "coffeeMaker": "Cafetière",
+      "microwave": "Micro-ondes",
+      "linens": "Linge de lit",
+      "wardrobe": "Armoire",
+      "toiletPaper": "Papier toilette",
+      "towels": "Serviettes",
+      "bathtubOrShower": "Baignoire ou douche",
+      "privateBathroom": "Salle de bain privée",
+      "toilet": "Toilettes",
+      "hairDryer": "Sèche-cheveux",
+      "shower": "Douche",
+      "flatScreenTv": "TV à écran plat",
+      "tv": "TV",
+      "closet": "Penderie",
+      "vanity": "Coiffeuse",
+      "outdoorDining": "Coin repas extérieur",
+      "outdoorFurniture": "Mobilier d'extérieur",
+      "grill": "Barbecue",
+      "privatePool": "Piscine privée",
+      "balcony": "Balcon",
+      "terrace": "Terrasse",
+      "garden": "Jardin",
+      "outdoorPool": "Piscine extérieure",
+      "sunUmbrellas": "Parasols",
+      "sunLoungers": "Chaises longues",
+      "steamBath": "Hammam",
+      "jacuzzi": "Jacuzzi",
+      "sauna": "Sauna",
+      "seaView": "Vue sur la mer",
+      "view": "Vue",
+      "standalone": "Villa indépendante",
+      "ac": "Climatisation",
+      "nonSmoking": "Établissement non-fumeurs",
+      "heating": "Chauffage",
+      "nonSmokingRoom": "Chambres non-fumeurs",
+      "smokeDetector": "Détecteur de fumée",
+      "german": "Allemand",
+      "english": "Anglais",
+      "turkish": "Turc"
+    }
+  },
   "contactForm": {
     "nameLabel": "Nom",
     "emailLabel": "E-mail",
@@ -230,9 +337,21 @@
     "title": "Contactez-nous",
     "description": "Une question sur une villa, une réservation de groupe, ou des dates qui n'apparaissent pas encore ici ? Envoyez-nous un message et nous vous répondrons.",
     "channels": [
-      { "label": "E-mail", "value": "info@villa-kalkan.net", "note": "Nous répondons généralement en quelques heures" },
-      { "label": "Téléphone / WhatsApp", "value": "+90 000 000 00 00", "note": "Anglais et turc parlés" },
-      { "label": "Où nous sommes", "value": "Kalkan, Antalya, Turquie", "note": "Sur place, toute la saison" }
+      {
+        "label": "E-mail",
+        "value": "info@villa-kalkan.net",
+        "note": "Nous répondons généralement en quelques heures"
+      },
+      {
+        "label": "Téléphone / WhatsApp",
+        "value": "+49 1578 3027381",
+        "note": "Anglais, allemand et turc parlés"
+      },
+      {
+        "label": "Où nous sommes",
+        "value": "Kalkan, Antalya, Turquie",
+        "note": "Sur place, toute la saison"
+      }
     ]
   },
   "aboutPage": {
@@ -347,7 +466,10 @@
       "title": "Où manger",
       "description": "Kalkan surpasse largement sa taille en matière de gastronomie — voici les trois expériences à ne pas manquer."
     },
-    "plan": { "eyebrow": "Planifier", "title": "Quand venir" },
+    "plan": {
+      "eyebrow": "Planifier",
+      "title": "Quand venir"
+    },
     "beaches": [
       {
         "name": "Plage de Kaputaş",
@@ -398,9 +520,18 @@
       }
     ],
     "seasons": [
-      { "months": "Mai – Juin", "detail": "Mers chaudes, collines verdoyantes, rues plus calmes. Idéal pour les couples." },
-      { "months": "Juillet – Août", "detail": "Plein été : 30°C+, port animé, réservez les villas tôt." },
-      { "months": "Septembre – Octobre", "detail": "Encore la saison de baignade, lumière plus douce, tables plus faciles à trouver." }
+      {
+        "months": "Mai – Juin",
+        "detail": "Mers chaudes, collines verdoyantes, rues plus calmes. Idéal pour les couples."
+      },
+      {
+        "months": "Juillet – Août",
+        "detail": "Plein été : 30°C+, port animé, réservez les villas tôt."
+      },
+      {
+        "months": "Septembre – Octobre",
+        "detail": "Encore la saison de baignade, lumière plus douce, tables plus faciles à trouver."
+      }
     ],
     "gettingHere": {
       "eyebrow": "Arriver à Kalkan",
@@ -433,5 +564,8 @@
     "title": "Nous n'avons pas trouvé cette page",
     "body": "La villa ou la page que vous recherchez a peut-être été déplacée. Essayez plutôt de parcourir la collection complète.",
     "browseVillas": "Voir les villas"
+  },
+  "legal": {
+    "germanNoticeNote": "Cette page est fournie en allemand, car il s'agit d'une mention légalement contraignante en vertu du droit allemand."
   }
 }

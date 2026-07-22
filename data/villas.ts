@@ -54,6 +54,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 4,
     bathrooms: 4,
     maxGuests: 8,
+    sizeSqm: 320,
     priceIndication: { amount: 420, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -106,6 +107,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: { amount: 340, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
     featured: true,
@@ -155,6 +157,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -210,6 +213,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 3,
     bathrooms: 3,
     maxGuests: 6,
+    sizeSqm: 220,
     priceIndication: { amount: 520, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -262,6 +266,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: null,
     sources: [{ platform: "booking", listingUrl: "#", icalUrl: null }],
   },
@@ -314,6 +319,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 3,
     bathrooms: 3,
     maxGuests: 6,
+    sizeSqm: 220,
     priceIndication: { amount: 300, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -367,6 +373,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
   },
@@ -417,6 +424,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -470,6 +478,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
+    sizeSqm: 120,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
@@ -528,6 +537,7 @@ const rawVillas: VillaInput[] = [
     bedrooms: 3,
     bathrooms: 3,
     maxGuests: 6,
+    sizeSqm: 220,
     priceIndication: null,
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
   },

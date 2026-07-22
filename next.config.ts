@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   // this, Next.js blocks those cross-origin dev requests with a 403. Update
   // this if the machine's local network IP changes (shown as "Network:" in
   // the `npm run dev` startup log).
-  allowedDevOrigins: ["192.168.178.26"],
+  allowedDevOrigins: ["192.168.178.26", "172.20.10.4"],
 };
 
 export default nextConfig;

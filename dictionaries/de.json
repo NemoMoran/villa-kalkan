@@ -20,8 +20,19 @@
     "exploreHeading": "Entdecken",
     "companyHeading": "Unternehmen",
     "getInTouchHeading": "Kontakt",
-    "exploreLinks": { "villas": "Alle Villen", "guide": "Kalkan-Guide", "faq": "FAQ" },
-    "companyLinks": { "about": "Über uns", "contact": "Kontakt" },
+    "exploreLinks": {
+      "villas": "Alle Villen",
+      "guide": "Kalkan-Guide",
+      "faq": "FAQ"
+    },
+    "companyLinks": {
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "legalLinks": {
+      "imprint": "Impressum",
+      "privacy": "Datenschutz"
+    },
     "copyright": "© {year} Villa Kalkan. Alle Rechte vorbehalten.",
     "bookingNote": "Buchungen werden sicher über Airbnb & Booking.com abgewickelt."
   },
@@ -75,9 +86,18 @@
       "title": "Warum Kalkan?",
       "description": "Ein weiß getünchtes Hafenstädtchen über einer türkisfarbenen Bucht — Dachterrassen-Restaurants, versteckte Buchten und einige der klarsten Gewässer im Mittelmeer. Ruhig genug zum Entspannen, lebendig genug, dass es nie an einem Abendessen-Plan fehlt.",
       "facts": [
-        { "value": "10 Min.", "label": "bis nach Kaputaş, einem der meistfotografierten Strände der Türkei" },
-        { "value": "25°C", "label": "durchschnittliche Wassertemperatur im Sommer" },
-        { "value": "1 Std. 45", "label": "Transfer vom internationalen Flughafen Dalaman" }
+        {
+          "value": "10 Min.",
+          "label": "bis nach Kaputaş, einem der meistfotografierten Strände der Türkei"
+        },
+        {
+          "value": "25°C",
+          "label": "durchschnittliche Wassertemperatur im Sommer"
+        },
+        {
+          "value": "1 Std. 45",
+          "label": "Transfer vom internationalen Flughafen Dalaman"
+        }
       ],
       "altHarbour": "Hafen und Bucht von Kalkan",
       "altOldTown": "Weiß getünchte Gassen der Altstadt"
@@ -88,9 +108,18 @@
       "description": "Strände, Bootstouren, antike Ruinen und die besten Adressen zum Essen — unser lokaler Guide zeigt Ihnen das Beste der Küste.",
       "readGuide": "Zum Guide",
       "highlights": [
-        { "title": "Kaputaş-Strand", "description": "Die türkisfarbene Bucht zwischen den Klippen, nur Minuten entfernt." },
-        { "title": "Abendessen am Hafen", "description": "Dachterrassen über der Marina bei Sonnenuntergang." },
-        { "title": "Bootstage", "description": "Private Gulet-Touren zu Buchten, die man über Land nicht erreicht." }
+        {
+          "title": "Kaputaş-Strand",
+          "description": "Die türkisfarbene Bucht zwischen den Klippen, nur Minuten entfernt."
+        },
+        {
+          "title": "Abendessen am Hafen",
+          "description": "Dachterrassen über der Marina bei Sonnenuntergang."
+        },
+        {
+          "title": "Bootstage",
+          "description": "Private Gulet-Touren zu Buchten, die man über Land nicht erreicht."
+        }
       ]
     },
     "reviews": {
@@ -170,7 +199,10 @@
     "priceOnRequest": "Preis auf Anfrage",
     "nightSuffix": "/Nacht",
     "reservationsNote": "Buchungen werden direkt auf der Plattform abgeschlossen — diese Seite verarbeitet niemals Ihre Zahlung.",
-    "bookOn": { "airbnb": "Bei Airbnb buchen", "booking": "Bei Booking.com buchen" },
+    "bookOn": {
+      "airbnb": "Bei Airbnb buchen",
+      "booking": "Bei Booking.com buchen"
+    },
     "trustPoints": [
       "Sichere Zahlung & Schutzmaßnahmen der Plattform",
       "Keine Extragebühren durch Buchung über diese Seite",
@@ -184,7 +216,9 @@
     "lightboxClose": "Schließen",
     "lightboxPrevious": "Vorheriges Foto",
     "lightboxNext": "Nächstes Foto",
-    "lightboxCounter": "{n} / {count}"
+    "lightboxCounter": "{n} / {count}",
+    "sizeSuffix": "m²",
+    "facilitiesHeading": "Ausstattung der Unterkunft"
   },
   "availability": {
     "heading": "Verfügbarkeit",
@@ -215,6 +249,79 @@
     "hamam": "Hamam",
     "sauna": "Sauna"
   },
+  "facilities": {
+    "unitType": "Privatunterkunft – Villa in Kalkan",
+    "categories": {
+      "parking": "Parkmöglichkeiten",
+      "internet": "Internet",
+      "kitchen": "Küche",
+      "bedroom": "Schlafzimmer",
+      "bathroom": "Badezimmer",
+      "media": "Medien & Technik",
+      "roomFeatures": "Zimmerausstattung",
+      "outdoor": "Außenbereich",
+      "wellness": "Wellness",
+      "outdoorView": "Outdoor & Ausblick",
+      "building": "Gebäude",
+      "general": "Sonstiges",
+      "familyRoom": "Familienzimmer",
+      "safety": "Sicherheit",
+      "languages": "Gesprochene Sprachen"
+    },
+    "items": {
+      "freeParking": "Private Parkplätze stehen kostenfrei zur Verfügung (Reservierung nicht erforderlich)",
+      "wifi": "WLAN ist in allen Bereichen nutzbar und kostenfrei",
+      "highchair": "Kinderhochstuhl",
+      "toaster": "Toaster",
+      "stovetop": "Herdplatte",
+      "oven": "Backofen",
+      "kitchenUtensils": "Küchenutensilien",
+      "kettle": "Wasserkocher",
+      "kitchen": "Küche",
+      "washingMachine": "Waschmaschine",
+      "dishwasher": "Spülmaschine",
+      "fridge": "Kühlschrank",
+      "coffeeMaker": "Kaffeemaschine",
+      "microwave": "Mikrowelle",
+      "linens": "Bettwäsche",
+      "wardrobe": "Schrank",
+      "toiletPaper": "Toilettenpapier",
+      "towels": "Handtücher",
+      "bathtubOrShower": "Badewanne oder Dusche",
+      "privateBathroom": "Eigenes Badezimmer",
+      "toilet": "WC",
+      "hairDryer": "Föhn",
+      "shower": "Dusche",
+      "flatScreenTv": "Flachbild-TV",
+      "tv": "TV",
+      "closet": "Kleiderschrank",
+      "vanity": "Schminktisch",
+      "outdoorDining": "Essbereich im Freien",
+      "outdoorFurniture": "Außenmöbel",
+      "grill": "Grill",
+      "privatePool": "Eigener Pool",
+      "balcony": "Balkon",
+      "terrace": "Terrasse",
+      "garden": "Garten",
+      "outdoorPool": "Außenpool",
+      "sunUmbrellas": "Sonnenschirme",
+      "sunLoungers": "Sonnenstühle/-liegen",
+      "steamBath": "Dampfbad/Türkisches Bad",
+      "jacuzzi": "Whirlpool/Jacuzzi",
+      "sauna": "Sauna",
+      "seaView": "Meerblick",
+      "view": "Aussicht",
+      "standalone": "Eigenständig",
+      "ac": "Klimaanlage",
+      "nonSmoking": "Nichtraucherunterkunft (alle öffentlichen und privaten Bereiche sind Nichtraucherzonen)",
+      "heating": "Heizung",
+      "nonSmokingRoom": "Nichtraucherzimmer",
+      "smokeDetector": "Rauchmelder",
+      "german": "Deutsch",
+      "english": "Englisch",
+      "turkish": "Türkisch"
+    }
+  },
   "contactForm": {
     "nameLabel": "Name",
     "emailLabel": "E-Mail",
@@ -230,9 +337,21 @@
     "title": "Kontaktieren Sie uns",
     "description": "Haben Sie eine Frage zu einer Villa, einer Gruppenbuchung oder Terminen, die hier noch nicht zu sehen sind? Schreiben Sie uns, wir melden uns bei Ihnen.",
     "channels": [
-      { "label": "E-Mail", "value": "info@villa-kalkan.net", "note": "Wir antworten meist innerhalb weniger Stunden" },
-      { "label": "Telefon / WhatsApp", "value": "+90 000 000 00 00", "note": "Englisch & Türkisch gesprochen" },
-      { "label": "Wo wir sind", "value": "Kalkan, Antalya, Türkei", "note": "Vor Ort, das ganze Jahr über" }
+      {
+        "label": "E-Mail",
+        "value": "info@villa-kalkan.net",
+        "note": "Wir antworten meist innerhalb weniger Stunden"
+      },
+      {
+        "label": "Telefon / WhatsApp",
+        "value": "+49 1578 3027381",
+        "note": "Englisch, Deutsch & Türkisch gesprochen"
+      },
+      {
+        "label": "Wo wir sind",
+        "value": "Kalkan, Antalya, Türkei",
+        "note": "Vor Ort, das ganze Jahr über"
+      }
     ]
   },
   "aboutPage": {
@@ -347,7 +466,10 @@
       "title": "Wo man essen sollte",
       "description": "Kalkan übertrifft seine Größe beim Essen bei weitem — diese drei Erlebnisse sollten Sie nicht verpassen."
     },
-    "plan": { "eyebrow": "Planen", "title": "Beste Reisezeit" },
+    "plan": {
+      "eyebrow": "Planen",
+      "title": "Beste Reisezeit"
+    },
     "beaches": [
       {
         "name": "Kaputaş-Strand",
@@ -398,9 +520,18 @@
       }
     ],
     "seasons": [
-      { "months": "Mai – Juni", "detail": "Warmes Wasser, grüne Hügel, ruhigere Straßen. Ideal für Paare." },
-      { "months": "Juli – August", "detail": "Hochsommer: 30°C+, belebter Hafen, Villen früh buchen." },
-      { "months": "September – Oktober", "detail": "Noch Badewetter, weicheres Licht, leichtere Tischreservierungen." }
+      {
+        "months": "Mai – Juni",
+        "detail": "Warmes Wasser, grüne Hügel, ruhigere Straßen. Ideal für Paare."
+      },
+      {
+        "months": "Juli – August",
+        "detail": "Hochsommer: 30°C+, belebter Hafen, Villen früh buchen."
+      },
+      {
+        "months": "September – Oktober",
+        "detail": "Noch Badewetter, weicheres Licht, leichtere Tischreservierungen."
+      }
     ],
     "gettingHere": {
       "eyebrow": "Anreise",
@@ -433,5 +564,8 @@
     "title": "Diese Seite konnten wir nicht finden",
     "body": "Die Villa oder Seite, die Sie suchen, wurde möglicherweise verschoben. Durchstöbern Sie stattdessen die gesamte Sammlung.",
     "browseVillas": "Villen entdecken"
+  },
+  "legal": {
+    "germanNoticeNote": ""
   }
 }
