@@ -38,7 +38,9 @@ export function proxy(request: NextRequest) {
   // discoverable/usable by anyone but the site owner.
   if (pathname.includes("/admin/")) {
     if (!isAuthorizedAdmin(request)) {
-      return new NextResponse("Authentication required", {
+      // TEMP DIAGNOSTIC — remove once admin auth is confirmed working.
+      const debug = `user_set=${process.env.ADMIN_USER !== undefined} user_len=${process.env.ADMIN_USER?.length ?? 0} pass_set=${process.env.ADMIN_PASSWORD !== undefined} pass_len=${process.env.ADMIN_PASSWORD?.length ?? 0}`;
+      return new NextResponse(`Authentication required\n${debug}`, {
         status: 401,
         headers: { "WWW-Authenticate": 'Basic realm="Admin"' },
       });
