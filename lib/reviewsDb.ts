@@ -94,6 +94,22 @@ export async function getPendingReviews(): Promise<StoredReview[]> {
   }
 }
 
+/** All approved reviews across every villa — for the admin cleanup view. */
+export async function getAllApprovedReviews(): Promise<StoredReview[]> {
+  try {
+    const sql = getSql();
+    const { rows } = await sql<ReviewRow>`
+      SELECT id, villa_slug, author, rating, text, locale, status, created_at
+      FROM reviews
+      WHERE status = 'approved'
+      ORDER BY created_at DESC
+    `;
+    return rows.map(mapRow);
+  } catch {
+    return [];
+  }
+}
+
 export async function createReview(input: {
   villaSlug: string;
   author: string;
