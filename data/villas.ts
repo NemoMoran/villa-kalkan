@@ -61,30 +61,6 @@ const rawVillas: VillaInput[] = [
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
     featured: true,
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Sarah M.",
-        rating: 5,
-        text: {
-          en: "Perfect for our big family reunion — the pool and sea view made every evening special.",
-          de: "Perfekt für unser großes Familientreffen – der Pool und der Meerblick machten jeden Abend besonders.",
-          tr: "Büyük aile buluşmamız için mükemmeldi – havuz ve deniz manzarası her akşamı özel kıldı.",
-          fr: "Parfait pour notre grande réunion de famille – la piscine et la vue sur mer ont rendu chaque soirée spéciale.",
-        },
-      },
-      {
-        author: "Daniel K.",
-        rating: 5,
-        text: {
-          en: "Spacious, spotless, and the jacuzzi was a hit with the kids. We'll be back.",
-          de: "Geräumig, makellos, und der Jacuzzi kam bei den Kindern super an. Wir kommen wieder.",
-          tr: "Geniş, tertemiz, ve jakuzi çocukların favorisi oldu. Tekrar geleceğiz.",
-          fr: "Spacieuse, impeccable, et le jacuzzi a beaucoup plu aux enfants. Nous reviendrons.",
-        },
-      },
-    ],
   },
   {
     // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
@@ -135,30 +111,6 @@ const rawVillas: VillaInput[] = [
     priceIndication: { amount: 340, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
     featured: true,
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Emma R.",
-        rating: 5,
-        text: {
-          en: "A romantic little escape — quiet, private, and the sunset views from the pool were unreal.",
-          de: "Ein romantischer kleiner Rückzugsort – ruhig, privat, und der Sonnenuntergang vom Pool aus war unglaublich.",
-          tr: "Romantik küçük bir kaçamak – sessiz, özel, ve havuzdan gün batımı manzarası inanılmazdı.",
-          fr: "Une petite escapade romantique – calme, privée, et la vue au coucher du soleil depuis la piscine était incroyable.",
-        },
-      },
-      {
-        author: "Marco T.",
-        rating: 5,
-        text: {
-          en: "Exactly what we needed for our anniversary. Beautifully kept and very private.",
-          de: "Genau das Richtige für unseren Hochzeitstag. Wunderschön gepflegt und sehr privat.",
-          tr: "Yıl dönümümüz için tam aradığımız yerdi. Çok güzel bakımlı ve oldukça özel.",
-          fr: "Exactement ce qu'il nous fallait pour notre anniversaire de mariage. Magnifiquement entretenue et très privée.",
-        },
-      },
-    ],
   },
   {
     // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
@@ -210,30 +162,6 @@ const rawVillas: VillaInput[] = [
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
-    ],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Lena F.",
-        rating: 4,
-        text: {
-          en: "Loved the peaceful location in Islamlar — felt like our own hideaway above the coast.",
-          de: "Wir liebten die ruhige Lage in Islamlar – fühlte sich an wie unser eigenes Versteck über der Küste.",
-          tr: "Islamlar'daki sakin konumu çok sevdik – sanki kıyının üzerinde kendi saklı yerimiz gibiydi.",
-          fr: "Nous avons adoré l'emplacement paisible à Islamlar – on se sentait dans notre propre refuge au-dessus de la côte.",
-        },
-      },
-      {
-        author: "James P.",
-        rating: 5,
-        text: {
-          en: "Comfortable, clean, and the pool was perfect after a day exploring Kalkan.",
-          de: "Komfortabel, sauber, und der Pool war perfekt nach einem Tag in Kalkan.",
-          tr: "Konforlu, temiz, ve Kalkan'da geçirilen bir günün ardından havuz tam kararında.",
-          fr: "Confortable, propre, et la piscine était parfaite après une journée à explorer Kalkan.",
-        },
-      },
     ],
   },
   {
@@ -292,30 +220,6 @@ const rawVillas: VillaInput[] = [
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
     featured: true,
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Katharina W.",
-        rating: 5,
-        text: {
-          en: "The hamam and sauna made this feel like a proper spa retreat, not just a villa.",
-          de: "Der Hamam und die Sauna machten daraus ein richtiges Spa-Erlebnis, nicht nur eine Villa.",
-          tr: "Hamam ve sauna burayı sadece bir villa değil, gerçek bir spa deneyimine dönüştürdü.",
-          fr: "Le hammam et le sauna en faisaient une vraie retraite spa, pas juste une villa.",
-        },
-      },
-      {
-        author: "Ahmet Y.",
-        rating: 5,
-        text: {
-          en: "Modern, relaxing, beautifully designed — we didn't want to leave.",
-          de: "Modern, entspannend, wunderschön gestaltet – wir wollten gar nicht mehr weg.",
-          tr: "Modern, dinlendirici, güzelce tasarlanmış – ayrılmak istemedik.",
-          fr: "Moderne, apaisante, magnifiquement conçue – nous ne voulions plus repartir.",
-        },
-      },
-    ],
   },
   {
     // TODO: bathrooms assumed = bedrooms (not stated in source copy, pending
@@ -365,30 +269,6 @@ const rawVillas: VillaInput[] = [
     sizeSqm: 120,
     priceIndication: null,
     sources: [{ platform: "booking", listingUrl: "#", icalUrl: null }],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Sophie L.",
-        rating: 5,
-        text: {
-          en: "Elegant and romantic — the sea view from the terrace at sunset was the highlight of our trip.",
-          de: "Elegant und romantisch – der Meerblick von der Terrasse bei Sonnenuntergang war der Höhepunkt unserer Reise.",
-          tr: "Zarif ve romantik – gün batımında terastan deniz manzarası tatilimizin en güzel anıydı.",
-          fr: "Élégante et romantique – la vue sur mer depuis la terrasse au coucher du soleil a été le point fort de notre séjour.",
-        },
-      },
-      {
-        author: "Chris B.",
-        rating: 4,
-        text: {
-          en: "Small but perfectly formed. Every detail felt thought through.",
-          de: "Klein, aber perfekt durchdacht. Jedes Detail hat gestimmt.",
-          tr: "Küçük ama her detayı düşünülmüş, kusursuz bir yer.",
-          fr: "Petite mais parfaitement pensée. Chaque détail était soigné.",
-        },
-      },
-    ],
   },
   {
     // TODO: photos are real (public/images/villas/villa-saba/). Bedrooms
@@ -445,30 +325,6 @@ const rawVillas: VillaInput[] = [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Julia N.",
-        rating: 5,
-        text: {
-          en: "Great for our group of friends — sauna after a beach day was the best part of the trip.",
-          de: "Toll für unsere Freundesgruppe – die Sauna nach einem Strandtag war das Beste an der Reise.",
-          tr: "Arkadaş grubumuz için harikaydı – plaj gününün ardından sauna tatilin en güzel kısmıydı.",
-          fr: "Idéale pour notre groupe d'amis – le sauna après une journée à la plage était le meilleur moment du séjour.",
-        },
-      },
-      {
-        author: "Tom H.",
-        rating: 5,
-        text: {
-          en: "Sea views from almost every room, and the pool area was gorgeous at night.",
-          de: "Meerblick von fast jedem Zimmer, und der Poolbereich war abends wunderschön.",
-          tr: "Neredeyse her odadan deniz manzarası, ve havuz alanı geceleri muhteşemdi.",
-          fr: "Vue sur mer depuis presque toutes les pièces, et l'espace piscine était magnifique le soir.",
-        },
-      },
-    ],
   },
   {
     // TODO: photos are real (public/images/villas/villa-bogota/). Owner fact
@@ -520,30 +376,6 @@ const rawVillas: VillaInput[] = [
     sizeSqm: 120,
     priceIndication: { amount: 260, currency: "EUR", per: "night" },
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Anna S.",
-        rating: 4,
-        text: {
-          en: "Peaceful and scenic — the terrace looking over the olive groves was so relaxing.",
-          de: "Ruhig und malerisch – die Terrasse mit Blick über die Olivenhaine war so entspannend.",
-          tr: "Huzurlu ve manzaralı – zeytinliklere bakan teras oldukça rahatlatıcıydı.",
-          fr: "Paisible et pittoresque – la terrasse donnant sur les oliveraies était tellement relaxante.",
-        },
-      },
-      {
-        author: "David O.",
-        rating: 5,
-        text: {
-          en: "Not on the sea, but honestly the mountain views made up for it completely.",
-          de: "Kein Meerblick, aber ehrlich gesagt haben die Bergblicke das mehr als wettgemacht.",
-          tr: "Deniz manzarası yok ama dağ manzarası bunu fazlasıyla telafi etti.",
-          fr: "Pas de vue sur mer, mais honnêtement la vue sur les montagnes a largement compensé.",
-        },
-      },
-    ],
   },
   {
     // TODO: photos are real (public/images/villas/villa-colombia/). Owner
@@ -598,30 +430,6 @@ const rawVillas: VillaInput[] = [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
     ],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Nina K.",
-        rating: 5,
-        text: {
-          en: "Loved the two-storey layout and the terrace view over the valley — very peaceful.",
-          de: "Wir liebten das zweistöckige Layout und den Terrassenblick über das Tal – sehr ruhig.",
-          tr: "İki katlı düzeni ve vadiye bakan teras manzarasını çok sevdik – çok huzurlu.",
-          fr: "Nous avons adoré la disposition sur deux étages et la vue sur la vallée depuis la terrasse – très paisible.",
-        },
-      },
-      {
-        author: "Peter L.",
-        rating: 4,
-        text: {
-          en: "Modern, comfortable, and a great quiet base for exploring Kalkan.",
-          de: "Modern, komfortabel, und eine tolle ruhige Basis, um Kalkan zu erkunden.",
-          tr: "Modern, konforlu, ve Kalkan'ı keşfetmek için harika, sakin bir üs.",
-          fr: "Moderne, confortable, et une excellente base tranquille pour explorer Kalkan.",
-        },
-      },
-    ],
   },
   {
     // TODO: photos are real (public/images/villas/villa-colosseum/). Owner
@@ -675,30 +483,6 @@ const rawVillas: VillaInput[] = [
     sources: [
       { platform: "airbnb", listingUrl: "#", icalUrl: null },
       { platform: "booking", listingUrl: "#", icalUrl: null },
-    ],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Claire D.",
-        rating: 5,
-        text: {
-          en: "Beautifully designed inside — felt like staying somewhere out of a magazine.",
-          de: "Innen wunderschön gestaltet – fühlte sich an wie aus einem Magazin.",
-          tr: "İç mekan tasarımı muhteşemdi – bir dergiden çıkmış gibi hissettirdi.",
-          fr: "Magnifiquement décorée à l'intérieur – on se serait cru dans un magazine.",
-        },
-      },
-      {
-        author: "Mehmet A.",
-        rating: 5,
-        text: {
-          en: "The open dining terrace with the hillside view was our favorite spot every evening.",
-          de: "Die offene Essterrasse mit Blick auf die Hügel war jeden Abend unser Lieblingsplatz.",
-          tr: "Tepelere bakan açık yemek terası her akşam favori noktamızdı.",
-          fr: "La terrasse à manger ouverte avec vue sur les collines était notre endroit préféré chaque soir.",
-        },
-      },
     ],
   },
   {
@@ -756,30 +540,6 @@ const rawVillas: VillaInput[] = [
     sizeSqm: 220,
     priceIndication: null,
     sources: [{ platform: "airbnb", listingUrl: "#", icalUrl: null }],
-    // TODO: placeholder reviews — replace with real guest quotes (copied
-    // over from Airbnb/Booking with permission) once available.
-    reviews: [
-      {
-        author: "Isabella R.",
-        rating: 5,
-        text: {
-          en: "Two jacuzzis and a sauna — this villa spoiled us completely.",
-          de: "Zwei Jacuzzis und eine Sauna – diese Villa hat uns komplett verwöhnt.",
-          tr: "İki jakuzi ve bir sauna – bu villa bizi tamamen şımarttı.",
-          fr: "Deux jacuzzis et un sauna – cette villa nous a totalement gâtés.",
-        },
-      },
-      {
-        author: "Fabian G.",
-        rating: 5,
-        text: {
-          en: "Great space for our group, stunning sea view, and so relaxing in the evenings.",
-          de: "Viel Platz für unsere Gruppe, toller Meerblick, und abends so entspannend.",
-          tr: "Grubumuz için bol alan, muhteşem deniz manzarası, ve akşamları çok dinlendirici.",
-          fr: "Beaucoup d'espace pour notre groupe, une vue sur mer superbe, et si relaxant le soir.",
-        },
-      },
-    ],
   },
 ];
 

@@ -323,6 +323,18 @@
       "turkish": "Turkish"
     }
   },
+  "reviewForm": {
+    "ratingLabel": "Your rating",
+    "starsLabel": "stars",
+    "nameLabel": "Name",
+    "textLabel": "Your review",
+    "send": "Submit review",
+    "sending": "Submitting...",
+    "successTitle": "Thanks for your review!",
+    "successBody": "It'll appear on this page once we've approved it.",
+    "genericError": "Something went wrong. Please try again.",
+    "moderationNote": "Reviews are checked before they appear publicly."
+  },
   "contactForm": {
     "nameLabel": "Name",
     "emailLabel": "Email",

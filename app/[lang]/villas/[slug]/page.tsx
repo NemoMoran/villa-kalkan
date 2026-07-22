@@ -8,6 +8,8 @@ import { VillaCard } from "@/components/villa/VillaCard";
 import { AmenitiesList } from "@/components/villa/AmenitiesList";
 import { FacilitiesList } from "@/components/villa/FacilitiesList";
 import { ReviewsList } from "@/components/villa/ReviewsList";
+import { ReviewForm } from "@/components/villa/ReviewForm";
+import { getApprovedReviews } from "@/lib/reviewsDb";
 import { AvailabilityCalendar } from "@/components/villa/AvailabilityCalendar";
 import { LinkButton } from "@/components/ui/Button";
 import { getVillaAvailability } from "@/lib/ical/getVillaAvailability";
@@ -19,6 +21,11 @@ import { getDictionary } from "../../dictionaries";
 export async function generateStaticParams() {
   return villas.map((villa) => ({ slug: villa.slug }));
 }
+
+// Reviews (and eventually live iCal availability) are request-time data —
+// this page can't be statically frozen at build time or new/approved
+// reviews wouldn't show up until a redeploy.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -50,6 +57,7 @@ export default async function VillaDetailPage({
 
   const dict = await getDictionary(lang);
   const content = getVillaContent(villa, lang);
+  const reviews = await getApprovedReviews(villa.slug);
 
   const platformLabel: Record<string, string> = {
     airbnb: dict.villaDetail.bookOn.airbnb,
@@ -145,16 +153,17 @@ export default async function VillaDetailPage({
             <FacilitiesList villa={villa} dict={dict.facilities} />
           </div>
 
-          {villa.reviews.length > 0 && (
-            <>
-              <h2 className="font-display mt-12 text-2xl text-ink">
-                {dict.villaDetail.reviewsHeading}
-              </h2>
-              <div className="mt-5">
-                <ReviewsList reviews={villa.reviews} lang={lang} />
-              </div>
-            </>
+          <h2 className="font-display mt-12 text-2xl text-ink">
+            {dict.villaDetail.reviewsHeading}
+          </h2>
+          {reviews.length > 0 && (
+            <div className="mt-5">
+              <ReviewsList reviews={reviews} />
+            </div>
           )}
+          <div className="mt-5">
+            <ReviewForm villaSlug={villa.slug} lang={lang} dict={dict.reviewForm} />
+          </div>
 
           <div className="mt-12">
             <AvailabilityCalendar

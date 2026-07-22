@@ -323,6 +323,18 @@
       "turkish": "Türkisch"
     }
   },
+  "reviewForm": {
+    "ratingLabel": "Ihre Bewertung",
+    "starsLabel": "Sterne",
+    "nameLabel": "Name",
+    "textLabel": "Ihre Rezension",
+    "send": "Bewertung abschicken",
+    "sending": "Wird gesendet...",
+    "successTitle": "Vielen Dank für Ihre Bewertung!",
+    "successBody": "Sie erscheint hier, sobald wir sie geprüft haben.",
+    "genericError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "moderationNote": "Bewertungen werden geprüft, bevor sie öffentlich erscheinen."
+  },
   "contactForm": {
     "nameLabel": "Name",
     "emailLabel": "E-Mail",

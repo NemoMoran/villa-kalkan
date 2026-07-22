@@ -4,6 +4,14 @@ import { locales, defaultLocale, hasLocale } from "@/lib/i18n/config";
 
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
+function isAuthorizedAdmin(request: NextRequest): boolean {
+  const auth = request.headers.get("authorization");
+  if (!auth?.startsWith("Basic ")) return false;
+
+  const [user, pass] = atob(auth.slice(6)).split(":");
+  return user === process.env.ADMIN_USER && pass === process.env.ADMIN_PASSWORD;
+}
+
 function detectLocale(request: NextRequest): string {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && hasLocale(cookieLocale)) return cookieLocale;
@@ -24,6 +32,18 @@ function detectLocale(request: NextRequest): string {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Password-gate the review moderation screen (any locale prefix) — it's
+  // not linked from anywhere public, but Basic Auth keeps it from being
+  // discoverable/usable by anyone but the site owner.
+  if (pathname.includes("/admin/")) {
+    if (!isAuthorizedAdmin(request)) {
+      return new NextResponse("Authentication required", {
+        status: 401,
+        headers: { "WWW-Authenticate": 'Basic realm="Admin"' },
+      });
+    }
+  }
 
   const pathnameHasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)

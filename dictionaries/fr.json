@@ -323,6 +323,18 @@
       "turkish": "Turc"
     }
   },
+  "reviewForm": {
+    "ratingLabel": "Votre note",
+    "starsLabel": "étoiles",
+    "nameLabel": "Nom",
+    "textLabel": "Votre avis",
+    "send": "Envoyer l'avis",
+    "sending": "Envoi...",
+    "successTitle": "Merci pour votre avis !",
+    "successBody": "Il apparaîtra sur cette page une fois approuvé.",
+    "genericError": "Une erreur s'est produite. Veuillez réessayer.",
+    "moderationNote": "Les avis sont vérifiés avant d'apparaître publiquement."
+  },
   "contactForm": {
     "nameLabel": "Nom",
     "emailLabel": "E-mail",

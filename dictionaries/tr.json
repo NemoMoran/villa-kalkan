@@ -323,6 +323,18 @@
       "turkish": "Türkçe"
     }
   },
+  "reviewForm": {
+    "ratingLabel": "Puanınız",
+    "starsLabel": "yıldız",
+    "nameLabel": "İsim",
+    "textLabel": "Yorumunuz",
+    "send": "Yorumu gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Yorumunuz için teşekkürler!",
+    "successBody": "Onayladıktan sonra bu sayfada görünecek.",
+    "genericError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+    "moderationNote": "Yorumlar yayınlanmadan önce kontrol edilir."
+  },
   "contactForm": {
     "nameLabel": "Ad",
     "emailLabel": "E-posta",
