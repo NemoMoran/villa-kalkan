@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { locales, hasLocale } from "@/lib/i18n/config";
@@ -82,6 +83,7 @@ export default async function RootLayout({
         <Navbar lang={lang} dict={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer lang={lang} dict={dict.footer} />
+        <SpeedInsights />
       </body>
     </html>
   );
