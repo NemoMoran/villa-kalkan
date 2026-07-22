@@ -218,7 +218,8 @@
     "lightboxNext": "Nächstes Foto",
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
-    "facilitiesHeading": "Ausstattung der Unterkunft"
+    "facilitiesHeading": "Ausstattung der Unterkunft",
+    "reviewsHeading": "Gästebewertungen"
   },
   "availability": {
     "heading": "Verfügbarkeit",

@@ -218,7 +218,8 @@
     "lightboxNext": "Sonraki fotoğraf",
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
-    "facilitiesHeading": "Konaklama Olanakları"
+    "facilitiesHeading": "Konaklama Olanakları",
+    "reviewsHeading": "Misafir Yorumları"
   },
   "availability": {
     "heading": "Uygunluk",

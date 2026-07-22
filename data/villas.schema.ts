@@ -31,6 +31,21 @@ export const villaContentSchema = z.object({
   description: z.string(),
 });
 
+/**
+ * Placeholder reviews until real guest quotes (copied over from Airbnb/
+ * Booking with permission) replace them — see the TODO in villas.ts.
+ */
+export const reviewSchema = z.object({
+  author: z.string(),
+  rating: z.number().int().min(1).max(5),
+  text: z.object(
+    Object.fromEntries(locales.map((locale) => [locale, z.string()])) as Record<
+      (typeof locales)[number],
+      z.ZodString
+    >
+  ),
+});
+
 export const villaSchema = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase kebab-case"),
   content: z.object(
@@ -67,11 +82,13 @@ export const villaSchema = z.object({
     .optional(),
   sources: z.array(villaSourceSchema).min(1).max(2),
   featured: z.boolean().optional(),
+  reviews: z.array(reviewSchema).default([]),
 });
 
 export type VillaSource = z.infer<typeof villaSourceSchema>;
 export type AmenityKey = z.infer<typeof amenityKeySchema>;
 export type VillaContent = z.infer<typeof villaContentSchema>;
+export type Review = z.infer<typeof reviewSchema>;
 export type Villa = z.infer<typeof villaSchema>;
 /** Raw villa literal shape, before the `images` default is applied. */
 export type VillaInput = z.input<typeof villaSchema>;

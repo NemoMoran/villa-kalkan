@@ -218,7 +218,8 @@
     "lightboxNext": "Photo suivante",
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
-    "facilitiesHeading": "Équipements du logement"
+    "facilitiesHeading": "Équipements du logement",
+    "reviewsHeading": "Avis des clients"
   },
   "availability": {
     "heading": "Disponibilité",

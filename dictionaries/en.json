@@ -218,7 +218,8 @@
     "lightboxNext": "Next photo",
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
-    "facilitiesHeading": "Property facilities"
+    "facilitiesHeading": "Property facilities",
+    "reviewsHeading": "Guest reviews"
   },
   "availability": {
     "heading": "Availability",

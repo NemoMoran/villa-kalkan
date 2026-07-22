@@ -7,6 +7,7 @@ import { VillaGallery } from "@/components/villa/VillaGallery";
 import { VillaCard } from "@/components/villa/VillaCard";
 import { AmenitiesList } from "@/components/villa/AmenitiesList";
 import { FacilitiesList } from "@/components/villa/FacilitiesList";
+import { ReviewsList } from "@/components/villa/ReviewsList";
 import { AvailabilityCalendar } from "@/components/villa/AvailabilityCalendar";
 import { LinkButton } from "@/components/ui/Button";
 import { getVillaAvailability } from "@/lib/ical/getVillaAvailability";
@@ -143,6 +144,17 @@ export default async function VillaDetailPage({
           <div className="mt-5 rounded-3xl border border-border bg-surface p-6">
             <FacilitiesList villa={villa} dict={dict.facilities} />
           </div>
+
+          {villa.reviews.length > 0 && (
+            <>
+              <h2 className="font-display mt-12 text-2xl text-ink">
+                {dict.villaDetail.reviewsHeading}
+              </h2>
+              <div className="mt-5">
+                <ReviewsList reviews={villa.reviews} lang={lang} />
+              </div>
+            </>
+          )}
 
           <div className="mt-12">
             <AvailabilityCalendar
