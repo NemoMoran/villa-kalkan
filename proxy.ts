@@ -12,6 +12,37 @@ function isAuthorizedAdmin(request: NextRequest): boolean {
   return user === process.env.ADMIN_USER && pass === process.env.ADMIN_PASSWORD;
 }
 
+const MAINTENANCE_PAGE = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Villa Kalkan — Back soon</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #faf7f0;
+        color: #1c1c1c;
+        text-align: center;
+        padding: 24px;
+      }
+      h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+      p { color: #6b6b6b; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Villa Kalkan</h1>
+      <p>We're doing some quick maintenance. Back shortly.</p>
+    </div>
+  </body>
+</html>`;
+
 function detectLocale(request: NextRequest): string {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && hasLocale(cookieLocale)) return cookieLocale;
@@ -32,6 +63,17 @@ function detectLocale(request: NextRequest): string {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Site-wide maintenance mode — set MAINTENANCE_MODE=true in Vercel's
+  // env vars (then redeploy) to hide the site from visitors. /admin stays
+  // reachable so review moderation still works while the site is "off".
+  // Remove the env var (and redeploy) to bring it back.
+  if (process.env.MAINTENANCE_MODE === "true" && !pathname.includes("/admin/")) {
+    return new NextResponse(MAINTENANCE_PAGE, {
+      status: 503,
+      headers: { "content-type": "text/html; charset=utf-8", "retry-after": "3600" },
+    });
+  }
 
   // Password-gate the review moderation screen (any locale prefix) — it's
   // not linked from anywhere public, but Basic Auth keeps it from being
