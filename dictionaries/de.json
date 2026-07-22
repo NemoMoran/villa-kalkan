@@ -219,7 +219,9 @@
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
     "facilitiesHeading": "Ausstattung der Unterkunft",
-    "reviewsHeading": "Gästebewertungen"
+    "reviewsHeading": "Gästebewertungen",
+    "showAllReviews": "Alle {count} Bewertungen anzeigen",
+    "showFewerReviews": "Weniger anzeigen"
   },
   "availability": {
     "heading": "Verfügbarkeit",

@@ -158,7 +158,11 @@ export default async function VillaDetailPage({
           </h2>
           {reviews.length > 0 && (
             <div className="mt-5">
-              <ReviewsList reviews={reviews} />
+              <ReviewsList
+                reviews={reviews}
+                showAllLabel={dict.villaDetail.showAllReviews}
+                showFewerLabel={dict.villaDetail.showFewerReviews}
+              />
             </div>
           )}
           <div className="mt-5">

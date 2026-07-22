@@ -219,7 +219,9 @@
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
     "facilitiesHeading": "Équipements du logement",
-    "reviewsHeading": "Avis des clients"
+    "reviewsHeading": "Avis des clients",
+    "showAllReviews": "Afficher les {count} avis",
+    "showFewerReviews": "Afficher moins d'avis"
   },
   "availability": {
     "heading": "Disponibilité",

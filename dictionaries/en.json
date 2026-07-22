@@ -219,7 +219,9 @@
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
     "facilitiesHeading": "Property facilities",
-    "reviewsHeading": "Guest reviews"
+    "reviewsHeading": "Guest reviews",
+    "showAllReviews": "Show all {count} reviews",
+    "showFewerReviews": "Show fewer reviews"
   },
   "availability": {
     "heading": "Availability",

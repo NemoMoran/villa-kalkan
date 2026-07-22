@@ -219,7 +219,9 @@
     "lightboxCounter": "{n} / {count}",
     "sizeSuffix": "m²",
     "facilitiesHeading": "Konaklama Olanakları",
-    "reviewsHeading": "Misafir Yorumları"
+    "reviewsHeading": "Misafir Yorumları",
+    "showAllReviews": "{count} yorumun tümünü göster",
+    "showFewerReviews": "Daha az göster"
   },
   "availability": {
     "heading": "Uygunluk",
