@@ -38,7 +38,7 @@ const MAINTENANCE_PAGE = `<!DOCTYPE html>
   <body>
     <div>
       <h1>Villa Kalkan</h1>
-      <p>We're doing some quick maintenance. Back shortly.</p>
+      <p>Wir führen Wartungsarbeiten durch. Wir sind in Kürze wieder für Sie da.</p>
     </div>
   </body>
 </html>`;
